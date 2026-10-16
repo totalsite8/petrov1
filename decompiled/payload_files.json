@@ -1,0 +1,1082 @@
+[
+ {
+  "entry": 2,
+  "name": "$PLUGINSDIR\\modern-wizard.bmp",
+  "data_off": 0,
+  "abs_off": 169314,
+  "size": 103048,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "da3bd54be92739fc21ac9aaa4d31a53b53b0849c8793870af822a960b771ee3c"
+ },
+ {
+  "entry": 25,
+  "name": "$PLUGINSDIR\\nsDialogs.dll",
+  "data_off": 103056,
+  "abs_off": 272370,
+  "size": 10752,
+  "compressed": false,
+  "flags": 83886225,
+  "sha256": "e778be010aa50b38e16fe99face86aad847dfc007e1b2d1bb04d7c921988a796"
+ },
+ {
+  "entry": 31,
+  "name": "$PLUGINSDIR\\nsDialogs.dll",
+  "data_off": 103056,
+  "abs_off": 272370,
+  "size": 10752,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "e778be010aa50b38e16fe99face86aad847dfc007e1b2d1bb04d7c921988a796"
+ },
+ {
+  "entry": 37,
+  "name": "$PLUGINSDIR\\nsDialogs.dll",
+  "data_off": 103056,
+  "abs_off": 272370,
+  "size": 10752,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "e778be010aa50b38e16fe99face86aad847dfc007e1b2d1bb04d7c921988a796"
+ },
+ {
+  "entry": 51,
+  "name": "$PLUGINSDIR\\nsDialogs.dll",
+  "data_off": 103056,
+  "abs_off": 272370,
+  "size": 10752,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "e778be010aa50b38e16fe99face86aad847dfc007e1b2d1bb04d7c921988a796"
+ },
+ {
+  "entry": 67,
+  "name": "$PLUGINSDIR\\nsDialogs.dll",
+  "data_off": 103056,
+  "abs_off": 272370,
+  "size": 10752,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "e778be010aa50b38e16fe99face86aad847dfc007e1b2d1bb04d7c921988a796"
+ },
+ {
+  "entry": 82,
+  "name": "$PLUGINSDIR\\nsDialogs.dll",
+  "data_off": 103056,
+  "abs_off": 272370,
+  "size": 10752,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "e778be010aa50b38e16fe99face86aad847dfc007e1b2d1bb04d7c921988a796"
+ },
+ {
+  "entry": 87,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 83886225,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 96,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 173,
+  "name": "$PLUGINSDIR\\modern-header.bmp",
+  "data_off": 126112,
+  "abs_off": 295426,
+  "size": 34256,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "21ddeb1b84556804dc12431c5250f1d4e94be1dfca90a0319a115819ab7467f6"
+ },
+ {
+  "entry": 224,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 232,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 238,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 243,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 251,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 263,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 269,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 370,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 83886225,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 533,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 538,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 543,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 548,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 554,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 561,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 567,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 572,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 591,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 596,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 601,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 606,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 733,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 748,
+  "name": "AmiCert_r1.cer",
+  "data_off": 172168,
+  "abs_off": 341482,
+  "size": 1078,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "d7a7a0fb5d7e2731d771e9484ebcdef71d5f0c3e0a2948782bc83ee0ea699ef4"
+ },
+ {
+  "entry": 750,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 756,
+  "name": "AmiCert_r2.cer",
+  "data_off": 173254,
+  "abs_off": 342568,
+  "size": 1395,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "7db9f7402a523dd338663b33d55aad0dd08cb67e687df0d4d98e7c5fca27efd1"
+ },
+ {
+  "entry": 758,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 764,
+  "name": "AmiCert_r3.cer",
+  "data_off": 174657,
+  "abs_off": 343971,
+  "size": 1568,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "384e9f98355a133565eb03083b79e71a46f00c21352ed7c06990d841228cbe88"
+ },
+ {
+  "entry": 766,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 772,
+  "name": "AmiCert_o1.cer",
+  "data_off": 176233,
+  "abs_off": 345547,
+  "size": 1739,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "d3f5264dc2d0bf38fb6e75df2d38e10eb172d2792aba42628697925213b908a1"
+ },
+ {
+  "entry": 774,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 780,
+  "name": "AmiCert_o2.cer",
+  "data_off": 177980,
+  "abs_off": 347294,
+  "size": 1723,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "fc1f921b19cd542758d00900801cdb758744d26e1336d29f279fdd9733442c16"
+ },
+ {
+  "entry": 782,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 850,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 857,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 864,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1099,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1134,
+  "name": "AmiconnectFlt.inf",
+  "data_off": 179711,
+  "abs_off": 349025,
+  "size": 3126,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "b9756c6c2a68715eddc73237abca26a0f821f89652d87cb5a199597a423645ed"
+ },
+ {
+  "entry": 1135,
+  "name": "amiconnectflt.cat",
+  "data_off": 182845,
+  "abs_off": 352159,
+  "size": 11332,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "d9890ed64595028bae1b9cb2ead254acf29effc02ba6723004289307fe072ca3"
+ },
+ {
+  "entry": 1136,
+  "name": "AmiconnectFlt.sys",
+  "data_off": 194185,
+  "abs_off": 363499,
+  "size": 228080,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "51c61c675ff614f8d7690ebcadf0b934da3969721ec50d0935d6314948f7ca4e"
+ },
+ {
+  "entry": 1137,
+  "name": "ADrvInst.exe",
+  "data_off": 422273,
+  "abs_off": 591587,
+  "size": 100168,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "d4c517e469ca3d3c1590acaf8ff0e5911da4aa9b9547734fcf90cbb86e7b3683"
+ },
+ {
+  "entry": 1164,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1172,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1179,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1185,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1194,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1201,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1387,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1394,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1401,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1412,
+  "name": "amiconnect.exe",
+  "data_off": 522449,
+  "abs_off": 691763,
+  "size": 25637352,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "bd8e1190e4bf92bdaa1f0b8f3772fdc890407df70e4d99559f4e6681bdcecf78"
+ },
+ {
+  "entry": 1413,
+  "name": "amiconnectd.exe",
+  "data_off": 26159809,
+  "abs_off": 26329123,
+  "size": 933864,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "772026db217db20f06cade0df7c79fc5acb31b9d3b746c80b7c8f49b404125bb"
+ },
+ {
+  "entry": 1414,
+  "name": "csat.conf",
+  "data_off": 27093681,
+  "abs_off": 27262995,
+  "size": 85,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "1027eab34bdb9950c2e74c9d7963571b9576baf0adb6b73d5fd5e4427f4083ca"
+ },
+ {
+  "entry": 1415,
+  "name": "ami.settings.conf",
+  "data_off": 27093774,
+  "abs_off": 27263088,
+  "size": 2363,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "e997705aab7a01f8945798c1f4ffbf6040bc28c9d088dcc2b232f2c3678203c4"
+ },
+ {
+  "entry": 1416,
+  "name": "connection.settings.tmpl",
+  "data_off": 27096145,
+  "abs_off": 27265459,
+  "size": 187,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "2dbbfb2ab9ae2579bbc678ea40010e3c193f4f6722684b8bdac24eb578ea7c12"
+ },
+ {
+  "entry": 1417,
+  "name": "cfg.ini",
+  "data_off": 27096340,
+  "abs_off": 27265654,
+  "size": 69,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "11a9530d8eef62b6f86ebce89b915626de302e2bac678ea56dd2673d4a0f6c46"
+ },
+ {
+  "entry": 1418,
+  "name": "status.json",
+  "data_off": 27096417,
+  "abs_off": 27265731,
+  "size": 137,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "481182f68bbde29285db2b055ff21cf36f19156a6f3a89f77990e3aa83b4bc0d"
+ },
+ {
+  "entry": 1419,
+  "name": "ami_errors.json",
+  "data_off": 27096562,
+  "abs_off": 27265876,
+  "size": 54377,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "37577e5d7bfaa4e1507a03959f2e7bb72538c9492939167e982989a1911f2b88"
+ },
+ {
+  "entry": 1422,
+  "name": "Руководство.pdf",
+  "data_off": 27150947,
+  "abs_off": 27320261,
+  "size": 1175873,
+  "compressed": false,
+  "flags": 83886226,
+  "sha256": "ed2afcb51b781b4bb0552628828f7fd85e13d5fac06dc986ff3bdbed3c6e4103"
+ },
+ {
+  "entry": 1477,
+  "name": "$PLUGINSDIR\\AccessControl.dll",
+  "data_off": 28326828,
+  "abs_off": 28496142,
+  "size": 16896,
+  "compressed": false,
+  "flags": 83886225,
+  "sha256": "f42283e64611a84ea3f4b14d01fb720cbd352f780beeb1e1ab9f35e2de32dc30"
+ },
+ {
+  "entry": 1485,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1492,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1577,
+  "name": "ADrvInst.exe",
+  "data_off": 422273,
+  "abs_off": 591587,
+  "size": 100168,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "d4c517e469ca3d3c1590acaf8ff0e5911da4aa9b9547734fcf90cbb86e7b3683"
+ },
+ {
+  "entry": 1579,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1589,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1596,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1603,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1610,
+  "name": "$PLUGINSDIR\\AccessControl.dll",
+  "data_off": 28326828,
+  "abs_off": 28496142,
+  "size": 16896,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "f42283e64611a84ea3f4b14d01fb720cbd352f780beeb1e1ab9f35e2de32dc30"
+ },
+ {
+  "entry": 1617,
+  "name": "$PLUGINSDIR\\AccessControl.dll",
+  "data_off": 28326828,
+  "abs_off": 28496142,
+  "size": 16896,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "f42283e64611a84ea3f4b14d01fb720cbd352f780beeb1e1ab9f35e2de32dc30"
+ },
+ {
+  "entry": 1624,
+  "name": "$PLUGINSDIR\\AccessControl.dll",
+  "data_off": 28326828,
+  "abs_off": 28496142,
+  "size": 16896,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "f42283e64611a84ea3f4b14d01fb720cbd352f780beeb1e1ab9f35e2de32dc30"
+ },
+ {
+  "entry": 1656,
+  "name": "amiconnect-mtu.ps1",
+  "data_off": 28343732,
+  "abs_off": 28513046,
+  "size": 3563,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "8e5e4ec581a12e6123ba9f821b7ed71be4d0451c825950607e5561dd430f8d5d"
+ },
+ {
+  "entry": 1658,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 1706,
+  "name": "License.txt",
+  "data_off": 28347303,
+  "abs_off": 28516617,
+  "size": 29918,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "86f1b6cb49bf1a1f66fcce4a2e721f3140c617b875abbb176cc523e25f846077"
+ },
+ {
+  "entry": 1708,
+  "name": "License.txt",
+  "data_off": 28377229,
+  "abs_off": 28546543,
+  "size": 29638,
+  "compressed": false,
+  "flags": 83886224,
+  "sha256": "bed55995bc69c2058e1d3ae81360a737787850a0961887cc9a9b36687f6f7e27"
+ },
+ {
+  "entry": 1711,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1717,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1722,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1729,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1735,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1742,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1747,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1753,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1758,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1767,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1772,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1777,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 1793,
+  "name": "$PLUGINSDIR\\nsDialogs.dll",
+  "data_off": 103056,
+  "abs_off": 272370,
+  "size": 10752,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "e778be010aa50b38e16fe99face86aad847dfc007e1b2d1bb04d7c921988a796"
+ },
+ {
+  "entry": 1799,
+  "name": "$PLUGINSDIR\\nsDialogs.dll",
+  "data_off": 103056,
+  "abs_off": 272370,
+  "size": 10752,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "e778be010aa50b38e16fe99face86aad847dfc007e1b2d1bb04d7c921988a796"
+ },
+ {
+  "entry": 1820,
+  "name": "$PLUGINSDIR\\nsDialogs.dll",
+  "data_off": 103056,
+  "abs_off": 272370,
+  "size": 10752,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "e778be010aa50b38e16fe99face86aad847dfc007e1b2d1bb04d7c921988a796"
+ },
+ {
+  "entry": 2118,
+  "name": "$PLUGINSDIR\\nsExec.dll",
+  "data_off": 165504,
+  "abs_off": 334818,
+  "size": 6656,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "514c68a3df01cfe60bf8db2424fee98ad9995ebe6db808328201ef6de0a0146b"
+ },
+ {
+  "entry": 2131,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 2153,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 2187,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 2194,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 2202,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 2276,
+  "name": "$PLUGINSDIR\\LangDLL.dll",
+  "data_off": 160376,
+  "abs_off": 329690,
+  "size": 5120,
+  "compressed": false,
+  "flags": 83886225,
+  "sha256": "a49c39f9d4ff16cd5f4548f040734d7934d9d6a2ff4cdabe41a71d80d557698a"
+ },
+ {
+  "entry": 2413,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 2419,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ },
+ {
+  "entry": 2475,
+  "name": "$PLUGINSDIR\\UserInfo.dll",
+  "data_off": 28406875,
+  "abs_off": 28576189,
+  "size": 4096,
+  "compressed": false,
+  "flags": 83886225,
+  "sha256": "add8aeedec53b64d5cc9b49889f8a4482f39d4d5995cb994a92f5a9406749552"
+ },
+ {
+  "entry": 2511,
+  "name": "$PLUGINSDIR\\System.dll",
+  "data_off": 113816,
+  "abs_off": 283130,
+  "size": 12288,
+  "compressed": false,
+  "flags": 33554601,
+  "sha256": "1eedd6da8da3fbd3fb7f106fff3d4f07561cc721ad6a0746faf4ecb5b723bf40"
+ }
+]

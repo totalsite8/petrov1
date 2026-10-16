@@ -1,0 +1,94 @@
+NSISBI disassembly of uninstaller_stream.bin
+stream 235480 B, entries 831, sections 2, pages 5, strings 321
+callbacks: .onGUIInit@46, .onUserAbort@70, .onInstSuccess@277, .onInit@517
+
+
+
+===== .onGUIInit =====
+    54  File "$PLUGINSDIR\modern-header.bmp"   ; data +0x0 size=34256
+
+===== SECTION_0_Uninstall =====
+    85  File "$PLUGINSDIR\nsExec.dll"   ; data +0x85D8 size=6656
+    90  CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+    92  File "$PLUGINSDIR\nsExec.dll"   ; data +0x85D8 size=6656
+    97  CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+    99  File "$PLUGINSDIR\nsExec.dll"   ; data +0x85D8 size=6656
+   104  CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   109  File "$PLUGINSDIR\nsExec.dll"   ; data +0x85D8 size=6656
+   114  CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   116  DeleteRegKey HKLM "System\CurrentControlSet\Services\amiconnectd"
+   119  File "AmiconnectFlt.inf"   ; data +0x9FE0 size=3126
+   120  File "amiconnectflt.cat"   ; data +0xAC1E size=11332
+   121  File "ADrvInst.exe"   ; data +0xD86A size=100168
+   123  File "$PLUGINSDIR\nsExec.dll"   ; data +0x85D8 size=6656
+   127  CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   130  Delete /REBOOTOK "$Var51\SYSTEM32\DRIVERS\AmiconnectFlt.sys"
+   132  File "$PLUGINSDIR\nsExec.dll"   ; data +0x85D8 size=6656
+   136  CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   140  File "$PLUGINSDIR\nsExec.dll"   ; data +0x85D8 size=6656
+   144  CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   146  Delete "$INSTDIR\amiconnect-mtu.ps1"
+   147  DeleteRegValue HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Run" "AMICON Amiconnect Client"
+   148  DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\AMICON Amiconnect"
+   149  DeleteRegKey HKLM "SOFTWARE\AMICON\Amiconnect"
+   151  File "$PLUGINSDIR\nsExec.dll"   ; data +0x85D8 size=6656
+   156  CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   158  Delete /REBOOTOK "$Var98\AMICON\Amiconnect\*.*"
+   159  RMDir /r /REBOOTOK "$Var98\AMICON\Amiconnect"
+   160  Delete /REBOOTOK "$Var98\АМИКОН\Амиконнект\*.*"
+   161  RMDir /r /REBOOTOK "$Var98\АМИКОН\Амиконнект"
+
+===== Function_166 =====
+   191  RMDir /r /REBOOTOK "$Var98\AMICON"
+   196  RMDir /r /REBOOTOK "$Var98\АМИКОН"
+
+===== Function_229 =====
+   233  File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x25FBA size=10752
+   236  CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="Create")
+   239  File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x25FBA size=10752
+   249  CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="CreateControl")
+   260  File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x25FBA size=10752
+   262  CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="Show")
+
+===== Function_265 =====
+   272  RMDir /r "$0\$2\AppData\Local\$R0"
+
+===== .onInstSuccess =====
+   280  RMDir /r /REBOOTOK $INSTDIR
+   286  RMDir /r /REBOOTOK $INSTDIR
+   291  RMDir /r $INSTDIR
+   292  RMDir /r "$Var52\AMICLIENT"
+
+===== Function_336 =====
+   456  MessageBox MB=0xE00024 $Var82 label_6 label_507
+   480  MessageBox MB=0x24 $Var82 label_6 label_507
+   510  File "$PLUGINSDIR\System.dll"   ; data +0x289C2 size=12288
+   513  CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+
+===== .onInit =====
+   518  File "$PLUGINSDIR\nsExec.dll"   ; data +0x85D8 size=6656
+   523  CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   551  Exec "$\"$INSTDIR\amiconnect-uninst.exe$\""
+   553  Exec "$\"$INSTDIR\amiconnect-uninst.exe$\" /S"
+   562  File "$PLUGINSDIR\LangDLL.dll"   ; data +0x2B9CA size=5120
+   574  CallInstDLL/Plugin "$PLUGINSDIR\LangDLL.dll" (func="LangDialog")
+   608  File "$PLUGINSDIR\System.dll"   ; data +0x289C2 size=12288
+   611  CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   614  File "$PLUGINSDIR\System.dll"   ; data +0x289C2 size=12288
+   617  CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   642  MessageBox MB=0xE00024 $Var87 label_5 label_668
+   669  File "$PLUGINSDIR\UserInfo.dll"   ; data +0x2CDD2 size=4096
+   671  CallInstDLL/Plugin "$PLUGINSDIR\UserInfo.dll" (func="GetAccountType")
+   698  MessageBox MB=0x10 $Var65 0 0
+   704  File "$PLUGINSDIR\System.dll"   ; data +0x289C2 size=12288
+   707  CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   711  File "$PLUGINSDIR\System.dll"   ; data +0x289C2 size=12288
+   714  CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+
+===== Function_720 =====
+   804  MessageBox MB=0x40 $Var84 0 0
+
+===== Function_812 =====
+   819  Delete "$0"
+   820  CreateDirectory $0
+   828  MessageBox MB=0x200010 "Error! Can't initialize plug-ins directory. Please try again later." 0 0

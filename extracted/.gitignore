@@ -1,0 +1,17 @@
+# Крупные бинарные копии из упакованного потока в репозиторий не кладём:
+# они целиком воспроизводятся из Amiconnect_1_30_3004_Win.exe одной командой
+#
+#   python3 tools/unpack_nsisbi.py Amiconnect_1_30_3004_Win.exe -o work/
+#   python3 tools/decompile_stream.py work/installer_stream.bin   decompiled            extracted/payload
+#   python3 tools/decompile_stream.py work/uninstaller_stream.bin decompiled_uninstaller extracted/uninstaller_payload
+#
+# Текстовые и конфигурационные файлы (csat.conf, cfg.ini, ami.settings.conf,
+# status.json, ami_errors.json, AmiconnectFlt.inf, amiconnect-mtu.ps1, License.txt)
+# остаются в репозитории — на них ссылаются отчёт и багрепорт.
+*.exe
+*.dll
+*.sys
+*.pdf
+*.cat
+*.bmp
+*.ico

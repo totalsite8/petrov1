@@ -1,0 +1,322 @@
+idx	text
+0	
+1	ProgramFilesDir
+17	CommonFilesDir
+32	C:\Program Files
+49	$SHELLREG("ProgramFilesDir", fallback "C:\Program Files")
+52	$SHELLREG("ProgramFilesDir", fallback "C:\Program Files")\Common Files
+68	$SHELLREG("CommonFilesDir", fallback "$SHELLREG("ProgramFilesDir", fallback "C:\Program Files")\Common Files")
+71	 
+73	0
+75	$Var0
+78	0x000C
+85	$Var2
+88	#32770
+95	$HWNDPARENT
+98	$Var45
+101	1006
+106	1029
+111	1000
+116	$Var23
+119	1021
+124	1022
+129	1017
+134	1032
+139	1042
+144	1043
+149	1023
+154	$Var29
+157	$Var31
+160	$Var40
+163	1004
+168	1027
+173	1016
+178	1037
+183	700
+187	$Var1
+190	0x0030
+197	1038
+202	$PLUGINSDIR\modern-header.bmp
+223	1046
+228	1034
+233	$Var3
+236	1028
+241	$Var6
+244	1256
+249	$Var5
+252	$(lang_-1) 
+256	1035
+261	1045
+266	Uninstall
+276	$Var64
+279	$SHELL($PROGRAMS|$SMPROGRAMS)
+282	$PLUGINSDIR\nsExec.dll
+296	sc failure amiconnectd reset= 0 actions= ""
+340	/TIMEOUT=30000
+355	/OEM
+360	ExecToLog
+370	net stop amiconnectd
+391	taskkill /f /t /im amiconnect.exe
+425	System\CurrentControlSet\Services\amiconnectd
+471	$1
+474	sc delete amiconnectd
+496	$0
+499	AmiconnectFlt.inf
+517	amiconnectflt.cat
+535	ADrvInst.exe
+548	"$INSTDIR\ADrvInst.exe" /u "$INSTDIR\Drivers\AmiconnectFlt\AmiconnectFlt.inf"
+614	3333
+619	$Var51\SYSTEM32\DRIVERS\AmiconnectFlt.sys
+657	"$INSTDIR\ADrvInst.exe" /do "$INSTDIR\Drivers\AmiconnectFlt\AmiconnectFlt.inf"
+724	powershell.exe -InputFormat None -NoProfile -NonInteractive -ExecutionPolicy Bypass -WindowStyle Hidden -File "$INSTDIR\amiconnect-mtu.ps1" -Mode Restore
+872	/TIMEOUT=60000
+887	$INSTDIR\amiconnect-mtu.ps1
+909	SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+955	AMICON Amiconnect Client
+980	Software\Microsoft\Windows\CurrentVersion\Uninstall\AMICON Amiconnect
+1050	SOFTWARE\AMICON\Amiconnect
+1077	netsh firewall delete allowedprogram "$INSTDIR\amiconnectd.exe"
+1135	$Var98\AMICON\Amiconnect\*.*
+1160	$Var98\AMICON\Amiconnect
+1181	$Var98\АМИКОН\Амиконнект\*.*
+1206	$Var98\АМИКОН\Амиконнект
+1227	$Var98\AMICON
+1237	$0\*.*
+1244	-1
+1247	.
+1249	..
+1252	$Var98\АМИКОН
+1262	Amiconnect configuration
+1287	Uninstalling Amiconnect configuration
+1325	$4
+1328	$5
+1331	$6
+1334	$Var97
+1337	13
+1340	$INSTDIR\Install.log
+1355	255
+1359	254
+1363	Detail print log...\r\n
+1385	$6\r\n
+1390	$PLUGINSDIR\nsDialogs.dll
+1407	1018
+1412	Create
+1419	$Var96
+1422	80%
+1426	10u
+1430	0x00000020
+1441	0x40000000|0x10000000|0x04000000|0x00000100
+1485	STATIC
+1492	CreateControl
+1506	Show
+1511	$PROFILE\..
+1517	$2
+1520	$0\$2\AppData\Local\*.*
+1544	$0\$2\AppData\Local\$R0
+1567	$Var92
+1570	$Var94
+1573	$INSTDIR
+1576	$Var52\AMICLIENT
+1589	$Var53
+1592	$CMDLINE
+1595	$3
+1598	$R1
+1601	/W
+1604	$7
+1607	$5$7
+1612	'
+1614	`
+1616	/w
+1619	$Var82
+1622	Yes
+1626	$Var50
+1629	$PLUGINSDIR\System.dll
+1643	kernel32::Wow64RevertWow64FsRedirection(i r1) i r2
+1694	Call
+1699	512
+1703	"sc" stop AmiFSFlt
+1722	/S
+1725	/s
+1728	/RR
+1732	"$INSTDIR\amiconnect-uninst.exe"
+1759	"$INSTDIR\amiconnect-uninst.exe" /S
+1789	Software\AMICON\Amiconnect
+1816	Installer Language
+1835	$Var100
+1838	$PLUGINSDIR\LangDLL.dll
+1853	1251
+1858	1049
+1863	Русский
+1871	1252
+1876	1033
+1881	English
+1889	AC
+1892	Выберите язык установщика
+1918	Язык установки
+1933	LangDialog
+1944	$LANGUAGE
+1947	cancel
+1954	25
+1957	© "АМИКОН", 2026
+1974	Амиконнект 1.30.3004
+1995	Амиконнект 1.30.3004\r успешно удален!\r\r Для завершения удаления нажмите 'Закрыть'.
+2078	Программу необходимо удалять с правами администратора!
+2133	Изменения вступят в силу после перезагрузки компьютера. Перезагрузить компьютер?
+2214	Ошибка деинсталляции tdi-драйвера.
+2249	Программу удаления не следует запускать из терминальной сессии! Продолжить удаление?
+2334	Конфигурация клиента
+2355	© "AMICON", 2026
+2372	Amiconnect 1.30.3004
+2393	Amiconnect 1.30.3004\r uninstalled successfully!\r\r To complete the uninstallation, press 'Close'.
+2490	Program must be installed with administrator rights!
+2543	Changes will be applied after the computer restarts. Restart the computer?
+2618	Error uninstalling TDI driver.
+2649	Installation program shouldn't be run from a terminal session! Continue installation?
+2735	user32::GetSystemMetrics(i 4096) i .r0
+2774	user32::GetSystemMetrics(i 8193) i .r0
+2813	$Var87
+2816	No
+2819	$PLUGINSDIR\UserInfo.dll
+2835	GetAccountType
+2850	Admin
+2856	$Var65
+2859	kernel32::Wow64DisableWow64FsRedirection(*i .r1) i r2
+2913	$WINDOWS
+2916	kernel32::GetSystemWindowsDirectory(t .r0, i 1024)
+2967	$TEMP
+2970	$Var91
+2973	$Var93
+2976	SOFTWARE\Microsoft\Windows NT\CurrentVersion
+3021	CurrentMajorVersionNumber
+3047	CurrentMinorVersionNumber
+3073	10
+3076	Win10
+3082	CurrentBuild
+3095	22000
+3101	OS Windows 11 / Server 11
+3127	OS Windows 10 / Server 10
+3153	$Var84
+3156	$PLUGINSDIR
+3159	Error! Can't initialize plug-ins directory. Please try again later.
+3227	$TEMP\Un.exe
+3237	"$TEMP\Un.exe" $0 _?=$INSTDIR\
+3259	$Var55
+3262	$Var63
+3265	$Var62
+3268	Space available: 
+3286	Доступно на диске: 
+3306	Space required: 
+3323	Требуется на диске: 
+3344	Can't write: 
+3358	Невозможно записать: 
+3380	Copy failed
+3392	Ошибка при копировании
+3415	Copy to 
+3424	Копирование в 
+3439	Could not find symbol: 
+3463	Невозможно найти символ: 
+3489	Could not load: 
+3506	Невозможно загрузить: 
+3529	Create folder: 
+3545	Создание папки: 
+3562	Create shortcut: 
+3580	Создание ярлыка: 
+3598	Created uninstaller: 
+3620	Создание программы удаления: 
+3650	Delete file: 
+3664	Удаление файла: 
+3681	Delete on reboot: 
+3700	Удаление при перезагрузке ПК: 
+3731	Error creating shortcut: 
+3757	Ошибка создания ярлыка: 
+3782	Error creating: 
+3799	Ошибка создания: 
+3817	Error decompressing data! Corrupted installer?
+3864	Ошибка распаковки данных! Возможно, повреждён дистрибутив.
+3923	Execute: 
+3933	Выполнение: 
+3946	Extract: 
+3956	Извлечение: 
+3969	Extract: error writing to file 
+4001	Извлечение: ошибка записи файла 
+4034	Installer corrupted: invalid opcode
+4070	Дистрибутив поврежден: недопустимый код
+4110	No OLE for: 
+4123	Нет OLE для: 
+4137	Output folder: 
+4153	Папка установки: 
+4171	Remove folder: 
+4187	Удаление папки: 
+4204	Rename on reboot: 
+4223	Переименование при перезагрузке ПК: 
+4260	Rename: 
+4269	Переименование: 
+4286	Skipped: 
+4296	Пропуск: 
+4306	Copy Details To Clipboard
+4332	Копировать сведения в буфер обмена
+4367	B
+4369	байт
+4374	 K
+4377	 К
+4380	 M
+4383	 М
+4386	 G
+4389	 Г
+4392	Uninstall $(lang_-69)
+4405	Удаление $(lang_-69)
+4417	Remove $(lang_-69) from your computer.
+4447	Удаление $(lang_-69) из компьютера.
+4474	Choose Components
+4492	Компоненты программы
+4513	Choose which features of $(lang_-69) you want to uninstall.
+4564	Выберите компоненты $(lang_-69), которые вы хотите удалить.
+4615	Description
+4627	Описание
+4636	Position your mouse over a component to see its description.
+4697	Наведите курсор мыши на название компонента, чтобы прочесть его описание.
+4771	Uninstalling
+4784	Удаление
+4793	Please wait while $(lang_-69) is being uninstalled.
+4836	Подождите, идет удаление файлов $(lang_-69)...
+4874	Uninstallation Complete
+4898	Удаление завершено
+4917	Uninstall was completed successfully.
+4955	Удаление программы успешно завершено.
+4993	Uninstallation Aborted
+5016	Удаление прервано
+5034	Uninstall was not completed successfully.
+5076	Удаление произведено не полностью.
+5111	MS Shell Dlg
+5124	Error opening file for writing: \r\n\r\n$0\r\n\r\nClick Abort to stop the installation,\r\nRetry to try again, or\r\nIgnore to skip this file.
+5255	Невозможно открыть файл для записи: \r\n	"$0"\r\n"Прервать": остановить установку;\r\n"Повтор": повторить попытку;\r\n"Пропуск": пропустить это действие.
+5401	Custom
+5408	По выбору
+5418	Cancel
+5425	Отмена
+5432	Uninstalling from:
+5451	Удаление из:
+5464	< &Back
+5472	< &Назад
+5481	&Next >
+5489	&Далее >
+5498	Click Next to continue.
+5522	Нажмите кнопку "Далее" для продолжения.
+5562	Check the components you want to uninstall and uncheck the components you don't want to uninstall. $_CLICK
+5664	Выберите компоненты, которые вы хотите удалить. $_CLICK
+5715	Select the type of uninstall:
+5745	Выберите тип удаления:
+5768	Or, select the optional components you wish to uninstall:
+5826	или выберите дополнительные компоненты для удаления:
+5879	Select components to uninstall:
+5911	Выберите компоненты для удаления:
+5945	&Uninstall
+5956	Уд&алить
+5965	Click Uninstall to start the uninstallation.
+6010	Нажмите кнопку "Удалить", чтобы удалить программу.
+6061	Show &details
+6075	&Детали...
+6086	Completed
+6096	Готово
+6103	&Close
+6110	&Закрыть

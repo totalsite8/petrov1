@@ -58,4 +58,4 @@
 
 ## Файлы
 
-- `bug-report-amiconnect.txt` — баг-репорт для Amiconnect_1_30_3004_Win.exe
+- `bug-report-amiconnect.txt` — баг-репорт для Amiconnect_1_30_3004_Win.exe (NSIS установщик, 8.2 MB, AMD64)

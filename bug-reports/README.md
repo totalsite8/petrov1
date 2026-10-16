@@ -58,4 +58,5 @@
 
 ## Файлы
 
-- `bug-report-amiconnect.txt` — баг-репорт для Amiconnect_1_30_3004_Win.exe (NSIS установщик, 8.2 MB, AMD64)
+- `bug-report-amiconnect.txt` — базовый баг-репорт для Amiconnect_1_30_3004_Win.exe
+- `deep-analysis-amiconnect.txt` — **глубокий анализ** с 37 найденными багами (2 critical, 8 high, 14 medium, 8 low, 5 info)

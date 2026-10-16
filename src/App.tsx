@@ -1,7 +1,8 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useMemo } from 'react';
 import { parsePE, PEResult } from './lib/pe-parser';
+import { findBugs, generateBugReportText, BugReport, BugSeverity } from './lib/bug-finder';
 
-type Tab = 'overview' | 'sections' | 'imports' | 'exports' | 'strings' | 'disasm' | 'hex';
+type Tab = 'overview' | 'sections' | 'imports' | 'exports' | 'strings' | 'disasm' | 'hex' | 'bugs';
 
 function formatBytes(bytes: number): string {
   if (bytes < 1024) return `${bytes} B`;
@@ -18,12 +19,34 @@ function formatHex(n: number): string {
   return '0x' + n.toString(16).toUpperCase().padStart(8, '0');
 }
 
+const severityConfig: Record<BugSeverity, { icon: string; color: string; bg: string; border: string }> = {
+  critical: { icon: '🔴', color: 'text-red-400', bg: 'bg-red-900/20', border: 'border-red-800' },
+  high:     { icon: '🟠', color: 'text-orange-400', bg: 'bg-orange-900/20', border: 'border-orange-800' },
+  medium:   { icon: '🟡', color: 'text-yellow-400', bg: 'bg-yellow-900/20', border: 'border-yellow-800' },
+  low:      { icon: '🔵', color: 'text-blue-400', bg: 'bg-blue-900/20', border: 'border-blue-800' },
+  info:     { icon: '⚪', color: 'text-gray-400', bg: 'bg-gray-800/30', border: 'border-gray-700' },
+};
+
 export default function App() {
   const [result, setResult] = useState<PEResult | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [activeTab, setActiveTab] = useState<Tab>('overview');
   const [dragOver, setDragOver] = useState(false);
+  const [bugFilter, setBugFilter] = useState<BugSeverity | 'all'>('all');
+
+  const bugs = useMemo(() => result ? findBugs(result) : [], [result]);
+
+  const filteredBugs = useMemo(() => {
+    if (bugFilter === 'all') return bugs;
+    return bugs.filter(b => b.severity === bugFilter);
+  }, [bugs, bugFilter]);
+
+  const bugCounts = useMemo(() => {
+    const counts = { critical: 0, high: 0, medium: 0, low: 0, info: 0 };
+    for (const b of bugs) counts[b.severity]++;
+    return counts;
+  }, [bugs]);
 
   const processFile = useCallback((file: File) => {
     setLoading(true);
@@ -36,7 +59,7 @@ export default function App() {
         const buffer = e.target?.result as ArrayBuffer;
         const parsed = parsePE(buffer, file.name);
         setResult(parsed);
-        setActiveTab('overview');
+        setActiveTab('bugs');
       } catch (err: any) {
         setError(err.message || 'Ошибка при анализе файла');
       } finally {
@@ -62,7 +85,20 @@ export default function App() {
     if (file) processFile(file);
   }, [processFile]);
 
-  const tabs: { id: Tab; label: string; icon: string; count?: number }[] = [
+  const downloadReport = useCallback(() => {
+    if (!result) return;
+    const text = generateBugReportText(result, bugs);
+    const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `bug-report-${result.fileName.replace(/\.[^.]+$/, '')}.txt`;
+    a.click();
+    URL.revokeObjectURL(url);
+  }, [result, bugs]);
+
+  const tabs: { id: Tab; label: string; icon: string; count?: number; badge?: string }[] = [
+    { id: 'bugs', label: 'Баг-репорт', icon: '🐛', count: bugs.length, badge: bugCounts.critical > 0 ? 'CRIT' : undefined },
     { id: 'overview', label: 'Обзор', icon: '📋' },
     { id: 'sections', label: 'Секции', icon: '📦', count: result?.sections.length },
     { id: 'imports', label: 'Импорты', icon: '📥', count: result?.imports.length },
@@ -76,12 +112,22 @@ export default function App() {
     <div className="min-h-screen bg-gray-950 text-gray-100 font-mono">
       {/* Header */}
       <header className="bg-gray-900 border-b border-gray-800 px-6 py-4">
-        <div className="max-w-7xl mx-auto flex items-center gap-4">
-          <div className="text-3xl">🔬</div>
-          <div>
-            <h1 className="text-xl font-bold text-emerald-400">EXE Decompiler</h1>
-            <p className="text-xs text-gray-500">PE Format Analyzer — анализ исполняемых файлов Windows</p>
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <div className="text-3xl">🔬</div>
+            <div>
+              <h1 className="text-xl font-bold text-emerald-400">EXE Decompiler</h1>
+              <p className="text-xs text-gray-500">PE Format Analyzer — декомпиляция и поиск багов</p>
+            </div>
           </div>
+          {result && (
+            <button
+              onClick={downloadReport}
+              className="px-4 py-2 bg-emerald-700 hover:bg-emerald-600 rounded text-sm font-semibold flex items-center gap-2 transition-colors"
+            >
+              <span>💾</span> Скачать баг-репорт
+            </button>
+          )}
         </div>
       </header>
 
@@ -114,7 +160,7 @@ export default function App() {
         {loading && (
           <div className="text-center py-20">
             <div className="inline-block animate-spin text-4xl mb-4">⚙️</div>
-            <p className="text-gray-400">Анализ PE файла...</p>
+            <p className="text-gray-400">Анализ PE файла и поиск багов...</p>
           </div>
         )}
 
@@ -142,15 +188,26 @@ export default function App() {
                 <span className="text-2xl">📄</span>
                 <div>
                   <p className="font-semibold text-emerald-400">{result.fileName}</p>
-                  <p className="text-xs text-gray-500">{formatBytes(result.fileSize)} • {result.peHeader.machine}</p>
+                  <p className="text-xs text-gray-500">
+                    {formatBytes(result.fileSize)} • {result.peHeader.machine} • {result.optionalHeader?.magic || 'N/A'}
+                  </p>
                 </div>
               </div>
-              <button
-                onClick={() => { setResult(null); setError(null); }}
-                className="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded text-sm flex items-center gap-2"
-              >
-                <span>📁</span> Загрузить другой файл
-              </button>
+              <div className="flex items-center gap-3">
+                {/* Quick bug summary */}
+                <div className="flex items-center gap-1 text-xs">
+                  {bugCounts.critical > 0 && <span className="bg-red-900/50 text-red-300 px-2 py-1 rounded">{bugCounts.critical} crit</span>}
+                  {bugCounts.high > 0 && <span className="bg-orange-900/50 text-orange-300 px-2 py-1 rounded">{bugCounts.high} high</span>}
+                  {bugCounts.medium > 0 && <span className="bg-yellow-900/50 text-yellow-300 px-2 py-1 rounded">{bugCounts.medium} med</span>}
+                  {bugs.length === 0 && <span className="bg-green-900/50 text-green-300 px-2 py-1 rounded">✓ чисто</span>}
+                </div>
+                <button
+                  onClick={() => { setResult(null); setError(null); }}
+                  className="px-4 py-2 bg-gray-800 hover:bg-gray-700 rounded text-sm flex items-center gap-2"
+                >
+                  <span>📁</span> Другой файл
+                </button>
+              </div>
             </div>
 
             {/* Tabs */}
@@ -161,15 +218,20 @@ export default function App() {
                   onClick={() => setActiveTab(tab.id)}
                   className={`px-4 py-2 rounded text-sm flex items-center gap-2 transition-all
                     ${activeTab === tab.id
-                      ? 'bg-emerald-600 text-white'
+                      ? (tab.id === 'bugs' ? 'bg-red-700 text-white' : 'bg-emerald-600 text-white')
                       : 'text-gray-400 hover:text-white hover:bg-gray-800'}`}
                 >
                   <span>{tab.icon}</span>
                   <span>{tab.label}</span>
                   {tab.count !== undefined && (
-                    <span className="text-xs bg-gray-700 px-1.5 py-0.5 rounded">
+                    <span className={`text-xs px-1.5 py-0.5 rounded ${
+                      tab.id === 'bugs' && tab.count > 0 ? 'bg-red-800 text-red-200' : 'bg-gray-700 text-gray-300'
+                    }`}>
                       {tab.count}
                     </span>
+                  )}
+                  {tab.badge && (
+                    <span className="text-xs bg-red-600 text-white px-1.5 py-0.5 rounded animate-pulse">{tab.badge}</span>
                   )}
                 </button>
               ))}
@@ -177,6 +239,7 @@ export default function App() {
 
             {/* Tab Content */}
             <div className="bg-gray-900 border border-gray-800 rounded-lg overflow-hidden">
+              {activeTab === 'bugs' && <BugsTab bugs={filteredBugs} allBugs={bugs} counts={bugCounts} filter={bugFilter} setFilter={setBugFilter} />}
               {activeTab === 'overview' && <OverviewTab result={result} />}
               {activeTab === 'sections' && <SectionsTab result={result} />}
               {activeTab === 'imports' && <ImportsTab result={result} />}
@@ -192,6 +255,111 @@ export default function App() {
   );
 }
 
+/* ==================== BUGS TAB ==================== */
+function BugsTab({ bugs, allBugs, counts, filter, setFilter }: {
+  bugs: BugReport[];
+  allBugs: BugReport[];
+  counts: Record<BugSeverity, number>;
+  filter: BugSeverity | 'all';
+  setFilter: (f: BugSeverity | 'all') => void;
+}) {
+  return (
+    <div className="p-6">
+      <div className="flex items-center justify-between mb-6 flex-wrap gap-4">
+        <h3 className="text-lg font-semibold text-red-400 flex items-center gap-2">
+          <span>🐛</span> Баг-репорт ({allBugs.length} найдено)
+        </h3>
+      </div>
+
+      {/* Summary cards */}
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-6">
+        {(['critical', 'high', 'medium', 'low', 'info'] as BugSeverity[]).map(sev => {
+          const cfg = severityConfig[sev];
+          return (
+            <button
+              key={sev}
+              onClick={() => setFilter(filter === sev ? 'all' : sev)}
+              className={`p-3 rounded-lg border transition-all ${
+                filter === sev ? `${cfg.bg} ${cfg.border} ring-1 ring-${sev}` : 'bg-gray-950 border-gray-800 hover:border-gray-600'
+              }`}
+            >
+              <div className="flex items-center gap-2">
+                <span className="text-lg">{cfg.icon}</span>
+                <span className={`text-2xl font-bold ${cfg.color}`}>{counts[sev]}</span>
+              </div>
+              <p className="text-xs text-gray-500 mt-1 capitalize">{sev}</p>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Filter indicator */}
+      {filter !== 'all' && (
+        <div className="mb-4 flex items-center gap-2">
+          <span className="text-sm text-gray-500">Фильтр:</span>
+          <span className={`text-sm px-2 py-0.5 rounded ${severityConfig[filter].bg} ${severityConfig[filter].color}`}>
+            {severityConfig[filter].icon} {filter}
+          </span>
+          <button onClick={() => setFilter('all')} className="text-xs text-gray-500 hover:text-white ml-2">✕ сбросить</button>
+        </div>
+      )}
+
+      {/* Bug list */}
+      {bugs.length === 0 ? (
+        <div className="text-center py-12">
+          <div className="text-4xl mb-3">✅</div>
+          <p className="text-gray-400">Баги не найдены</p>
+          <p className="text-gray-600 text-sm mt-1">PE файл выглядит корректно</p>
+        </div>
+      ) : (
+        <div className="space-y-3">
+          {bugs.map(bug => {
+            const cfg = severityConfig[bug.severity];
+            return (
+              <details key={bug.id} className={`${cfg.bg} border ${cfg.border} rounded-lg group`}>
+                <summary className="p-4 cursor-pointer hover:brightness-110 transition-all">
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex items-start gap-3">
+                      <span className="text-lg mt-0.5">{cfg.icon}</span>
+                      <div>
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="text-xs text-gray-500 font-mono">{bug.id}</span>
+                          <span className={`text-xs px-1.5 py-0.5 rounded ${cfg.bg} ${cfg.color} uppercase font-bold`}>
+                            {bug.severity}
+                          </span>
+                          <span className="text-xs text-gray-600 bg-gray-800 px-1.5 py-0.5 rounded">{bug.category}</span>
+                        </div>
+                        <h4 className="font-semibold text-gray-200 mt-1">{bug.title}</h4>
+                      </div>
+                    </div>
+                  </div>
+                </summary>
+                <div className="px-4 pb-4 border-t border-gray-800/50 mt-0 pt-3">
+                  <p className="text-sm text-gray-300 mb-2">{bug.description}</p>
+                  {bug.offset && (
+                    <p className="text-xs text-yellow-400 mb-2">📍 Смещение: <code>{bug.offset}</code></p>
+                  )}
+                  <div className="bg-gray-950/50 rounded p-3 mt-2">
+                    <p className="text-xs text-gray-500 mb-1 font-semibold">Детали:</p>
+                    <pre className="text-xs text-gray-400 whitespace-pre-wrap font-mono">{bug.details}</pre>
+                  </div>
+                  {bug.recommendation && (
+                    <div className="mt-3 flex items-start gap-2">
+                      <span className="text-emerald-400 text-sm">💡</span>
+                      <p className="text-sm text-emerald-300">{bug.recommendation}</p>
+                    </div>
+                  )}
+                </div>
+              </details>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
+/* ==================== OTHER TABS ==================== */
 function InfoRow({ label, value, highlight }: { label: string; value: string | number; highlight?: boolean }) {
   return (
     <div className="flex items-center justify-between py-2 px-4 border-b border-gray-800/50 hover:bg-gray-800/30">

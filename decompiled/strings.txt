@@ -1,0 +1,640 @@
+idx	text
+0	
+1	ProgramFilesDir
+17	CommonFilesDir
+32	C:\Program Files
+49	$SHELLREG("ProgramFilesDir", fallback "C:\Program Files")
+52	$SHELLREG("ProgramFilesDir", fallback "C:\Program Files")\Common Files
+68	$SHELLREG("CommonFilesDir", fallback "$SHELLREG("ProgramFilesDir", fallback "C:\Program Files")\Common Files")
+71	$PLUGINSDIR\modern-wizard.bmp
+92	$Var6
+95	0
+97	$Var5
+100	$Var0
+103	$Var2
+106	$Var4
+109	$Var7
+112	$Var8
+115	1
+117	$PLUGINSDIR\nsDialogs.dll
+134	1044
+139	Create
+146	SetRTL
+153	$Var12
+156	193u
+161	109u
+166	0u
+169	0x40000000|0x10000000|0x04000000|0x0000000E|0x00000100
+224	STATIC
+231	CreateControl
+245	$Var13
+248	28u
+252	195u
+257	10u
+261	120u
+266	0x00000020
+277	0x40000000|0x10000000|0x04000000|0x00000100
+321	$Var15
+324	12
+327	700
+331	$Var16
+334	0x0030
+341	130u
+346	45u
+350	$Var17
+353	Show
+358	$PLUGINSDIR\System.dll
+372	=
+374	$Var14
+377	Int64Op
+385	$Var18
+388	gdi32::DeleteObject(ps)
+412	Call
+417	 
+419	LICENSE AGREEMENT (EULA)\r\n\r\n1. General Provisions\r\n	1.1. Any person who downloads, installs, or otherwise uses the Software (hereinafter – the "User") is deemed to have accepted the terms of this Agreement in full as of the actual commencement of use of the Software (including its downloading, installation, launching, or storage on a device). If the User does not agree with the terms of this Agreement, they are not entitled to use the Software and must delete all copies thereof.\r\n	1.2. For hardware-software complexes and software tools supplied under separate contracts with customers (including as part of HSCs and CIIMs), special license terms stipulated in the relevant contracts and operational documentation may apply. In the event of a conflict between this Agreement and the terms of the contract, the terms of the contract shall prevail.\r\n\r\n2. Subject Matter of the Agreement\r\n	2.1. The HSC consists of server components subject to licensing and the Software included in the HSC that is installed on the User's workstations and ensures interaction with the server part; and the Software is not an independent object of licensing and is used solely together with the server part of the HSC.\r\n	2.2. The Software is a complex of computer programs that is an object of copyright and is protected by the laws of the Russian Federation. All terms of this License Agreement apply both to the Software as a whole and to all its components individually.\r\n	2.3. The Software is intended for building secure communication channels between workstations equipped with the Amiconnect complex and FPSU-IP complexes manufactured by AMICON LLC.\r\n	2.4. Upon acquisition of the HSC, the User receives a non-exclusive right to use the server components of the Software included in the HSC. The Software is provided to the User for use solely together with the specified HSC without separate payment and cannot be used independently outside the HSC infrastructure.\r\n	2.5. The client software installed on the User's workstations is provided by the Rightholder without charging a separate license fee. The right to use such software arises for the User provided that they have the rights to use the HSC.\r\n	2.6. The license fee is charged exclusively for the HSC and the server components of the system that ensure the functioning of the secure communication channel.\r\n\r\n3. Territory and Term of the License\r\n	3.1. The User is solely responsible for compliance with export control restrictions and legislation in the field of cryptography.\r\n	3.2. Term of the license:\r\n		3.2.1. Rights to the Software are granted to the User for the entire duration of the copyright.\r\n\r\n4. Scope of Granted Rights\r\n	4.1. Under this Agreement, the User is granted the following rights:\r\n		4.1.1. The User has the right to install and use the necessary number of copies of the Software on workstations connected to the HSC owned by the User;\r\n		4.1.2. The User has the right to use the Software only as part of those Amiconnect HSCs that are owned by the User;\r\n		4.1.3. The User must use the Software only for its direct functional purpose, guided by the operational documentation and the user manual for the HSC;\r\n		4.1.4. Distribution kits of the Software in unaltered form may be copied to physical media or sent by email within the User's organizational structures.\r\n	4.2. Other rights to use the Software (including, but not limited to, the right to provide access to third parties, the right to lease, the right to public display, demonstration, distribution, etc.) are not granted to the User, unless expressly stated otherwise in the contract with the Rightholder.\r\n	4.3. Exclusive copyrights to the Software and its accompanying materials belong exclusively to AMICON LLC and are protected by the legislation of the Russian Federation and international copyright agreements. All rights not expressly granted by this agreement are reserved by AMIKON LLC.\r\n\r\n5. Use Restrictions\r\n	5.1. The User is not entitled to:\r\n		5.1.1. modify, adapt, translate the Software, make changes to its object or source code, except for cases directly permitted by the legislation of the Russian Federation;\r\n		5.1.2. decompile, disassemble, or reverse engineer the Software, except for the cases and to the extent expressly provided for by Article 1280 of the Civil Code of the Russian Federation;\r\n		5.1.3. use the Software as a basis for creating derivative software products without the written consent of the Rightholder;\r\n		5.1.4. remove, alter, or hide copyright notices, trademarks, indications of the Rightholder, or relevant certificates;\r\n		5.1.5. transfer the Software to third parties (including providing access to it via the Internet or other networks), lease, rent out, or lend the Software, or sell the Software, unless such provision is permitted in writing by the Rightholder or by contract;\r\n		5.1.6. distribute distribution kits of Software versions outside the User's organizational structures or place them on publicly accessible websites without the special written permission of AMICON LLC;\r\n		5.1.7. use the Software in violation of the requirements of the operational documentation, user manual, or certification documents;\r\n		5.1.8. use the Software contrary to the requirements of the legislation of the Russian Federation and the legislation of the country of use of the Software;\r\n		5.1.9. The User undertakes to comply with the requirements of the legislation of the Russian Federation in the field of application of cryptographic information protection means and is not entitled to use the Software together with other cryptographic means or in configurations not provided for by the operational documentation or user manual.\r\n\r\n	5.2. The Rightholder reserves the right to use any technological solutions that prevent illegal distribution and use of the Software.\r\n	5.3. In the event of a breach of the above restrictions by the User, the Rightholder has the right to unilaterally terminate this Agreement with respect to such User and demand the cessation of use and destruction of all copies of the Software.\r\n\r\n6. Special Terms for Using Beta Versions of the Software\r\n	6.1. Beta versions of the Software are preliminary versions of the software product intended for limited testing and may contain errors, incomplete functionality, operate unstably or incorrectly. They are provided to Users for testing to identify errors not detected during internal testing, as well as to collect feedback and suggestions from Users.\r\n	6.2. The Software is intended for building secure communication channels between workstations and FPSU-IP and for protecting information exchanges from unauthorized access.\r\n	6.3. The User is notified that the Software has not undergone certification in the certification system for cryptographic information protection means (CIIM) of the FSB of Russia (or other authorized bodies).\r\n	6.4. In systems where mandatory CIIM certification is not required according to the legislation of the Russian Federation, the Software may be used as the primary means of providing secure communication with FPSU-IP. For processing information that requires cryptographic protection under the legislation of the Russian Federation, it is necessary to additionally use certified cryptographic protection means.\r\n	6.5. The User independently determines the need to use certified CIIMs in accordance with their legal status and the information being processed.\r\n	6.6. Beta versions of the Software are provided to the User "as is" without any warranties of suitability, operability, compatibility with other software or hardware.\r\n	6.7. A distinctive feature of Beta versions of the Software is the inscription in Latin letters "Beta" in the name of the Software version (release) during installation and in the "About" menu section.\r\n	6.8. All rights to Beta versions of the Software belong exclusively to the Rightholder.\r\n	6.9. Any Beta versions of the Software are provided to Users for temporary use for a strictly defined period, after which the User must destroy all working and distribution copies of the Software.\r\n	6.10. Beta versions of the Software are provided only to those Users who already own previous versions of the Software.\r\n	6.11. Beta versions of the Software are not official versions and are not covered by certificates.\r\n	6.12. The User undertakes to:\r\n		6.12.1. inform the Rightholder, where possible, of any detected errors, crashes, vulnerabilities, and other problems when using the beta version of the Software;\r\n		6.12.2. not disclose information about the functioning of the beta version of the Software, its characteristics, and potential vulnerabilities, unless expressly permitted otherwise by the Rightholder.\r\n	6.13. The Rightholder has the right at any time without notice to the User to cease support or distribution of the beta version of the Software, change its functionality, or replace it with another version.\r\n\r\n7. Updates and Modifications of the Software\r\n	7.1. The Rightholder has the right, at its sole discretion, to release updates, fixes, new versions, and modifications of the Software (hereinafter – "Updates").\r\n	7.2. Updates may be automatically installed on the User's devices or provided for manual installation. The use of Updates may be accompanied by changes in functionality, interface, data formats, and other characteristics of the Software.\r\n	7.3. Unless otherwise specified by the Rightholder, Updates are provided to the User under the terms of this Agreement.\r\n\r\n8. Confidentiality and Data Processing\r\n	8.1. Use of the Software may involve the transmission to the Rightholder of technical information about the operation of the Software and its interaction with the User's infrastructure (error logs, diagnostic information, etc.), if provided for by the Software settings or operational documentation.\r\n	8.2. The Rightholder has the right to use such technical information solely for the purposes of analyzing the functionality of the Software, improving its quality, ensuring security, and supporting the User.\r\n	8.3. Processing of personal data when using the Software and the Site is carried out in accordance with the Company's Privacy Policy.\r\n	8.4. Technical logs, error reports, and diagnostic information transmitted by the User must not contain personal data. In the event of such data being transmitted at the User's initiative, their processing is carried out in accordance with the Privacy Policy.\r\n\r\n9. Warranties and Liability\r\n	9.1. With respect to Software distributed from the Site without a separate contract, the Rightholder provides the Software "as is" and makes no warranties (express or implied) of merchantability, fitness for a particular purpose, uninterrupted and error-free operation, except where such warranties cannot be excluded or limited by law.\r\n	9.2. AMICON LLC guarantees the operability of the Software and its compliance with the operational characteristics specified in the relevant documentation for the HSC (operational documentation, user manual).\r\n	9.3. The operational documentation and user manual for the Software are supplied in electronic form.\r\n	9.4. The limited warranty for the Software is valid for the period specified upon purchase of the HSC, but not less than 12 months. During this period, claims regarding the quality of the purchased version of the Software are accepted.\r\n	9.5. When filing a warranty claim, the User must:\r\n		- confirm the existence of a malfunction in the Software by submitting a written request to AMICON LLC with a detailed description of the detected error;\r\n		- confirm the correct operation of the Software in accordance with the requirements of the operational documentation.\r\n	9.6. The Rightholder shall not be liable for any direct or indirect damage, including but not limited to lost profits, loss of data, disruption of business processes, caused as a result of the use or inability to use the Software, unless otherwise provided by mandatory legal provisions or a contract with the User.\r\n	9.7. In the event of a breach of this License Agreement, AMIKON LLC revokes the User's License to use the Software and fully disclaims its warranty and other obligations.\r\n\r\n10. Amendment of Agreement Terms\r\n	10.1. The Rightholder has the right to unilaterally make any changes and additions to this Agreement. Such changes take effect upon the expiration of 14 (fourteen) calendar days from the date of publication of the new version of the Agreement on the website https://amicon.ru, which is acknowledged by the Parties as proper notice, and apply in full and in any part to all Users.\r\n	10.2. A User who continues to use the Software after the changes take effect is deemed to have consented to the new version of the Agreement.\r\n	10.3. If the User disagrees with the changes, they must cease using the Software and delete it from all devices.\r\n	10.4. Failure by the User to take steps to cease use shall be deemed as consent to the changes.\r\n	10.5. AMICON LLC does not undertake, has never declared an intention, and does not assume any responsibility to notify the User of amendments to the Agreement by any means other than publishing the Agreement on the website https://amicon.ru.\r\n	10.6. All changes to the terms of the Agreement do not contradict applicable law, are not discriminatory, and apply to all Users.\r\n\r\n11. Termination of the Agreement\r\n	11.1. This Agreement is valid for the entire duration of the Rightholder's exclusive rights to the Software, unless terminated earlier.\r\n	11.2. The Agreement terminates with respect to a specific User:\r\n		11.2.1. upon deletion by the User of all copies of the Software;\r\n		11.2.2. upon breach by the User of the terms of the Agreement – from the moment of receipt of the Rightholder's notice of license termination;\r\n		11.2.3. upon termination of the Rightholder's exclusive rights to the Software or revocation of the license by a regulator, if such termination directly affects the possibility of using the Software.\r\n	11.3. Upon termination of the Agreement, the User must immediately cease using the Software and destroy all copies of the Software in their possession.\r\n\r\n12. Applicable Law and Dispute Resolution\r\n	12.1. The law of the Russian Federation applies to this Agreement and the relations between the Rightholder and the User.\r\n	12.2. Disputes arising out of or in connection with this Agreement shall, where possible, be resolved through negotiations. If no agreement is reached, the dispute shall be referred to the court at the location of the Rightholder after compliance with the pre-trial claims procedure (response period for a claim – 30 calendar days).\r\n	12.3. The invalidity of any particular provision of the Agreement shall not entail the invalidity of the entire Agreement.
+15239	0x000C
+15246	#32770
+15253	$HWNDPARENT
+15256	$Var19
+15259	1040
+15264	1006
+15269	1000
+15274	$Var20
+15277	$Var23
+15280	1021
+15285	1022
+15290	1017
+15295	1032
+15300	1042
+15305	1043
+15310	1023
+15315	$Var29
+15318	$Var31
+15321	$Var33
+15324	1020
+15329	1019
+15334	1001
+15339	1024
+15344	$Var40
+15347	1004
+15352	1027
+15357	1016
+15362	Software\AMICON\Amiconnect
+15389	Installer Language
+15408	$LANGUAGE
+15411	1037
+15416	$Var1
+15419	1038
+15424	$PLUGINSDIR\modern-header.bmp
+15445	1046
+15450	1034
+15455	$Var3
+15458	1028
+15463	1256
+15468	$(lang_-1) 
+15472	1035
+15477	1045
+15482	$SHELLREG("ProgramFilesDir", fallback "C:\Program Files")\AMICON\Amiconnect
+15503	SOFTWARE\AMICON\Amiconnect
+15530	Install_Dir
+15542	$0
+15545	$1
+15548	$2
+15551	$3
+15554	$4
+15557	$5
+15560	$6
+15563	$7
+15566	$Var97
+15569	13
+15572	$INSTDIR\Install.log
+15587	255
+15591	254
+15595	\r\n\r\nFull log...\r\n
+15613	4100
+15618	Alloc
+15624	*(i, i, i, i, i, i, i, i, i) i (0, 0, 0, 0, 0, r3, 1024) .r1
+15685	User32::SendMessageW(i, i, i, i) i ($0, 4211, $2, r1)
+15739	*$3(&t1024 .r4)
+15755	kernel32::WriteFile(i r5, i r3, i r7, *i .r4, i 0) i r7
+15811	Free
+15816	Fixing user configuration...
+15845	Detail print log...\r\n
+15867	$6\r\n
+15872	$8
+15875	$PROFILE\..
+15881	$0\*.*
+15888	$0\$2\AppData\Local\Amiconnect\cfg.ini
+15927	Modifying config: $4
+15948	powershell -WindowStyle hidden -command 
+15989	$7"(Get-Content '$4') 
+16012	$7-replace '\""ALLOWNOVPNIPPACK\""\s*:\s*0', 
+16058	$7'\""ALLOWNOVPNIPPACK\"": 1' 
+16089	$7| Set-Content '$4'"
+16111	Executing: $7
+16125	$PLUGINSDIR\nsExec.dll
+16139	/TIMEOUT=30000
+16154	ExecToLog
+16164	Failed to modify $4 (error $8)
+16195	User's configuration fix completed
+16230	Cleaning old files...
+16252	$INSTDIR\usercfg.ini
+16267	$0\$2\AppData\Local\Amiconnect\usercfg.ini
+16310	Cleaning old files done
+16334	$Var64
+16337	A
+16339	M
+16341	LS
+16344	AS
+16347	CS
+16350	MS
+16353	*(i,l,l,l,i,i,i,i,&t260,&t14) p .r6
+16389	kernel32::FindFirstFile(t,p)p(r0,r6) .r2
+16430	kernel32::FindClose(i)i(r2)
+16458	*(&i2,&i2,&i2,&i2,&i2,&i2,&i2,&i2) p .r7
+16499	kernel32::GetLocalTime(p)i(r7)
+16530	kernel32::GetSystemTime(p)i(r7)
+16562	*$6(i,l,l,l,i,i,i,i,&t260,&t14)p(,.r4,.r3,.r2)
+16609	kernel32::FileTimeToLocalFileTime(*l,*l)i(r2,.r3)
+16659	kernel32::FileTimeToSystemTime(*l,i)i(r3,r7)
+16704	*$7(&i2.r5,&i2.r6,&i2.r4,&i2.r0,&i2.r3,&i2.r2,&i2.r1,&i2)
+16762	%.2u
+16767	Sunday
+16774	Monday
+16781	Tuesday
+16789	Wednesday
+16799	Thursday
+16808	Friday
+16815	Saturday
+16824	$0.$1.$2 $4:$5:$6
+16842	Installing AMICON AMICONNECT version 1.30.3004
+16889	$SHELL($PROGRAMS|$SMPROGRAMS)
+16892	kernel32::Wow64DisableWow64FsRedirection(*i .r1) i r2
+16946	$INSTDIR
+16949	1234
+16954	$Var51\SYSTEM32\certutil.exe
+16979	$Var52\AMICLIENT
+16992	AmiCert_r1.cer
+17007	"$Var51\SYSTEM32\certutil.exe" -addstore "Root"             $Var52\AMICLIENT\AmiCert_r1.cer
+17091	/OEM
+17096	AmiCert_r2.cer
+17111	"$Var51\SYSTEM32\certutil.exe" -addstore "CA"               $Var52\AMICLIENT\AmiCert_r2.cer
+17195	AmiCert_r3.cer
+17210	"$Var51\SYSTEM32\certutil.exe" -addstore "CA"               $Var52\AMICLIENT\AmiCert_r3.cer
+17294	AmiCert_o1.cer
+17309	"$Var51\SYSTEM32\certutil.exe" -addstore "TrustedPublisher" $Var52\AMICLIENT\AmiCert_o1.cer
+17393	AmiCert_o2.cer
+17408	"$Var51\SYSTEM32\certutil.exe" -addstore "TrustedPublisher" $Var52\AMICLIENT\AmiCert_o2.cer
+17492	$INSTDIR\License.txt
+17507	2000
+17512	$Var52\AMICLIENT\License.txt
+17537	$Var52\AMICLIENT\License.txt->$INSTDIR\License.txt
+17578	$INSTDIR\amiconnect-uninst.exe
+17603	$Var98
+17606	$2\Amiconnect\*.*
+17624	$2\Amiconnect
+17638	$2\AMICON\Amiconnect\*.*
+17663	$2\AMICON\Amiconnect
+17684	$2\AMICON\Амиконнект\*.*
+17709	$2\AMICON\Амиконнект
+17730	$2\Амиконнект\*.*
+17748	$2\Амиконнект
+17762	$2\АМИКОН\Амиконнект\*.*
+17787	$2\АМИКОН\Амиконнект
+17808	$2\АМИКОН\Amiconnect\*.*
+17833	$2\АМИКОН\Amiconnect
+17854	$2\AMICON
+17864	-1
+17867	$2\АМИКОН
+17877	DEL
+17881	$Var99
+17884	sc failure amiconnectd reset= 0 actions= ""
+17928	net stop amiconnectd
+17949	taskkill /f /t /im amiconnect.exe
+17983	3333
+17988	Old INSTDIR = '$1'
+18007	+
+18009	\/
+18012	$R0
+18015	$R1
+18018	$R2
+18021	$R3
+18024	$R4
+18027	$R5
+18030	$R6
+18033	$R7
+18036	$R8
+18039	-3
+18042	eng
+18046	rus
+18050	65
+18053	90
+18056	97
+18059	122
+18063	192
+18067	223
+18071	224
+18075	-
+18077	+-
+18080	$R7$R8
+18085	31
+18088	-2
+18091	48
+18094	57
+18097	%c
+18100	$R1$R2
+18105	New INSTDIR != Old
+18124	netsh firewall delete allowedprogram "$1\amiconnectd.exe"
+18182	$INSTDIR\Log
+18189	Installing network drivers
+18216	$INSTDIR\Drivers\AmiconnectFlt
+18241	AmiconnectFlt.inf
+18259	amiconnectflt.cat
+18277	AmiconnectFlt.sys
+18295	ADrvInst.exe
+18308	$Var51\SYSTEM32\DRIVERS\AmiconnectFlt.sys
+18346	Uninstalling driver...
+18369	"$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe" /u "$INSTDIR\Drivers\AmiconnectFlt\AmiconnectFlt.inf"
+18457	"$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe" /do "$INSTDIR\Drivers\AmiconnectFlt\AmiconnectFlt.inf"
+18546	"$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe" /o "$INSTDIR\Drivers\AmiconnectFlt\AmiconnectFlt.inf"
+18634	"$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe" /i /s "$INSTDIR\Drivers\AmiconnectFlt\AmiconnectFlt.inf"
+18725	"$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe" /t /s "AmiconnectFlt"
+18787	copy /y "$INSTDIR\Drivers\AmiNdisFlt\AmiconnectFlt.sys" "$Var51\SYSTEM32\DRIVERS"
+18859	$Var54 $Var66
+18865	No
+18868	$Var67
+18871	"$INSTDIR\amiconnect-uninst.exe"
+18898	$Var70
+18901	$Var71
+18904	$Var72
+18907	$Var73
+18910	$Var74
+18913	$Var77
+18916	Setting registry keys
+18938	512
+18942	SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+18988	AMICON Amiconnect Client
+19013	Software\Microsoft\Windows\CurrentVersion\Uninstall\AMICON Amiconnect
+19083	$INSTDIR\amiconnect.exe
+19101	VersionHi
+19111	VersionLo
+19121	VersionBn
+19131	VersionBeta
+19143	VersionBetaN
+19156	DisplayName
+19168	$Var63
+19171	UninstallString
+19187	DisplayIcon
+19199	DisplayVersion
+19214	URLInfoAbout
+19227	http://www.amicon.ru
+19248	Publisher
+19258	HideConnectDialog
+19276	FlushDNS
+19285	RestartAdapters
+19301	Installing Amiconnect service
+19331	sc delete amiconnectd
+19353	System\CurrentControlSet\Services\amiconnectd
+19399	$INSTDIR\amiconnect.*
+19415	amiconnectd.exe
+19431	csat.conf
+19441	ami.settings.conf
+19459	connection.settings.tmpl
+19484	status.json
+19496	ami_errors.json
+19512	$INSTDIR\Captive
+19523	Руководство.pdf
+19539	$INSTDIR\log
+19546	Failed to create log directory $INSTDIR\log
+19584	Cannot create folder $INSTDIR\log
+19612	Log directory created
+19634	$PLUGINSDIR\AccessControl.dll
+19655	FullAccess
+19666	(S-1-5-32-545)
+19681	GrantOnFile
+19693	sc create amiconnectd start= auto displayname= "AMICON Amiconnect Service" binPath= "$INSTDIR\amiconnectd.exe"
+19798	sc description amiconnectd "Amicon Amiconnect service for Amicon FPSU-IP"
+19872	$Var78
+19875	$Var79
+19878	"$Var52\AMICLIENT\ADrvInst.exe" /t /s "amiconnectd"
+19926	error
+19932	$Var52\AMICLIENT\ADrvInst.exe
+19958	sc failure amiconnectd reset= 600 actions= restart/5000/restart/10000/restart/10000/""/0
+20047	sc failureflag amiconnectd 1
+20076	netsh firewall add allowedprogram "$INSTDIR\amiconnectd.exe" "Amiconnect" ENABLE
+20151	GenericRead+GenericWrite
+20176	$INSTDIR\csat.conf
+20189	$INSTDIR\cfg.ini
+20200	$INSTDIR\status.json
+20215	Reduce MTU on all network interfaces
+20252	Setting default MTU
+20272	amiconnect-mtu.ps1
+20291	powershell.exe -InputFormat None -NoProfile -NonInteractive -ExecutionPolicy Bypass -WindowStyle Hidden -File "$INSTDIR\amiconnect-mtu.ps1" -Mode Save
+20436	/TIMEOUT=60000
+20451	Start menu shortcut
+20471	Installing links
+20488	$Var61
+20491	25
+20494	$Var98\АМИКОН\Амиконнект
+20515	$Var98\АМИКОН\Амиконнект\Амиконнект.lnk
+20551	visible
+20559	$Var98\АМИКОН\Амиконнект\Удалить Амиконнект.lnk
+20603	$Var98\АМИКОН\Амиконнект\Лицензионное соглашение Амиконнекта.lnk
+20664	$INSTDIR\license.txt
+20679	$Var98\АМИКОН\Амиконнект\Руководство Амиконнекта.lnk
+20728	$INSTDIR\Руководство.pdf
+20747	$Var98\AMICON\Amiconnect
+20768	$Var98\AMICON\Amiconnect\Amiconnect.lnk
+20804	$Var98\AMICON\Amiconnect\UnInstall Amiconnect.lnk
+20850	$Var98\AMICON\Amiconnect\License Agreement.lnk Amiconnect
+20904	$Var98\AMICON\Amiconnect\Amiconnect Manual.lnk
+20947	Kernel32::CreateFileW(t, i, i, i, i, i, i) i (r1, 0x80000000, 0, 0, 0x00000003, 0x00000080, 0) .r2
+21046	Kernel32::GetFileSize(i, i) i ($2, 0) .r3
+21088	Kernel32::CloseHandle(i) i ($2)
+21120	Kernel32::ReadFile(i, i, i, i, i) i ($2, r4, $3, r5, 0) .r1
+21180	User32::SendMessageW(i, i, i, i) i ($0, 0x000C, 0, r1)
+21235	1018
+21240	$Var95
+21243	80%
+21247	$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe
+21285	$Var82
+21288	$CMDLINE
+21291	/W
+21294	$5$7
+21299	`
+21301	/w
+21304	Yes
+21308	$Var53
+21311	Starting Amiconnect service
+21339	net start amiconnectd
+21361	"$INSTDIR\amiconnect.exe"
+21381	$Var50
+21384	kernel32::Wow64RevertWow64FsRedirection(i r1) i r2
+21435	/ANP
+21440	$EXEPATH
+21443	//
+21446	\\
+21449	:
+21451	kernel32::GetDriveTypeW(w r0) i .r1
+21487	$TEMP
+21490	$(lang_-8)$TEMP
+21495	"$TEMP\$EXEFILE" $0 /ANP
+21511	$TEMP\$EXEFILE
+21517	/lt
+21521	/LT
+21525	$EXEDIR
+21528	$WINDOWS
+21531	kernel32::GetSystemWindowsDirectory(t .r0, i 1024)
+21582	/S
+21585	/s
+21588	/AUTORUN
+21597	/R
+21600	/r
+21603	1049
+21608	$Var100
+21611	$PLUGINSDIR\LangDLL.dll
+21626	1251
+21631	Русский
+21639	1252
+21644	1033
+21649	English
+21657	AC
+21660	Выберите язык установщика
+21686	Язык установки
+21701	LangDialog
+21712	cancel
+21719	© "АМИКОН", 2026
+21736	Амиконнект 1.30.3004
+21757	Амиконнект 1.30.3004\r успешно установлен!\r\r Для завершения установки нажмите 'Закрыть'.
+21845	Обновление драйвера...
+21868	Обновление драйвера не выполнено. 
+21903	Предварительная установка драйвера не удалась.
+21950	Установка драйвера...
+21972	Запуск программы установки Амиконнект\r\rИспользование:\rBin\Amiconnect_1_30_3004_Win\r [/S [/W] [/R]] [/D={директория установки по умолчанию}];\r\r /S - тихий режим установки\r /W - показывать окно о перезагрузке после установки\r  (используется вместе с /S)\r /R - только обновление установленного клиента\r /D= - директория установки по умолчанию\r /LT - использовать в качестве временной директории папку запуска установщика\r\rКоды ошибок, возвращаемые установщиком:\r 0 - нет ошибок\r 1 - есть ошибки\r 2 - необходима перезагрузка компьютера\r 3 - запущен не с правами администратора\r\rУстановщик должен быть запущен с правами администратора\r и не в терминальной сессии\rПоддерживаемые ОС: Windows 10, 11
+22664	Программу необходимо устанавливать с правами администратора!
+22725	Ошибка установки сетевого драйвера. Повторить ещё раз?
+22780	Ошибка установки сетевого драйвера. Установка невозможна.
+22838	Ошибка установки драйвера файловой системы. Повторить ещё раз?
+22901	Ошибка установки драйвера файловой системы. Установка невозможна.
+22967	Ошибка инициализации INetCfg интерфейса. 
+23009	INetCfg интерфейс уже используется. 
+23046	Не удается открыть INetCfg интерфейс на запись. 
+23095	Для установки требуется перезагрузка. 
+23134	Превышено количество установленных NDIS-фильтров. 
+23185	Невозможно открыть устройство драйвера. 
+23226	Невозможно открыть устройство драйвера. Продолжить установку?
+23288	Не создана папка драйвера в реестре. 
+23326	Ошибка установки сервиса Amiconnect. Повторить ещё раз?
+23382	Ошибка установки сервиса Amiconnect. Установка невозможна.
+23441	Установка KC3 не выбрана, но он уже установлен. Удалить его?
+23502	Установка запуска приложения до входа в систему не выбрана, но оно уже установлено. Удалить его?
+23599	Изменения вступят в силу после перезагрузки компьютера. Перезагрузить компьютер?
+23680	Ошибка деинсталляции tdi-драйвера.
+23715	Установка невозможна. Нужна ОС Windows 10, 11
+23761	Возможна неправильная установка из-за запуска в режиме совместимости (версии ОС и ndis.sys различны)! Продолжить?
+23875	Установка невозможна. Установлена более новая версия программы. Для продолжения установки удалите установленную версию программы
+24004	Программу установки не следует запускать из терминальной сессии! Продолжить установку?
+24091	Уменьшить MTU на сетевых интерфейсах
+24128	Ярлык меню Пуск
+24144	\r\r Лог установки сохранён как:\r   '$INSTDIR\Install.log'.
+24196	© "AMICON", 2026
+24213	Amiconnect 1.30.3004
+24234	Amiconnect 1.30.3004\r installed successfully!\r\r To complete the installation, press 'Close'.
+24327	Driver update...
+24344	Driver update failed. 
+24367	Driver presetup failed.
+24391	Driver setup...
+24407	Execute Amiconnect installer\r\rUsage:\rBin\Amiconnect_1_30_3004_Win\r [/S [/W] [/R]] [/D={default install directory}];\r\r /S - silent installation\r /W - show reboot window after installation is complete\r  (used with /S)\r /R - update the installed client only\r /D= - default install directory\r /LT - use the installer path as a temporary directory\r\rError codes returned by installer:\r 0 - no errors\r 1 - errors\r 2 - computer restart needed\r 3 - was started without administrator rights\r\rInstaller must be run with administrator rights\r and not from a terminal session\rSupported OS: Windows 10, 11
+24999	Program must be installed with administrator rights!
+25052	Error installing network driver. Try again?
+25096	Error installing network driver. Installation canceled.
+25152	Error installing file system driver. Try again?
+25200	Error installing file system driver. Installation canceled.
+25260	INetCfg interface initialization failed. 
+25302	INetCfg interface is already in use. 
+25340	Opening INetCfg interface for writing failed. 
+25387	Reboot needed to complete the installation. 
+25432	NDIS filter limit exceeded. 
+25461	Opening driver device failed. 
+25492	Opening driver device failed. Continue installation?
+25545	Driver registry folder wasn't created. 
+25585	Error installing Amiconnect service. Try again?
+25633	Error installing Amiconnect service. Installation canceled.
+25693	Installation of KC3 not selected, but it was installed. Uninstall it?
+25763	Installation of application to run before logon not selected, but it was installed. Uninstall it?
+25861	Changes will be applied after the computer restarts. Restart the computer?
+25936	Error uninstalling TDI driver.
+25967	Installation canceled. Windows 10, 11 is required.
+26018	Installation may be incorrect because it is running in compatibility mode (OS and ndis.sys versions differ). Continue?
+26137	Installation canceled. A newer version of the program is installed. Uninstall it to continue the installation.
+26248	Installation program shouldn't be run from a terminal session! Continue installation?
+26334	\r\r Installation log saved as:\r   '$INSTDIR\Install.log'.
+26385	/?
+26388	-?
+26391	/H
+26394	/h
+26397	-H
+26400	-h
+26403	$Var60
+26406	user32::GetSystemMetrics(i 4096) i .r0
+26445	user32::GetSystemMetrics(i 8193) i .r0
+26484	$Var87
+26487	$PLUGINSDIR\UserInfo.dll
+26503	GetAccountType
+26518	Admin
+26524	$Var65
+26527	SOFTWARE\Microsoft\Windows NT\CurrentVersion
+26572	CurrentMajorVersionNumber
+26598	CurrentMinorVersionNumber
+26624	10
+26627	Win10
+26633	CurrentBuild
+26646	22000
+26652	OS Windows 11 / Server 11
+26678	OS Windows 10 / Server 10
+26704	$Var84
+26707	$Var88
+26710	$Var89
+26713	$Var90
+26716	$Var86
+26719	$PLUGINSDIR
+26722	Error! Can't initialize plug-ins directory. Please try again later.
+26790	$Var55
+26793	Space available: 
+26811	Доступно на диске: 
+26831	Space required: 
+26848	Требуется на диске: 
+26869	Can't write: 
+26883	Невозможно записать: 
+26905	Copy failed
+26917	Ошибка при копировании
+26940	Copy to 
+26949	Копирование в 
+26964	Could not find symbol: 
+26988	Невозможно найти символ: 
+27014	Could not load: 
+27031	Невозможно загрузить: 
+27054	Create folder: 
+27070	Создание папки: 
+27087	Create shortcut: 
+27105	Создание ярлыка: 
+27123	Created uninstaller: 
+27145	Создание программы удаления: 
+27175	Delete file: 
+27189	Удаление файла: 
+27206	Delete on reboot: 
+27225	Удаление при перезагрузке ПК: 
+27256	Error creating shortcut: 
+27282	Ошибка создания ярлыка: 
+27307	Error creating: 
+27324	Ошибка создания: 
+27342	Error decompressing data! Corrupted installer?
+27389	Ошибка распаковки данных! Возможно, повреждён дистрибутив.
+27448	Execute: 
+27458	Выполнение: 
+27471	Extract: 
+27481	Извлечение: 
+27494	Extract: error writing to file 
+27526	Извлечение: ошибка записи файла 
+27559	Installer corrupted: invalid opcode
+27595	Дистрибутив поврежден: недопустимый код
+27635	No OLE for: 
+27648	Нет OLE для: 
+27662	Output folder: 
+27678	Папка установки: 
+27696	Remove folder: 
+27712	Удаление папки: 
+27729	Rename on reboot: 
+27748	Переименование при перезагрузке ПК: 
+27785	Rename: 
+27794	Переименование: 
+27811	Skipped: 
+27821	Пропуск: 
+27831	Copy Details To Clipboard
+27857	Копировать сведения в буфер обмена
+27892	B
+27894	байт
+27899	 K
+27902	 К
+27905	 M
+27908	 М
+27911	 G
+27914	 Г
+27917	Error opening file for writing: \r\n\r\n$0\r\n\r\nClick Abort to stop the installation,\r\nRetry to try again, or\r\nIgnore to skip this file.
+28048	Невозможно открыть файл для записи: \r\n	"$0"\r\n"Прервать": остановить установку;\r\n"Повтор": повторить попытку;\r\n"Пропуск": пропустить это действие.
+28194	Welcome to $(lang_-79) Setup
+28214	Вас приветствует мастер установки $(lang_-79)
+28251	MS Shell Dlg
+28264	Setup will guide you through the installation of $(lang_-79).\r\n\r\nIt is recommended that you close all other applications before starting Setup. This will make it possible to update relevant system files without having to reboot your computer.\r\n\r\n$_CLICK
+28504	Эта программа установит $(lang_-79) на ваш компьютер.\r\n\r\nПеред началом установки рекомендуется закрыть все работающие приложения. Это позволит программе установки обновить системные файлы без перезагрузки компьютера.\r\n\r\n$_CLICK
+28718	If you accept the terms of the agreement, click I Agree to continue. You must accept the agreement to install $(lang_-79).
+28832	Если вы принимаете условия соглашения, нажмите кнопку "Принимаю". Чтобы установить программу, необходимо принять соглашение.
+28957	License Agreement
+28975	Лицензионное соглашение
+28999	Please review the license terms before installing $(lang_-79).
+29053	Перед установкой $(lang_-79) ознакомьтесь с лицензионным соглашением.
+29114	Press Page Down to see the rest of the agreement.
+29164	Для перемещения по тексту используйте клавиши "PageUp" и "PageDown".
+29233	Choose Components
+29251	Компоненты устанавливаемой программы
+29288	Choose which features of $(lang_-79) you want to install.
+29337	Выберите компоненты $(lang_-79), которые вы хотите установить.
+29391	Description
+29403	Описание
+29412	Position your mouse over a component to see its description.
+29473	Наведите курсор мыши на название компонента, чтобы прочесть его описание.
+29547	Choose Install Location
+29571	Выбор папки установки
+29593	Choose the folder in which to install $(lang_-79).
+29635	Выберите папку для установки $(lang_-79).
+29668	Installing
+29679	Копирование файлов
+29698	Please wait while $(lang_-79) is being installed.
+29739	Подождите, идет копирование файлов $(lang_-79)...
+29780	Installation Complete
+29802	Установка завершена
+29822	Setup was completed successfully.
+29856	Установка успешно завершена.
+29885	Installation Aborted
+29906	Установка прервана
+29925	Setup was not completed successfully.
+29963	Установка не завершена.
+29987	Custom
+29994	По выбору
+30004	Cancel
+30011	Отмена
+30018	< &Back
+30026	< &Назад
+30035	&Next >
+30043	&Далее >
+30052	Click Next to continue.
+30076	Нажмите кнопку "Далее" для продолжения.
+30116	I &Agree
+30125	Принима&ю
+30135	Check the components you want to install and uncheck the components you don't want to install. $_CLICK
+30233	Выберите компоненты программы, которые вы хотите установить. $_CLICK
+30297	Select the type of install:
+30325	Выберите тип установки:
+30349	Or, select the optional components you wish to install:
+30405	или выберите дополнительные компоненты для установки:
+30459	Select components to install:
+30489	Выберите компоненты программы для установки:
+30534	Setup will install $(lang_-79) in the following folder. To install in a different folder, click Browse and select another folder. $_CLICK
+30658	Программа установит $(lang_-79) в указанную папку. Чтобы установить приложение в другую папку, нажмите кнопку "Обзор" и укажите ее. $_CLICK
+30784	Destination Folder
+30803	Папка установки
+30819	B&rowse...
+30830	О&бзор ...
+30841	Select the folder to install $(lang_-79) in:
+30877	Укажите папку для установки $(lang_-79):
+30909	&Install
+30918	&Установить
+30930	Click Install to start the installation.
+30971	Нажмите кнопку "Установить", чтобы установить программу.
+31028	Show &details
+31042	&Детали...
+31053	Completed
+31063	Готово
+31070	&Close
+31077	&Закрыть
+31086	$Var62

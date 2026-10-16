@@ -1,0 +1,1027 @@
+{
+  "01-0000-0": {
+    "ru": {
+      "title": "Ошибок не обнаружено",
+      "description": ""
+    },
+    "en": {
+      "title": "No errors detected",
+      "description": ""
+    }
+  },
+
+
+  "01-0001-0": {
+    "ru": {
+      "title": "Необходимо принудительное пересоединение",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Forced reconnection required",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0002-0": {
+    "ru": {
+      "title": "Подсистема PKI-клиентов недоступна",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "PKI client subsystem unavailable",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0003-0": {
+    "ru": {
+      "title": "Неверное состояние сессии",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Invalid session state",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0004-0": {
+    "ru": {
+      "title": "Неизвестный клиент",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Unknown client",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0005-0": {
+    "ru": {
+      "title": "Превышение числа подключенных клиентов",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Maximum number of connected clients exceeded",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0006-0": {
+    "ru": {
+      "title": "Дублирование NAT-адреса",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "NAT address duplication",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0007-0": {
+    "ru": {
+      "title": "Неверный сессионный ключ",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Invalid session key",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0008-0": {
+    "ru": {
+      "title": "Внутренняя ошибка",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Internal error",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0009-0": {
+    "ru": {
+      "title": "Нарушена структура пакета синхронизации",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Synchronization packet structure violation",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0010-0": {
+    "ru": {
+      "title": "Отсутствие критичных атрибутов",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Missing critical attributes",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0011-0": {
+    "ru": {
+      "title": "На ФПСУ нет цепочки доверия к сертификату клиента",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "No trust chain to client certificate on FPSU",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0012-0": {
+    "ru": {
+      "title": "Срок действия сертификата истёк",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Certificate has expired",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0013-0": {
+    "ru": {
+      "title": "Неверное назначение ключа",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Invalid key usage",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0014-0": {
+    "ru": {
+      "title": "Статус сертификата не подтверждён",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Certificate status not verified",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0015-0": {
+    "ru": {
+      "title": "Неверный формат сертификата",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Invalid certificate format",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0016-0": {
+    "ru": {
+      "title": "Неверный формат ЭП",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Invalid digital signature format",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0017-0": {
+    "ru": {
+      "title": "ЭП некорректна",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Digital signature is invalid",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0018-0": {
+    "ru": {
+      "title": "Ошибка связи с сервисом проверки сертификатов",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Connection error with certificate validation service",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0019-0": {
+    "ru": {
+      "title": "Данные аутентификации введены неверно",
+      "description": "Введите корректный одноразовый пароль."
+    },
+    "en": {
+      "title": "Authentication data entered incorrectly",
+      "description": "Enter the correct one-time password."
+    }
+  },
+  "01-0020-0": {
+    "ru": {
+      "title": "Ошибка связи с сервером аутентификации",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "Connection error with authentication server",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0021-0": {
+    "ru": {
+      "title": "Ошибка связи с DHCP-сервером",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "Connection error with DHCP server",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0022-0": {
+    "ru": {
+      "title": "Ошибочные данные от сервиса проверки сертификатов",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "Invalid data from certificate validation service",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0023-0": {
+    "ru": {
+      "title": "Произошло отключение администратором или автоматизированной системой",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "Disconnection by administrator or automated system",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0024-0": {
+    "ru": {
+      "title": "Текущая версия Амиконнект не поддерживается",
+      "description": "1. Подключитесь к корпоративной сети в офисе банка.\n2. Перейдите на страницу https://sberusersoft.sigma.sbrf.ru/ и выполните установку новой версии ПО Амиконнект.\n3. Перезагрузите устройство и выполните подключение к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "The current version of AMICONNECT is not supported",
+      "description": "1. Connect to the corporate network in the bank office.\n2. Go to https://sberusersoft.sigma.sbrf.ru/ and install the new version of AMICONNECT software.\n3. Restart your device and connect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0025-0": {
+    "ru": {
+      "title": "Сессия была прервана администратором",
+      "description": "При необходимости произведите повторное подключение к VPN либо обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Session terminated by administrator",
+      "description": "If necessary, reconnect to the VPN, or contact support, specifying the error name."
+    }
+  },
+  "01-0026-0": {
+    "ru": {
+      "title": "Неизвестная туннельная группа",
+      "description": "Проверьте корректность указанной туннельной группы.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Unknown tunnel group",
+      "description": "Check the correctness of the specified tunnel group.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0027-0": {
+    "ru": {
+      "title": "Запрещенная туннельная группа",
+      "description": "Проверьте корректность указанной туннельной группы.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Forbidden tunnel group",
+      "description": "Check the correctness of the specified tunnel group.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0028-0": {
+    "ru": {
+      "title": "Не совпал издатель для туннельной группы",
+      "description": "Проверьте корректность указанной туннельной группы.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Publisher mismatch for tunnel group",
+      "description": "Check the correctness of the specified tunnel group.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0029-0": {
+    "ru": {
+      "title": "Неподдерживаемый тип двуфакторной аутентификации",
+      "description": "Измените метод аутентификации в настройках ПО и повторите подключение к VPN.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Unsupported two-factor authentication type",
+      "description": "Change the authentication method in the software settings and reconnect to the VPN.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0030-0": {
+    "ru": {
+      "title": "Обнаружен дубликат сертификата",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Duplicate certificate detected",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0031-0": {
+    "ru": {
+      "title": "Время сессии истекло",
+      "description": "Необходимо заново пройти процесс подключения"
+    },
+    "en": {
+      "title": "Session time expired",
+      "description": "Reconnect is necessary"
+    }
+  },
+  "01-0032-0": {
+    "ru": {
+      "title": "Полученный NAT-адрес уже зарегистрирован",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки"
+    },
+    "en": {
+      "title": "The NAT address is already registered",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0033-0": {
+    "ru": {
+      "title": "Учетная запись находится в черном списке SOAR",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "User account is in the SOAR blacklist",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0034-0": {
+    "ru": {
+      "title": "Тикет аутентификации невалиден",
+      "description": "Необходимо заново пройти процесс подключения"
+    },
+    "en": {
+      "title": "Authentication ticket is not valid",
+      "description": "Reconnect is necessary"
+    }
+  },
+
+
+  "01-0050-0": {
+    "ru": {
+      "title": "Ошибка проверки ЭП на клиенте",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Digital signature verification error on client",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0051-0": {
+    "ru": {
+      "title": "Ошибка создания ЭП на клиенте",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Digital signature creation error on client",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0052-0": {
+    "ru": {
+      "title": "Ошибка создания аутентификационной информации",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Authentication information creation error",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0053-0": {
+    "ru": {
+      "title": "Нет доступа к ключевому контейнеру сертификата",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "No access to certificate key container",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0054-0": {
+    "ru": {
+      "title": "Отсутствует цепочка доверия сертификатов для клиентского сертификата",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Missing trust chain for client certificate",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+
+
+  "01-0060-0": {
+    "ru": {
+      "title": "Неверный пароль",
+      "description": "Введите корректный одноразовый пароль."
+    },
+    "en": {
+      "title": "Invalid password",
+      "description": "Enter the correct one-time password."
+    }
+  },
+  "01-0061-0": {
+    "ru": {
+      "title": "Пользователь не зарегистрирован",
+      "description": "Выполните регистрацию мобильного устройства на корпоративном портале.\nПосле регистрации выполните повторное подключение к VPN.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "User not registered",
+      "description": "Register your mobile device on the corporate portal.\nAfter registration, reconnect to the VPN.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0062-0": {
+    "ru": {
+      "title": "Ваша учётная запись заблокирована",
+      "description": "Для разблокировки учётной записи наберите предоставленный вам номер для восстановления доступа.\nНе сбрасывайте пароль. Действие доступно только при звонке с номера, указанного в справочнике."
+    },
+    "en": {
+      "title": "Your account is blocked",
+      "description": "To unblock your account, call the provided number for access recovery.\nDo not reset the password. This action is only available when calling from the number specified in the directory."
+    }
+  },
+  "01-0063-0": {
+    "ru": {
+      "title": "Срок действия одноразового пароля истёк",
+      "description": "Введите обновлённый код из мобильного приложения OTP."
+    },
+    "en": {
+      "title": "One-time password has expired",
+      "description": "Enter the updated code from the OTP mobile application."
+    }
+  },
+  "01-0064-0": {
+    "ru": {
+      "title": "Повторный ввод одноразового пароля",
+      "description": "Введите обновлённый код из мобильного приложения OTP."
+    },
+    "en": {
+      "title": "Re-enter one-time password",
+      "description": "Enter the updated code from the OTP mobile application."
+    }
+  },
+  "01-0065-0": {
+    "ru": {
+      "title": "Необходимо перерегистрироваться в OTP-сервисе",
+      "description": "Выполните регистрацию мобильного устройства на корпоративном портале.\nПосле регистрации выполните повторное подключение к VPN.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Re-registration with the OTP service required",
+      "description": "Register your mobile device on the corporate portal.\nAfter registration, reconnect to the VPN.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0066-0": {
+    "ru": {
+      "title": "Учетная запись пользователя отсутствует в домене",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "User account not found in domain",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0067-0": {
+    "ru": {
+      "title": "В домене более одной действующей учётной записи",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "More than one active account in the domain",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0068-0": {
+    "ru": {
+      "title": "Пользователь не найден",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "User not found",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0069-0": {
+    "ru": {
+      "title": "Токен не найден в БД",
+      "description": "Отправьте токен администраторам для регистрации."
+    },
+    "en": {
+      "title": "Token not found in database",
+      "description": "Send the token to the administrators for registration."
+    }
+  },
+  "01-0070-0": {
+    "ru": {
+      "title": "Неверный размер пароля",
+      "description": "Укажите пароль нужного размера."
+    },
+    "en": {
+      "title": "Invalid password size",
+      "description": "Specify a password of the required size."
+    }
+  },
+  "01-0071-0": {
+    "ru": {
+      "title": "Не зарегистрировано ни одного устройства",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "No devices registered",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+
+
+  "01-0090-0": {
+    "ru": {
+      "title": "Нет подсистемы Winsock2",
+      "description": "Перезагрузите устройство.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Winsock2 subsystem not available",
+      "description": "Restart your device.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0091-0": {
+    "ru": {
+      "title": "Проблема с подключением к сетевому интерфейсу",
+      "description": "Перезагрузите устройство.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Network interface connection problem",
+      "description": "Restart your device.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0091-1": {
+    "ru": {
+      "title": "Отказ сетевой подсистемы",
+      "description": "Перезагрузите устройство.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Network subsystem failure",
+      "description": "Restart your device.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0091-2": {
+    "ru": {
+      "title": "Широковещательный адрес запрещён",
+      "description": "Перезагрузите устройство.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Broadcast address prohibited",
+      "description": "Restart your device.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0091-3": {
+    "ru": {
+      "title": "Сокет закрыт",
+      "description": "Перезагрузите устройство.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Socket closed",
+      "description": "Restart your device.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0091-4": {
+    "ru": {
+      "title": "Удалённый хост недоступен",
+      "description": "Перезагрузите устройство.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Remote host unavailable",
+      "description": "Restart your device.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0091-5": {
+    "ru": {
+      "title": "Соединение отвергнуто удалённым хостом",
+      "description": "Проверьте IP-адрес ФПСУ-IP.\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Connection rejected by remote host",
+      "description": "Check the FPSU-IP address.\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0092-0": {
+    "ru": {
+      "title": "Сетевой интерфейс ПК недоступен",
+      "description": "1. Перезагрузите устройство, после перезагрузки подождите 3 минуты.\n2. Проверьте, что интернет-подключение стабильно.\n3. Выполните подключение к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "PC network interface unavailable",
+      "description": "1. Restart your device, wait 3 minutes after reboot.\n2. Check that the internet connection is stable.\n3. Connect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+
+
+  "01-0100-0": {
+    "ru": {
+      "title": "Неизвестная ошибка соединения с ФПСУ-IP",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Unknown connection error with FPSU-IP",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0101-0": {
+    "ru": {
+      "title": "Не указаны доменные идентификационные данные",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "Domain identification data not specified",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0102-0": {
+    "ru": {
+      "title": "Не указаны идентификационные данные OTP",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "OTP identification data not specified",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0103-0": {
+    "ru": {
+      "title": "Неподдерживаемый криптопротокол",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "Unsupported crypto protocol",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0104-0": {
+    "ru": {
+      "title": "Не указана идентификационная информация",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "Identification information not specified",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0105-0": {
+    "ru": {
+      "title": "Неправильный размер идентификационной информации",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "Invalid identification information size",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0106-0": {
+    "ru": {
+      "title": "Идентификационная информация искажена",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "Identification information corrupted",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0107-0": {
+    "ru": {
+      "title": "Неправильный размер данных",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Invalid data size",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0108-0": {
+    "ru": {
+      "title": "Нарушена целостность данных от ФПСУ",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "FPSU data integrity violation",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0109-0": {
+    "ru": {
+      "title": "Несоответствующее состояние фильтра",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Filter state mismatch",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0110-0": {
+    "ru": {
+      "title": "Нет памяти для инициализации данных",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "No memory for data initialization",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0111-0": {
+    "ru": {
+      "title": "Нет доступных сетевых адаптеров",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "No available network adapters",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0112-0": {
+    "ru": {
+      "title": "Сетевой пакет не может быть декодирован",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Network packet cannot be decoded",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0113-0": {
+    "ru": {
+      "title": "Сетевой пакет игнорируется в текущем состоянии",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Network packet ignored in current state",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0114-0": {
+    "ru": {
+      "title": "Размер не соответствует типу сетевого пакета",
+      "description": "1. Отключите VPN.\n2. Перезагрузите ПО Амиконнект.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Size does not match network packet type",
+      "description": "1. Disconnect the VPN.\n2. Restart the AMICONNECT software.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0115-0": {
+    "ru": {
+      "title": "ФПСУ-IP недоступен. Проверьте IP-адрес ФПСУ-IP",
+      "description": "1. Проверьте, что интернет-подключение работает стабильно.\n2. Проверьте адрес сервера в настройках Амиконнекта.\n3. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "FPSU-IP unavailable. Check the FPSU-IP address",
+      "description": "1. Check that the internet connection is stable.\n2. Check the server address in AMICONNECT settings.\n3. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0116-0": {
+    "ru": {
+      "title": "Несогласованная версия протоколов синхронизации",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "Inconsistent synchronization protocol version",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0117-0": {
+    "ru": {
+      "title": "Ошибка чтения файла конфигурации",
+      "description": "Обратитесь в службу поддержки пользователей, указав название ошибки."
+    },
+    "en": {
+      "title": "Configuration file read error",
+      "description": "Contact user support, specifying the error name."
+    }
+  },
+  "01-0118-0": {
+    "ru": {
+      "title": "Проблемы с подключением к сервисной части",
+      "description": "1. Перезагрузите устройство, после перезагрузки подождите 3 минуты.\n2. Проверьте, что интернет-подключение стабильно.\n3. Выполните подключение к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Problems connecting to the service part of AMICONNECT",
+      "description": "1. Restart your device, wait 3 minutes after rebooting.\n2. Check that your internet connection is stable.\n3. Connect to the VPN.\n\nIf you experience any problems, please contact support, specifying the error name."
+    }
+  },
+  "01-0119-0": {
+    "ru": {
+      "title": "Не указан адрес ФПСУ в настройках",
+      "description": "1. Проверьте адрес ФПСУ в настройках Амиконнекта.\n2. Повторно подключитесь к VPN.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "FPSU address not specified in settings",
+      "description": "1. Check the FPSU address in AMICONNECT settings.\n2. Reconnect to the VPN.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0120-0": {
+    "ru": {
+      "title": "Нет доступных профилей для подключения",
+      "description": "Проверьте настройки профиля. Как минимум, должны быть указаны действующий сертификат и адрес ФПСУ.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "No available profiles to connect",
+      "description": "Check the profile settings. At a minimum, a valid certificate and FPSU address should be specified.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0121-0": {
+    "ru": {
+      "title": "Ошибка при экспорте протоколов работы",
+      "description": "Попробуйте выгрузить протоколы вручную. Местонахождение протоколов можно уточнить у администратора системы.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Error exporting operation logs",
+      "description": "Try to export the logs manually. The location of the logs can be clarified with the system administrator.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0122-0": {
+    "ru": {
+      "title": "Время ввода пуш-кода вышло",
+      "description": "Запустите процесс подключения к VPN заново."
+    },
+    "en": {
+      "title": "Push code input time expired",
+      "description": "Restart the VPN connection process."
+    }
+  },
+  "01-0123-0": {
+    "ru": {
+      "title": "Соединение прервано пользователем",
+      "description": "Если необходимо, запустите процесс подключения к VPN заново."
+    },
+    "en": {
+      "title": "Connection terminated by user",
+      "description": "If necessary, restart the VPN connection process."
+    }
+  },
+  "01-0124-0": {
+    "ru": {
+      "title": "Сервис занят",
+      "description": "Попробуйте повторить соединение через 10 секунд.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Service busy",
+      "description": "Try to reconnect after 10 seconds.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0125-0": {
+    "ru": {
+      "title": "Ошибка соединения с прокси",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Proxy connection error",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0126-0": {
+    "ru": {
+      "title": "Отсутствуют логи ПО «Сакура-клиент»",
+      "description": "Попробуйте ещё раз сформировать архив с логами. Если ошибка повторится, обратитесь к администратору системы."
+    },
+    "en": {
+      "title": "Sakura-client software logs missing",
+      "description": "Try to create the log archive again. If the error repeats, contact the system administrator."
+    }
+  },
+  "01-0127-0": {
+    "ru": {
+      "title": "Необходимых файлов для формирования архива с протоколом работы Амиконнекта не существует",
+      "description": "Попробуйте ещё раз сформировать архив с логами. Если ошибка повторится, обратитесь к администратору системы."
+    },
+    "en": {
+      "title": "Required files for creating AMICONNECT operation log archive do not exist",
+      "description": "Try to create the log archive again. If the error repeats, contact the system administrator."
+    }
+  },
+  "01-0128-0": {
+    "ru": {
+      "title": "VPN-соединение уже установлено другим пользователем этого компьютера",
+      "description": "Необходимо дождаться отключения другого пользователя и затем повторить попытку соединения"
+    },
+    "en": {
+      "title": "A VPN connection has already been established by another user of this computer",
+      "description": "You must wait for the other user to disconnect and then try connecting again."
+    }
+  },
+  "01-0129-0": {
+    "ru": {
+      "title": "Один из компонентов приложения недоступен",
+      "description": "Перезапустите приложение. Если проблема повторится после перезапуска — свяжитесь с технической поддержкой."
+    },
+    "en": {
+      "title": "One of the application components is unavailable",
+      "description": "Restart the application. If the problem persists after restarting, contact technical support."
+    }
+  },
+
+
+  "01-0400-0": {
+    "ru": {
+      "title": "NSS. Проблема с цепочкой доверия сертификата",
+      "description": "Не удалось подтвердить сертификат из-за проблем с цепочкой доверия (использование ключа не соответствует требуемым правилам).\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "NSS. Certificate trust chain problem",
+      "description": "Failed to verify the certificate due to trust chain issues (key usage does not comply with the required rules).\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0401-0": {
+    "ru": {
+      "title": "NSS. Сертификат недействителен по времени",
+      "description": "Дата и время на вашем устройстве не совпадают с датой и временем, указанными в сертификате безопасности.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "NSS. Certificate invalid by time",
+      "description": "The date and time on your device do not match the date and time specified in the security certificate.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0402-0": {
+    "ru": {
+      "title": "NSS. Формат сертификата безопасности или ЭП не удаётся распознать",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "NSS. Security certificate or digital signature format cannot be recognized",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0403-0": {
+    "ru": {
+      "title": "NSS. ЭП неверна",
+      "description": "Попробуйте отключиться от VPN и подключиться заново.\n\nПри возникновении проблем обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "NSS. Digital signature is invalid",
+      "description": "Try to disconnect from the VPN and reconnect.\n\nIf problems occur, contact support, specifying the error name."
+    }
+  },
+  "01-0404-0": {
+    "ru": {
+      "title": "NSS. Сертификат безопасности просрочен",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "NSS. Security certificate expired",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0405-0": {
+    "ru": {
+      "title": "NSS. Сертификат безопасности отозван",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "NSS. Security certificate revoked",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+  "01-0406-0": {
+    "ru": {
+      "title": "NSS. Издатель сертификата не найден",
+      "description": "Не удалось найти издателя сертификата в доверенном хранилище сертификатов.\n\nОбратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "NSS. Certificate issuer not found",
+      "description": "Failed to find the certificate issuer in the trusted certificate store.\n\nContact support, specifying the error name."
+    }
+  },
+  "01-0407-0": {
+    "ru": {
+      "title": "NSS. Не удалось создать ЭП",
+      "description": "Не удалось создать электронную подпись.\n\nОбратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "NSS. Failed to create digital signature",
+      "description": "Failed to create digital signature.\n\nContact support, specifying the error name."
+    }
+  },
+
+  "01-0500-0": {
+    "ru": {
+      "title": "Не удалось создать электронную подпись",
+      "description": "Ваша связка ключей заблокирована, отсутствуют разрешения или не хватает промежуточных сертификатов.\n\nОбратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Failed to create digital signature",
+      "description": "Your keychain is locked, permissions are missing, or intermediate certificates are missing.\n\nContact support, specifying the error name."
+    }
+  },
+
+  "01-0624-0": {
+    "ru": {
+      "title": "Не удалось определить IP-адрес ФПСУ по DNS-имени",
+      "description": "Обратитесь в службу поддержки, указав название ошибки."
+    },
+    "en": {
+      "title": "Could not determine the FPSU-IP address by DNS name",
+      "description": "Contact support, specifying the error name."
+    }
+  },
+
+  "01-9999-0": {
+    "ru": {
+      "title": "Неизвестный код ошибки",
+      "description": "Предоставьте протоколы работы ПО Амиконнект в службу поддержки."
+    },
+    "en": {
+      "title": "Unknown error code",
+      "description": "Provide AMICONNECT operation logs to support."
+    }
+  }
+}

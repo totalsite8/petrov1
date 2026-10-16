@@ -1,0 +1,82 @@
+;-------------------------------------------------------------------------
+; AmiconnectFlt.INF -- Amicon NDIS 6.20 Filter I/O Driver
+;
+; Copyright (c) Amicon.  All rights reserved.
+;-------------------------------------------------------------------------
+[version]
+Signature   = "$Windows NT$"
+Class       = NetService
+ClassGUID   = {4D36E974-E325-11CE-BFC1-08002BE10318}
+Provider    = %Ami%
+DriverVer   = 04/13/2026,1.12.2207.0
+CatalogFile = AmiconnectFlt.cat
+
+[Manufacturer]
+%Ami% = AMI,NTamd64
+
+[AMI]
+%AmiconnectFlt_Desc% = Install, AMI_AmiconnectFlt
+
+[AMI.NTamd64]
+%AmiconnectFlt_Desc% = Install, AMI_AmiconnectFlt
+
+;-------------------------------------------------------------------------
+; Installation Section
+;-------------------------------------------------------------------------
+[Install]
+AddReg           = Inst_Ndi
+Characteristics  = 0x40000
+NetCfgInstanceId = "{257D9FDA-B0C9-44A2-B64C-55BD83AA1AE2}"
+Copyfiles        = AmiconnectFlt.copyfiles.sys
+
+[SourceDisksNames]
+1 = %AmiconnectFlt_Desc%,"",,
+
+[SourceDisksFiles]
+AmiconnectFlt.sys = 1
+
+[DestinationDirs]
+DefaultDestDir = 12
+AmiconnectFlt.copyfiles.sys = 12 ; %windir%\System32\drivers
+
+[AmiconnectFlt.copyfiles.sys]
+AmiconnectFlt.sys,,,2
+
+;-------------------------------------------------------------------------
+; Ndi installation support
+;-------------------------------------------------------------------------
+[Inst_Ndi]
+HKR, Ndi,            Service,          , "AmiconnectFlt"
+HKR, Ndi,            CoServices,         0x00010000,"AmiconnectFlt"
+HKR, Ndi,            HelpText,         , %AmiconnectFlt_HelpText%
+HKR, Ndi,            FilterClass,      , compression
+HKR, Ndi,            FilterType,         0x00010001,0x00000002
+HKR, Ndi\Interfaces, UpperRange,       , "noupper"
+HKR, Ndi\Interfaces, LowerRange,       , "nolower"
+HKR, Ndi\Interfaces, FilterMediaTypes, , "ethernet, wan, ppip"
+HKR, Ndi\Interfaces, LowerExclude,     , "ndiscowan, ndiswan, ndiswanasync, ndiswanipx, ndiswannbf, ndiswanbh"
+HKR, Ndi,            FilterRunType,      0x00010001, 1 ;this filter must run before any protocol can bind to the below miniport 
+
+;-------------------------------------------------------------------------
+; Service installation support
+;-------------------------------------------------------------------------
+[Install.Services]
+AddService = AmiconnectFlt,,AmiconnectFlt_Service_Inst
+
+[AmiconnectFlt_Service_Inst]
+DisplayName     = %AmiconnectFlt_Desc%
+ServiceType     = 1 ;SERVICE_KERNEL_DRIVER
+StartType       = 1 ;SERVICE_SYSTEM_START
+ErrorControl    = 1 ;SERVICE_ERROR_NORMAL
+ServiceBinary   = %12%\AmiconnectFlt.sys
+LoadOrderGroup = NDIS ; Group needed for StartType = SERVICE_BOOT_START(0) or SERVICE_SYSTEM_START(1)
+Description     = %AmiconnectFlt_Desc%
+
+[Install.Remove.Services]
+DelService = AmiconnectFlt,0x200
+
+;-------------------------------------------------------------------------
+[Strings]
+Ami						= "Amicon"
+AmiconnectFlt_Desc		= "Amiconnect NDIS 6.20 Filter Driver"
+AmiconnectFlt_HelpText	= "Amicon NDIS 6.20 Filter Driver for Amiconnect"

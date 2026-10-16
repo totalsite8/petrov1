@@ -1,0 +1,2820 @@
+NSISBI disassembly of installer_stream.bin
+stream 28657684 B, entries 2761, sections 3, pages 7, strings 639
+callbacks: .onGUIInit@165, .onUserAbort@190, .onInstSuccess@1825, .onInit@2138
+
+
+
+===== Function_0   [entries 0..3] =====
+     0  EW_CALL            Call label_2742
+     1  EW_SETFLAG         SetFlag bit=13 value=0
+     2  EW_EXTRACTFILE     File "$PLUGINSDIR\modern-wizard.bmp"   ; data +0x0 size=103048
+     3  EW_RET             Return
+
+===== Function_4   [entries 4..13] =====
+     4  EW_RESERVEDOPCODE  EW_RESERVEDOPCODE()
+     5  EW_SHOWWINDOW      ShowWindow $Var6 0
+     6  EW_SHOWWINDOW      ShowWindow $Var5 0
+     7  EW_SHOWWINDOW      ShowWindow $Var0 0
+     8  EW_SHOWWINDOW      ShowWindow $Var2 0
+     9  EW_SHOWWINDOW      ShowWindow $Var4 0
+    10  EW_SHOWWINDOW      ShowWindow $Var7 0
+    11  EW_SHOWWINDOW      ShowWindow $Var8 1
+    12  EW_RESERVEDOPCODE  EW_RESERVEDOPCODE(0x1)
+    13  EW_RET             Return
+
+===== Function_14   [entries 14..164] =====
+    14  EW_RESERVEDOPCODE  EW_RESERVEDOPCODE()
+    15  EW_SHOWWINDOW      ShowWindow $Var6 1
+    16  EW_SHOWWINDOW      ShowWindow $Var5 1
+    17  EW_SHOWWINDOW      ShowWindow $Var0 1
+    18  EW_SHOWWINDOW      ShowWindow $Var2 1
+    19  EW_SHOWWINDOW      ShowWindow $Var4 1
+    20  EW_SHOWWINDOW      ShowWindow $Var7 1
+    21  EW_SHOWWINDOW      ShowWindow $Var8 0
+    22  EW_RESERVEDOPCODE  EW_RESERVEDOPCODE(0x1)
+    23  EW_RET             Return
+    24  EW_CALL            Call label_2742
+    25  EW_EXTRACTFILE     File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x19290 size=10752
+    26  EW_SETFLAG         SetFlag bit=13 value=0
+    27  EW_PUSHPOP         Push 1044
+    28  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="Create")
+    29  EW_PUSHPOP         Pop $Var12
+    30  EW_CALL            Call label_2742
+    31  EW_EXTRACTFILE     File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x19290 size=10752
+    32  EW_SETFLAG         SetFlag bit=13 value=0
+    33  EW_PUSHPOP         Push $(lang[-38])
+    34  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="SetRTL")
+    35  EW_SETCTLCOLORS    SetCtlColors "$Var12" <colors 0>
+    36  EW_CALL            Call label_2742
+    37  EW_EXTRACTFILE     File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x19290 size=10752
+    38  EW_SETFLAG         SetFlag bit=13 value=0
+    39  EW_PUSHPOP         Push 0
+    40  EW_PUSHPOP         Push "193u"
+    41  EW_PUSHPOP         Push "109u"
+    42  EW_PUSHPOP         Push "0u"
+    43  EW_PUSHPOP         Push "0u"
+    44  EW_PUSHPOP         Push 0
+    45  EW_PUSHPOP         Push "0x40000000|0x10000000|0x04000000|0x0000000E|0x00000100"
+    46  EW_PUSHPOP         Push "STATIC"
+    47  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="CreateControl")
+    48  EW_PUSHPOP         Pop $Var13
+    49  EW_LOADANDSETIMAGE LoadAndSetImage <ctrl="es" type="$PLUGINSDIR\modern-wizard.bmp" lrflags="$Var13" img=3221291280>
+    50  EW_CALL            Call label_2742
+    51  EW_EXTRACTFILE     File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x19290 size=10752
+    52  EW_SETFLAG         SetFlag bit=13 value=0
+    53  EW_PUSHPOP         Push $(lang[-39])
+    54  EW_PUSHPOP         Push "28u"
+    55  EW_PUSHPOP         Push "195u"
+    56  EW_PUSHPOP         Push "10u"
+    57  EW_PUSHPOP         Push "120u"
+    58  EW_PUSHPOP         Push "0x00000020"
+    59  EW_PUSHPOP         Push "0x40000000|0x10000000|0x04000000|0x00000100"
+    60  EW_PUSHPOP         Push "STATIC"
+    61  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="CreateControl")
+    62  EW_PUSHPOP         Pop $Var15
+    63  EW_SETCTLCOLORS    SetCtlColors "$Var15" <colors "Dir">
+    64  EW_CREATEFONT      CreateFont $Var16 $(lang[-40]) height=12 weight=700 italic=0 underline=0 strike=0
+    65  EW_SENDMESSAGE     SendMessage none "$Var15" "0x0030" "$Var16" (flags=0x0)
+    66  EW_CALL            Call label_2742
+    67  EW_EXTRACTFILE     File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x19290 size=10752
+    68  EW_SETFLAG         SetFlag bit=13 value=0
+    69  EW_PUSHPOP         Push $(lang[-41])
+    70  EW_PUSHPOP         Push "130u"
+    71  EW_PUSHPOP         Push "195u"
+    72  EW_PUSHPOP         Push "45u"
+    73  EW_PUSHPOP         Push "120u"
+    74  EW_PUSHPOP         Push "0x00000020"
+    75  EW_PUSHPOP         Push "0x40000000|0x10000000|0x04000000|0x00000100"
+    76  EW_PUSHPOP         Push "STATIC"
+    77  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="CreateControl")
+    78  EW_PUSHPOP         Pop $Var17
+    79  EW_SETCTLCOLORS    SetCtlColors "$Var17" <colors "Dir">
+    80  EW_CALL            Call label_4
+    81  EW_CALL            Call label_2742
+    82  EW_EXTRACTFILE     File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x19290 size=10752
+    83  EW_SETFLAG         SetFlag bit=13 value=0
+    84  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="Show")
+    85  EW_CALL            Call label_14
+    86  EW_CALL            Call label_2742
+    87  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+    88  EW_SETFLAG         SetFlag bit=13 value=0
+    89  EW_PUSHPOP         Push 0
+    90  EW_PUSHPOP         Push "="
+    91  EW_PUSHPOP         Push $Var14
+    92  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Int64Op")
+    93  EW_PUSHPOP         Pop $Var18
+    94  EW_INTCMP          IntCmp $Var18 0 0 label_101 label_101
+    95  EW_CALL            Call label_2742
+    96  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+    97  EW_SETFLAG         SetFlag bit=13 value=0
+    98  EW_PUSHPOP         Push $Var14
+    99  EW_PUSHPOP         Push "gdi32::DeleteObject(ps)"
+   100  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   101  EW_RET             Return
+   102  EW_RET             Return
+   103  EW_SENDMESSAGE     SendMessage none "$Var0" "0x000C" "0" (flags=0x2)
+   104  EW_SENDMESSAGE     SendMessage none "$Var2" "0x000C" "0" (flags=0x2)
+   105  EW_RET             Return
+   106  EW_FINDWINDOW      FindWindow $Var19 "#32770" 0
+   107  EW_GETDLGITEM      GetDlgItem $Var20 $Var19 1040
+   108  EW_GETDLGITEM      GetDlgItem $Var21 $Var19 1006
+   109  EW_GETDLGITEM      GetDlgItem $Var22 $Var19 1000
+   110  EW_SENDMESSAGE     SendMessage none "$Var20" "0x000C" "0" (flags=0x2)
+   111  EW_CALL            Call label_1703
+   112  EW_RET             Return
+   113  EW_RET             Return
+   114  EW_SENDMESSAGE     SendMessage none "$Var0" "0x000C" "0" (flags=0x2)
+   115  EW_SENDMESSAGE     SendMessage none "$Var2" "0x000C" "0" (flags=0x2)
+   116  EW_RET             Return
+   117  EW_FINDWINDOW      FindWindow $Var23 "#32770" 0
+   118  EW_GETDLGITEM      GetDlgItem $Var24 $Var23 1006
+   119  EW_GETDLGITEM      GetDlgItem $Var25 $Var23 1021
+   120  EW_GETDLGITEM      GetDlgItem $Var26 $Var23 1022
+   121  EW_GETDLGITEM      GetDlgItem $Var27 $Var23 1017
+   122  EW_GETDLGITEM      GetDlgItem $Var28 $Var23 1032
+   123  EW_GETDLGITEM      GetDlgItem $Var29 $Var23 1042
+   124  EW_GETDLGITEM      GetDlgItem $Var31 $Var23 1043
+   125  EW_GETDLGITEM      GetDlgItem $Var32 $Var23 1023
+   126  EW_SENDMESSAGE     SendMessage none "$Var29" "0x000C" "0" (flags=0x2)
+   127  EW_SHOWWINDOW      ShowWindow $Var31 0
+   128  EW_SENDMESSAGE     SendMessage none "$Var31" "0x000C" "0" (flags=0x2)
+   129  EW_ASSIGNVAR       StrCpy $Var30 $(lang[-49])
+   130  EW_CALL            Call label_1782
+   131  EW_RET             Return
+   132  EW_RET             Return
+   133  EW_SENDMESSAGE     SendMessage none "$Var0" "0x000C" "0" (flags=0x2)
+   134  EW_SENDMESSAGE     SendMessage none "$Var2" "0x000C" "0" (flags=0x2)
+   135  EW_RET             Return
+   136  EW_FINDWINDOW      FindWindow $Var33 "#32770" 0
+   137  EW_GETDLGITEM      GetDlgItem $Var34 $Var33 1006
+   138  EW_GETDLGITEM      GetDlgItem $Var35 $Var33 1020
+   139  EW_GETDLGITEM      GetDlgItem $Var36 $Var33 1019
+   140  EW_GETDLGITEM      GetDlgItem $Var37 $Var33 1001
+   141  EW_GETDLGITEM      GetDlgItem $Var38 $Var33 1023
+   142  EW_GETDLGITEM      GetDlgItem $Var39 $Var33 1024
+   143  EW_CALL            Call label_1784
+   144  EW_RET             Return
+   145  EW_RET             Return
+   146  EW_SENDMESSAGE     SendMessage none "$Var0" "0x000C" "0" (flags=0x2)
+   147  EW_SENDMESSAGE     SendMessage none "$Var2" "0x000C" "0" (flags=0x2)
+   148  EW_RET             Return
+   149  EW_FINDWINDOW      FindWindow $Var40 "#32770" 0
+   150  EW_GETDLGITEM      GetDlgItem $Var41 $Var40 1006
+   151  EW_GETDLGITEM      GetDlgItem $Var42 $Var40 1004
+   152  EW_GETDLGITEM      GetDlgItem $Var43 $Var40 1027
+   153  EW_GETDLGITEM      GetDlgItem $Var44 $Var40 1016
+   154  EW_CALL            Call label_1786
+   155  EW_RET             Return
+   156  EW_IFFLAG          IfFlag bit=3 mask=-1 -> set:label_160 clear:0
+   157  EW_SENDMESSAGE     SendMessage none "$Var0" "0x000C" "0" (flags=0x2)
+   158  EW_SENDMESSAGE     SendMessage none "$Var2" "0x000C" "0" (flags=0x2)
+   159  EW_NOP             Goto label_162
+   160  EW_SENDMESSAGE     SendMessage none "$Var0" "0x000C" "0" (flags=0x2)
+   161  EW_SENDMESSAGE     SendMessage none "$Var2" "0x000C" "0" (flags=0x2)
+   162  EW_IFFLAG          IfFlag bit=3 mask=-1 -> set:label_164 clear:0
+   163  EW_WRITEREG        WriteRegStr HKLM "Software\AMICON\Amiconnect" "Installer Language" "$LANGUAGE"
+   164  EW_RET             Return
+
+===== .onGUIInit   [entries 165..189] =====
+   165  EW_GETDLGITEM      GetDlgItem $Var0 $HWNDPARENT 1037
+   166  EW_CREATEFONT      CreateFont $Var1 $(lang[-40]) height=-58 weight=700 italic=0 underline=0 strike=0
+   167  EW_SENDMESSAGE     SendMessage none "$Var0" "0x0030" "$Var1" (flags=0x0)
+   168  EW_GETDLGITEM      GetDlgItem $Var2 $HWNDPARENT 1038
+   169  EW_SETCTLCOLORS    SetCtlColors "$Var0" <colors "Dir">
+   170  EW_SETCTLCOLORS    SetCtlColors "$Var2" <colors "Dir">
+   171  EW_CALL            Call label_2742
+   172  EW_SETFLAG         SetFlag bit=13 value=0
+   173  EW_EXTRACTFILE     File "$PLUGINSDIR\modern-header.bmp"   ; data +0x1ECA0 size=34256
+   174  EW_GETDLGITEM      GetDlgItem $Var4 $HWNDPARENT 1046
+   175  EW_LOADANDSETIMAGE LoadAndSetImage <ctrl=$(BRANDING) type="$PLUGINSDIR\modern-header.bmp" lrflags=1046 img=3221291024>
+   176  EW_GETDLGITEM      GetDlgItem $Var3 $HWNDPARENT 1034
+   177  EW_SETCTLCOLORS    SetCtlColors "$Var3" <colors 0>
+   178  EW_GETDLGITEM      GetDlgItem $Var6 $HWNDPARENT 1028
+   179  EW_SETCTLCOLORS    SetCtlColors "$Var6" <colors "ommon Files">
+   180  EW_GETDLGITEM      GetDlgItem $Var5 $HWNDPARENT 1256
+   181  EW_SETCTLCOLORS    SetCtlColors "$Var5" <colors "ommon Files">
+   182  EW_SENDMESSAGE     SendMessage none "$Var5" "0x000C" "0" (flags=0x2)
+   183  EW_GETDLGITEM      GetDlgItem $Var7 $HWNDPARENT 1035
+   184  EW_GETDLGITEM      GetDlgItem $Var8 $HWNDPARENT 1045
+   185  EW_GETDLGITEM      GetDlgItem $Var9 $HWNDPARENT 1
+   186  EW_GETDLGITEM      GetDlgItem $Var10 $HWNDPARENT 2
+   187  EW_GETDLGITEM      GetDlgItem $Var11 $HWNDPARENT 3
+   188  EW_CALL            Call label_0
+   189  EW_RET             Return
+
+===== .onUserAbort   [entries 190..191] =====
+   190  EW_CALL            Call label_192
+   191  EW_RET             Return
+
+===== Function_192   [entries 192..193] =====
+   192  EW_SETFLAG         SetFlag bit=11 value=1
+   193  EW_RET             Return
+
+===== Function_194   [entries 194..281] =====
+   194  EW_PUSHPOP         Push $0
+   195  EW_PUSHPOP         Push $1
+   196  EW_PUSHPOP         Push $2
+   197  EW_PUSHPOP         Push $3
+   198  EW_PUSHPOP         Push $4
+   199  EW_PUSHPOP         Push $5
+   200  EW_PUSHPOP         Push $6
+   201  EW_PUSHPOP         Push $7
+   202  EW_INTOP           IntOp $1 0 + 0
+   203  EW_INTOP           IntOp $3 0 + 0
+   204  EW_INTOP           IntOp $5 0 + 0
+   205  EW_FINDWINDOW      FindWindow $0 "#32770" 0
+   206  EW_INTCMP          IntCmp $0 0 label_259 0 0
+   207  EW_GETDLGITEM      GetDlgItem $0 $0 1016
+   208  EW_INTCMP          IntCmp $0 0 label_259 0 0
+   209  EW_INTCMP          IntCmp $Var97 13 0 label_212 label_212
+   210  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+   211  EW_NOP             Goto label_213
+   212  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+   213  EW_INTOP           IntOp $Var97 0 + 13
+   214  EW_INTCMP          IntCmp $5 0 label_259 0 0
+   215  EW_FSEEK           FileSeek $5 0 END $4
+   216  EW_INTCMP          IntCmp $4 0 0 label_219 label_219
+   217  EW_FPUTS           FileWriteByte $5 255
+   218  EW_FPUTS           FileWriteByte $5 254
+   219  EW_LOCKWINDOW      LockWindow on
+   220  EW_SENDMESSAGE     SendMessage "amFilesDir" "$0" "4100" "0" (flags=0x0)
+   221  EW_INTOP           IntOp $2 1024 + 0
+   222  EW_INTOP           IntOp $2 $2 * 2
+   223  EW_CALL            Call label_2742
+   224  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   225  EW_SETFLAG         SetFlag bit=13 value=0
+   226  EW_PUSHPOP         Push $2
+   227  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Alloc")
+   228  EW_PUSHPOP         Pop $3
+   229  EW_INTCMP          IntCmp $3 0 label_259 0 0
+   230  EW_INTOP           IntOp $2 0 + 0
+   231  EW_CALL            Call label_2742
+   232  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   233  EW_SETFLAG         SetFlag bit=13 value=0
+   234  EW_PUSHPOP         Push "*(i, i, i, i, i, i, i, i, i) i (0, 0, 0, 0, 0, r3, 1024) .r1"
+   235  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   236  EW_INTCMP          IntCmp $2 $6 label_259 0 0
+   237  EW_CALL            Call label_2742
+   238  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   239  EW_SETFLAG         SetFlag bit=13 value=0
+   240  EW_PUSHPOP         Push "User32::SendMessageW(i, i, i, i) i ($0, 4211, $2, r1)"
+   241  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   242  EW_CALL            Call label_2742
+   243  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   244  EW_SETFLAG         SetFlag bit=13 value=0
+   245  EW_PUSHPOP         Push "*$3(&t1024 .r4)"
+   246  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   247  EW_STRCMP          StrCmp $4 0 label_257 0
+   248  EW_STRLEN          StrLen $7 $4
+   249  EW_INTOP           IntOp $7 $7 << 1
+   250  EW_CALL            Call label_2742
+   251  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   252  EW_SETFLAG         SetFlag bit=13 value=0
+   253  EW_PUSHPOP         Push "kernel32::WriteFile(i r5, i r3, i r7, *i .r4, i 0) i r7"
+   254  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   255  EW_INTCMP          IntCmp $7 0 label_259 0 0
+   256  EW_LOCKWINDOW      LockWindow on
+   257  EW_INTOP           IntOp $2 $2 + 1
+   258  EW_NOP             Goto label_236
+   259  EW_INTCMP          IntCmp $5 0 label_261 0 0
+   260  EW_FCLOSE          FileClose $5
+   261  EW_INTCMP          IntCmp $1 0 label_267 0 0
+   262  EW_CALL            Call label_2742
+   263  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   264  EW_SETFLAG         SetFlag bit=13 value=0
+   265  EW_PUSHPOP         Push $1
+   266  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Free")
+   267  EW_INTCMP          IntCmp $3 0 label_273 0 0
+   268  EW_CALL            Call label_2742
+   269  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   270  EW_SETFLAG         SetFlag bit=13 value=0
+   271  EW_PUSHPOP         Push $3
+   272  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Free")
+   273  EW_PUSHPOP         Pop $7
+   274  EW_PUSHPOP         Pop $6
+   275  EW_PUSHPOP         Pop $5
+   276  EW_PUSHPOP         Pop $4
+   277  EW_PUSHPOP         Pop $3
+   278  EW_PUSHPOP         Pop $2
+   279  EW_PUSHPOP         Pop $1
+   280  EW_PUSHPOP         Pop $0
+   281  EW_RET             Return
+
+===== Function_282   [entries 282..432] =====
+   282  EW_UPDATETEXT      DetailPrint "Fixing user configuration..."
+   283  EW_PUSHPOP         Push $4
+   284  EW_PUSHPOP         Push $5
+   285  EW_PUSHPOP         Push $6
+   286  EW_ASSIGNVAR       StrCpy $6 "Fixing user configuration..."
+   287  EW_INTOP           IntOp $5 0 + 0
+   288  EW_INTCMP          IntCmp $Var97 13 0 label_291 label_291
+   289  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+   290  EW_NOP             Goto label_292
+   291  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+   292  EW_INTOP           IntOp $Var97 0 + 13
+   293  EW_INTCMP          IntCmp $5 0 label_300 0 0
+   294  EW_FSEEK           FileSeek $5 0 END $4
+   295  EW_INTCMP          IntCmp $4 0 0 label_299 label_299
+   296  EW_FPUTS           FileWriteByte $5 255
+   297  EW_FPUTS           FileWriteByte $5 254
+   298  EW_LOCKWINDOW      LockWindow on
+   299  EW_LOCKWINDOW      LockWindow on
+   300  EW_INTCMP          IntCmp $5 0 label_302 0 0
+   301  EW_FCLOSE          FileClose $5
+   302  EW_PUSHPOP         Pop $6
+   303  EW_PUSHPOP         Pop $5
+   304  EW_PUSHPOP         Pop $4
+   305  EW_PUSHPOP         Push $0
+   306  EW_PUSHPOP         Push $1
+   307  EW_PUSHPOP         Push $2
+   308  EW_PUSHPOP         Push $4
+   309  EW_PUSHPOP         Push $7
+   310  EW_PUSHPOP         Push $8
+   311  EW_GETFULLPATHNAME GetFullPathName $Var15843 0
+   312  EW_FINDFIRST       FindFirst $2 $1 "$0\*.*"
+   313  EW_STRCMP          StrCmp $2 0 label_402 0
+   314  EW_STRCMP          StrCmp $2 "." label_400 0
+   315  EW_STRCMP          StrCmp $2 ".." label_400 0
+   316  EW_ASSIGNVAR       StrCpy $4 "$0\$2\AppData\Local\Amiconnect\cfg.ini"
+   317  EW_IFFILEEXISTS    IfFileExists "$4" 0 label_400
+   318  EW_UPDATETEXT      DetailPrint "Modifying config: $4"
+   319  EW_PUSHPOP         Push $4
+   320  EW_PUSHPOP         Push $5
+   321  EW_PUSHPOP         Push $6
+   322  EW_ASSIGNVAR       StrCpy $6 "Modifying config: $4"
+   323  EW_INTOP           IntOp $5 0 + 0
+   324  EW_INTCMP          IntCmp $Var97 13 0 label_327 label_327
+   325  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+   326  EW_NOP             Goto label_328
+   327  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+   328  EW_INTOP           IntOp $Var97 0 + 13
+   329  EW_INTCMP          IntCmp $5 0 label_336 0 0
+   330  EW_FSEEK           FileSeek $5 0 END $4
+   331  EW_INTCMP          IntCmp $4 0 0 label_335 label_335
+   332  EW_FPUTS           FileWriteByte $5 255
+   333  EW_FPUTS           FileWriteByte $5 254
+   334  EW_LOCKWINDOW      LockWindow on
+   335  EW_LOCKWINDOW      LockWindow on
+   336  EW_INTCMP          IntCmp $5 0 label_338 0 0
+   337  EW_FCLOSE          FileClose $5
+   338  EW_PUSHPOP         Pop $6
+   339  EW_PUSHPOP         Pop $5
+   340  EW_PUSHPOP         Pop $4
+   341  EW_ASSIGNVAR       StrCpy $7 "powershell -WindowStyle hidden -command "
+   342  EW_ASSIGNVAR       StrCpy $7 "$7$\"(Get-Content '$4') "
+   343  EW_ASSIGNVAR       StrCpy $7 "$7-replace '\$\"$\"ALLOWNOVPNIPPACK\$\"$\"\s*:\s*0', "
+   344  EW_ASSIGNVAR       StrCpy $7 "$7'\$\"$\"ALLOWNOVPNIPPACK\$\"$\": 1' "
+   345  EW_ASSIGNVAR       StrCpy $7 "$7| Set-Content '$4'$\""
+   346  EW_UPDATETEXT      DetailPrint "Executing: $7"
+   347  EW_PUSHPOP         Push $4
+   348  EW_PUSHPOP         Push $5
+   349  EW_PUSHPOP         Push $6
+   350  EW_ASSIGNVAR       StrCpy $6 "Executing: $7"
+   351  EW_INTOP           IntOp $5 0 + 0
+   352  EW_INTCMP          IntCmp $Var97 13 0 label_355 label_355
+   353  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+   354  EW_NOP             Goto label_356
+   355  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+   356  EW_INTOP           IntOp $Var97 0 + 13
+   357  EW_INTCMP          IntCmp $5 0 label_364 0 0
+   358  EW_FSEEK           FileSeek $5 0 END $4
+   359  EW_INTCMP          IntCmp $4 0 0 label_363 label_363
+   360  EW_FPUTS           FileWriteByte $5 255
+   361  EW_FPUTS           FileWriteByte $5 254
+   362  EW_LOCKWINDOW      LockWindow on
+   363  EW_LOCKWINDOW      LockWindow on
+   364  EW_INTCMP          IntCmp $5 0 label_366 0 0
+   365  EW_FCLOSE          FileClose $5
+   366  EW_PUSHPOP         Pop $6
+   367  EW_PUSHPOP         Pop $5
+   368  EW_PUSHPOP         Pop $4
+   369  EW_CALL            Call label_2742
+   370  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+   371  EW_SETFLAG         SetFlag bit=13 value=0
+   372  EW_PUSHPOP         Push $7
+   373  EW_PUSHPOP         Push "/TIMEOUT=30000"
+   374  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   375  EW_PUSHPOP         Pop $8
+   376  EW_STRCMP          StrCmp $8 0 label_400 0
+   377  EW_UPDATETEXT      DetailPrint "Failed to modify $4 (error $8)"
+   378  EW_PUSHPOP         Push $4
+   379  EW_PUSHPOP         Push $5
+   380  EW_PUSHPOP         Push $6
+   381  EW_ASSIGNVAR       StrCpy $6 "Failed to modify $4 (error $8)"
+   382  EW_INTOP           IntOp $5 0 + 0
+   383  EW_INTCMP          IntCmp $Var97 13 0 label_386 label_386
+   384  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+   385  EW_NOP             Goto label_387
+   386  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+   387  EW_INTOP           IntOp $Var97 0 + 13
+   388  EW_INTCMP          IntCmp $5 0 label_395 0 0
+   389  EW_FSEEK           FileSeek $5 0 END $4
+   390  EW_INTCMP          IntCmp $4 0 0 label_394 label_394
+   391  EW_FPUTS           FileWriteByte $5 255
+   392  EW_FPUTS           FileWriteByte $5 254
+   393  EW_LOCKWINDOW      LockWindow on
+   394  EW_LOCKWINDOW      LockWindow on
+   395  EW_INTCMP          IntCmp $5 0 label_397 0 0
+   396  EW_FCLOSE          FileClose $5
+   397  EW_PUSHPOP         Pop $6
+   398  EW_PUSHPOP         Pop $5
+   399  EW_PUSHPOP         Pop $4
+   400  EW_FINDNEXT        FindNext $2 $1
+   401  EW_NOP             Goto label_313
+   402  EW_FINDCLOSE       FindClose $1
+   403  EW_PUSHPOP         Pop $8
+   404  EW_PUSHPOP         Pop $7
+   405  EW_PUSHPOP         Pop $4
+   406  EW_PUSHPOP         Pop $2
+   407  EW_PUSHPOP         Pop $1
+   408  EW_PUSHPOP         Pop $0
+   409  EW_UPDATETEXT      DetailPrint "User's configuration fix completed"
+   410  EW_PUSHPOP         Push $4
+   411  EW_PUSHPOP         Push $5
+   412  EW_PUSHPOP         Push $6
+   413  EW_ASSIGNVAR       StrCpy $6 "User's configuration fix completed"
+   414  EW_INTOP           IntOp $5 0 + 0
+   415  EW_INTCMP          IntCmp $Var97 13 0 label_418 label_418
+   416  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+   417  EW_NOP             Goto label_419
+   418  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+   419  EW_INTOP           IntOp $Var97 0 + 13
+   420  EW_INTCMP          IntCmp $5 0 label_427 0 0
+   421  EW_FSEEK           FileSeek $5 0 END $4
+   422  EW_INTCMP          IntCmp $4 0 0 label_426 label_426
+   423  EW_FPUTS           FileWriteByte $5 255
+   424  EW_FPUTS           FileWriteByte $5 254
+   425  EW_LOCKWINDOW      LockWindow on
+   426  EW_LOCKWINDOW      LockWindow on
+   427  EW_INTCMP          IntCmp $5 0 label_429 0 0
+   428  EW_FCLOSE          FileClose $5
+   429  EW_PUSHPOP         Pop $6
+   430  EW_PUSHPOP         Pop $5
+   431  EW_PUSHPOP         Pop $4
+   432  EW_RET             Return
+
+===== Function_433   [entries 433..501] =====
+   433  EW_UPDATETEXT      DetailPrint "Cleaning old files..."
+   434  EW_PUSHPOP         Push $4
+   435  EW_PUSHPOP         Push $5
+   436  EW_PUSHPOP         Push $6
+   437  EW_ASSIGNVAR       StrCpy $6 "Cleaning old files..."
+   438  EW_INTOP           IntOp $5 0 + 0
+   439  EW_INTCMP          IntCmp $Var97 13 0 label_442 label_442
+   440  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+   441  EW_NOP             Goto label_443
+   442  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+   443  EW_INTOP           IntOp $Var97 0 + 13
+   444  EW_INTCMP          IntCmp $5 0 label_451 0 0
+   445  EW_FSEEK           FileSeek $5 0 END $4
+   446  EW_INTCMP          IntCmp $4 0 0 label_450 label_450
+   447  EW_FPUTS           FileWriteByte $5 255
+   448  EW_FPUTS           FileWriteByte $5 254
+   449  EW_LOCKWINDOW      LockWindow on
+   450  EW_LOCKWINDOW      LockWindow on
+   451  EW_INTCMP          IntCmp $5 0 label_453 0 0
+   452  EW_FCLOSE          FileClose $5
+   453  EW_PUSHPOP         Pop $6
+   454  EW_PUSHPOP         Pop $5
+   455  EW_PUSHPOP         Pop $4
+   456  EW_SETFLAG         SetFlag bit=2 value=0
+   457  EW_IFFILEEXISTS    IfFileExists "$INSTDIR\usercfg.ini" 0 label_459
+   458  EW_DELETEFILE      Delete "$INSTDIR\usercfg.ini"
+   459  EW_PUSHPOP         Push $0
+   460  EW_PUSHPOP         Push $1
+   461  EW_PUSHPOP         Push $2
+   462  EW_PUSHPOP         Push $4
+   463  EW_GETFULLPATHNAME GetFullPathName $Var15843 0
+   464  EW_FINDFIRST       FindFirst $2 $1 "$0\*.*"
+   465  EW_STRCMP          StrCmp $2 0 label_473 0
+   466  EW_STRCMP          StrCmp $2 "." label_471 0
+   467  EW_STRCMP          StrCmp $2 ".." label_471 0
+   468  EW_ASSIGNVAR       StrCpy $4 "$0\$2\AppData\Local\Amiconnect\usercfg.ini"
+   469  EW_IFFILEEXISTS    IfFileExists "$4" 0 label_471
+   470  EW_DELETEFILE      Delete "$4"
+   471  EW_FINDNEXT        FindNext $2 $1
+   472  EW_NOP             Goto label_465
+   473  EW_FINDCLOSE       FindClose $1
+   474  EW_PUSHPOP         Pop $4
+   475  EW_PUSHPOP         Pop $2
+   476  EW_PUSHPOP         Pop $1
+   477  EW_PUSHPOP         Pop $0
+   478  EW_UPDATETEXT      DetailPrint "Cleaning old files done"
+   479  EW_PUSHPOP         Push $4
+   480  EW_PUSHPOP         Push $5
+   481  EW_PUSHPOP         Push $6
+   482  EW_ASSIGNVAR       StrCpy $6 "Cleaning old files done"
+   483  EW_INTOP           IntOp $5 0 + 0
+   484  EW_INTCMP          IntCmp $Var97 13 0 label_487 label_487
+   485  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+   486  EW_NOP             Goto label_488
+   487  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+   488  EW_INTOP           IntOp $Var97 0 + 13
+   489  EW_INTCMP          IntCmp $5 0 label_496 0 0
+   490  EW_FSEEK           FileSeek $5 0 END $4
+   491  EW_INTCMP          IntCmp $4 0 0 label_495 label_495
+   492  EW_FPUTS           FileWriteByte $5 255
+   493  EW_FPUTS           FileWriteByte $5 254
+   494  EW_LOCKWINDOW      LockWindow on
+   495  EW_LOCKWINDOW      LockWindow on
+   496  EW_INTCMP          IntCmp $5 0 label_498 0 0
+   497  EW_FCLOSE          FileClose $5
+   498  EW_PUSHPOP         Pop $6
+   499  EW_PUSHPOP         Pop $5
+   500  EW_PUSHPOP         Pop $4
+   501  EW_RET             Return
+
+===== SECTION_0_Amiconnect   [entries 502..506] =====
+   502  EW_SENDMESSAGE     SendMessage none "$HWNDPARENT" "0x000C" "0" (flags=0x2)
+   503  EW_PUSHPOP         Push 0
+   504  EW_PUSHPOP         Push "L"
+   505  EW_CALL            Call label_507
+   506  EW_NOP             Goto label_673
+
+===== Function_507   [entries 507..811] =====
+   507  EW_PUSHPOP         Push $1
+   508  EW_PUSHPOP         Exch
+   509  EW_PUSHPOP         Pop $1
+   510  EW_PUSHPOP         Exch
+   511  EW_PUSHPOP         Push $0
+   512  EW_PUSHPOP         Exch
+   513  EW_PUSHPOP         Pop $0
+   514  EW_PUSHPOP         Exch
+   515  EW_PUSHPOP         Push $2
+   516  EW_PUSHPOP         Push $3
+   517  EW_PUSHPOP         Push $4
+   518  EW_PUSHPOP         Push $5
+   519  EW_PUSHPOP         Push $6
+   520  EW_PUSHPOP         Push $7
+   521  EW_SETFLAG         SetFlag bit=2 value=0
+   522  EW_STRCMP          StrCmp $1 "L" label_547 0
+   523  EW_STRCMP          StrCmp $1 "A" label_531 0
+   524  EW_STRCMP          StrCmp $1 "C" label_531 0
+   525  EW_STRCMP          StrCmp $1 "M" label_531 0
+   526  EW_STRCMP          StrCmp $1 "LS" label_547 0
+   527  EW_STRCMP          StrCmp $1 "AS" label_531 0
+   528  EW_STRCMP          StrCmp $1 "CS" label_531 0
+   529  EW_STRCMP          StrCmp $1 "MS" label_531 0
+   530  EW_NOP             Goto label_636
+   531  EW_IFFILEEXISTS    IfFileExists "$0" 0 label_636
+   532  EW_CALL            Call label_2742
+   533  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   534  EW_SETFLAG         SetFlag bit=13 value=0
+   535  EW_PUSHPOP         Push "*(i,l,l,l,i,i,i,i,&t260,&t14) p .r6"
+   536  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   537  EW_CALL            Call label_2742
+   538  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   539  EW_SETFLAG         SetFlag bit=13 value=0
+   540  EW_PUSHPOP         Push "kernel32::FindFirstFile(t,p)p(r0,r6) .r2"
+   541  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   542  EW_CALL            Call label_2742
+   543  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   544  EW_SETFLAG         SetFlag bit=13 value=0
+   545  EW_PUSHPOP         Push "kernel32::FindClose(i)i(r2)"
+   546  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   547  EW_CALL            Call label_2742
+   548  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   549  EW_SETFLAG         SetFlag bit=13 value=0
+   550  EW_PUSHPOP         Push "*(&i2,&i2,&i2,&i2,&i2,&i2,&i2,&i2) p .r7"
+   551  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   552  EW_STRCMP          StrCmp $1 "L" 0 label_559
+   553  EW_CALL            Call label_2742
+   554  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   555  EW_SETFLAG         SetFlag bit=13 value=0
+   556  EW_PUSHPOP         Push "kernel32::GetLocalTime(p)i(r7)"
+   557  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   558  EW_NOP             Goto label_600
+   559  EW_STRCMP          StrCmp $1 "LS" 0 label_566
+   560  EW_CALL            Call label_2742
+   561  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   562  EW_SETFLAG         SetFlag bit=13 value=0
+   563  EW_PUSHPOP         Push "kernel32::GetSystemTime(p)i(r7)"
+   564  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   565  EW_NOP             Goto label_600
+   566  EW_CALL            Call label_2742
+   567  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   568  EW_SETFLAG         SetFlag bit=13 value=0
+   569  EW_PUSHPOP         Push "*$6(i,l,l,l,i,i,i,i,&t260,&t14)p(,.r4,.r3,.r2)"
+   570  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   571  EW_CALL            Call label_2742
+   572  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   573  EW_SETFLAG         SetFlag bit=13 value=0
+   574  EW_PUSHPOP         Push $6
+   575  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Free")
+   576  EW_STRCMP          StrCmp $1 "A" 0 label_579
+   577  EW_ASSIGNVAR       StrCpy $2 $3
+   578  EW_NOP             Goto label_590
+   579  EW_STRCMP          StrCmp $1 "C" 0 label_582
+   580  EW_ASSIGNVAR       StrCpy $2 $4
+   581  EW_NOP             Goto label_590
+   582  EW_STRCMP          StrCmp $1 "M" label_590 0
+   583  EW_STRCMP          StrCmp $1 "AS" label_595 0
+   584  EW_STRCMP          StrCmp $1 "CS" 0 label_587
+   585  EW_ASSIGNVAR       StrCpy $3 $4
+   586  EW_NOP             Goto label_595
+   587  EW_STRCMP          StrCmp $1 "MS" 0 label_590
+   588  EW_ASSIGNVAR       StrCpy $3 $2
+   589  EW_NOP             Goto label_595
+   590  EW_CALL            Call label_2742
+   591  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   592  EW_SETFLAG         SetFlag bit=13 value=0
+   593  EW_PUSHPOP         Push "kernel32::FileTimeToLocalFileTime(*l,*l)i(r2,.r3)"
+   594  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   595  EW_CALL            Call label_2742
+   596  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   597  EW_SETFLAG         SetFlag bit=13 value=0
+   598  EW_PUSHPOP         Push "kernel32::FileTimeToSystemTime(*l,i)i(r3,r7)"
+   599  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   600  EW_CALL            Call label_2742
+   601  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   602  EW_SETFLAG         SetFlag bit=13 value=0
+   603  EW_PUSHPOP         Push "*$7(&i2.r5,&i2.r6,&i2.r4,&i2.r0,&i2.r3,&i2.r2,&i2.r1,&i2)"
+   604  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   605  EW_CALL            Call label_2742
+   606  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   607  EW_SETFLAG         SetFlag bit=13 value=0
+   608  EW_PUSHPOP         Push $7
+   609  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Free")
+   610  EW_INTFMT          IntFmt $6 "%.2u" $6
+   611  EW_INTFMT          IntFmt $0 "%.2u" $0
+   612  EW_INTFMT          IntFmt $3 "%.2u" $3
+   613  EW_INTFMT          IntFmt $2 "%.2u" $2
+   614  EW_INTFMT          IntFmt $1 "%.2u" $1
+   615  EW_STRCMP          StrCmp $4 0 0 label_618
+   616  EW_ASSIGNVAR       StrCpy $4 "Sunday"
+   617  EW_NOP             Goto label_644
+   618  EW_STRCMP          StrCmp $4 1 0 label_621
+   619  EW_ASSIGNVAR       StrCpy $4 "Monday"
+   620  EW_NOP             Goto label_644
+   621  EW_STRCMP          StrCmp $4 2 0 label_624
+   622  EW_ASSIGNVAR       StrCpy $4 "Tuesday"
+   623  EW_NOP             Goto label_644
+   624  EW_STRCMP          StrCmp $4 3 0 label_627
+   625  EW_ASSIGNVAR       StrCpy $4 "Wednesday"
+   626  EW_NOP             Goto label_644
+   627  EW_STRCMP          StrCmp $4 4 0 label_630
+   628  EW_ASSIGNVAR       StrCpy $4 "Thursday"
+   629  EW_NOP             Goto label_644
+   630  EW_STRCMP          StrCmp $4 5 0 label_633
+   631  EW_ASSIGNVAR       StrCpy $4 "Friday"
+   632  EW_NOP             Goto label_644
+   633  EW_STRCMP          StrCmp $4 6 0 label_636
+   634  EW_ASSIGNVAR       StrCpy $4 "Saturday"
+   635  EW_NOP             Goto label_644
+   636  EW_SETFLAG         SetFlag bit=2 value=1
+   637  EW_ASSIGNVAR       StrCpy $0 0
+   638  EW_ASSIGNVAR       StrCpy $1 0
+   639  EW_ASSIGNVAR       StrCpy $2 0
+   640  EW_ASSIGNVAR       StrCpy $3 0
+   641  EW_ASSIGNVAR       StrCpy $4 0
+   642  EW_ASSIGNVAR       StrCpy $5 0
+   643  EW_ASSIGNVAR       StrCpy $6 0
+   644  EW_PUSHPOP         Pop $7
+   645  EW_PUSHPOP         Push $6
+   646  EW_PUSHPOP         Exch
+   647  EW_PUSHPOP         Pop $6
+   648  EW_PUSHPOP         Exch
+   649  EW_PUSHPOP         Push $5
+   650  EW_PUSHPOP         Exch
+   651  EW_PUSHPOP         Pop $5
+   652  EW_PUSHPOP         Exch 2
+   653  EW_PUSHPOP         Push $4
+   654  EW_PUSHPOP         Exch
+   655  EW_PUSHPOP         Pop $4
+   656  EW_PUSHPOP         Exch 3
+   657  EW_PUSHPOP         Push $3
+   658  EW_PUSHPOP         Exch
+   659  EW_PUSHPOP         Pop $3
+   660  EW_PUSHPOP         Exch 4
+   661  EW_PUSHPOP         Push $2
+   662  EW_PUSHPOP         Exch
+   663  EW_PUSHPOP         Pop $2
+   664  EW_PUSHPOP         Exch 5
+   665  EW_PUSHPOP         Push $1
+   666  EW_PUSHPOP         Exch
+   667  EW_PUSHPOP         Pop $1
+   668  EW_PUSHPOP         Exch 6
+   669  EW_PUSHPOP         Push $0
+   670  EW_PUSHPOP         Exch
+   671  EW_PUSHPOP         Pop $0
+   672  EW_RET             Return
+   673  EW_PUSHPOP         Pop $0
+   674  EW_PUSHPOP         Pop $1
+   675  EW_PUSHPOP         Pop $2
+   676  EW_PUSHPOP         Pop $3
+   677  EW_PUSHPOP         Pop $4
+   678  EW_PUSHPOP         Pop $5
+   679  EW_PUSHPOP         Pop $6
+   680  EW_UPDATETEXT      DetailPrint "$0.$1.$2 $4:$5:$6"
+   681  EW_PUSHPOP         Push $4
+   682  EW_PUSHPOP         Push $5
+   683  EW_PUSHPOP         Push $6
+   684  EW_ASSIGNVAR       StrCpy $6 "$0.$1.$2 $4:$5:$6"
+   685  EW_INTOP           IntOp $5 0 + 0
+   686  EW_INTCMP          IntCmp $Var97 13 0 label_689 label_689
+   687  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+   688  EW_NOP             Goto label_690
+   689  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+   690  EW_INTOP           IntOp $Var97 0 + 13
+   691  EW_INTCMP          IntCmp $5 0 label_698 0 0
+   692  EW_FSEEK           FileSeek $5 0 END $4
+   693  EW_INTCMP          IntCmp $4 0 0 label_697 label_697
+   694  EW_FPUTS           FileWriteByte $5 255
+   695  EW_FPUTS           FileWriteByte $5 254
+   696  EW_LOCKWINDOW      LockWindow on
+   697  EW_LOCKWINDOW      LockWindow on
+   698  EW_INTCMP          IntCmp $5 0 label_700 0 0
+   699  EW_FCLOSE          FileClose $5
+   700  EW_PUSHPOP         Pop $6
+   701  EW_PUSHPOP         Pop $5
+   702  EW_PUSHPOP         Pop $4
+   703  EW_UPDATETEXT      DetailPrint "Installing AMICON AMICONNECT version 1.30.3004"
+   704  EW_PUSHPOP         Push $4
+   705  EW_PUSHPOP         Push $5
+   706  EW_PUSHPOP         Push $6
+   707  EW_ASSIGNVAR       StrCpy $6 "Installing AMICON AMICONNECT version 1.30.3004"
+   708  EW_INTOP           IntOp $5 0 + 0
+   709  EW_INTCMP          IntCmp $Var97 13 0 label_712 label_712
+   710  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+   711  EW_NOP             Goto label_713
+   712  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+   713  EW_INTOP           IntOp $Var97 0 + 13
+   714  EW_INTCMP          IntCmp $5 0 label_721 0 0
+   715  EW_FSEEK           FileSeek $5 0 END $4
+   716  EW_INTCMP          IntCmp $4 0 0 label_720 label_720
+   717  EW_FPUTS           FileWriteByte $5 255
+   718  EW_FPUTS           FileWriteByte $5 254
+   719  EW_LOCKWINDOW      LockWindow on
+   720  EW_LOCKWINDOW      LockWindow on
+   721  EW_INTCMP          IntCmp $5 0 label_723 0 0
+   722  EW_FCLOSE          FileClose $5
+   723  EW_PUSHPOP         Pop $6
+   724  EW_PUSHPOP         Pop $5
+   725  EW_PUSHPOP         Pop $4
+   726  EW_SETFLAG         SetFlag bit=1 value=1
+   727  EW_ASSIGNVAR       StrCpy $Var98 "$SHELL($PROGRAMS|$SMPROGRAMS)"
+   728  EW_SETFLAG         SetFlag bit=1 value=0
+   729  EW_ASSIGNVAR       StrCpy $Var99 "$SHELL($PROGRAMS|$SMPROGRAMS)"
+   730  EW_STRCMP          StrCmp 0 0 0 label_738
+   731  EW_SETFLAG         SetFlag bit=12 value=0
+   732  EW_CALL            Call label_2742
+   733  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+   734  EW_SETFLAG         SetFlag bit=13 value=0
+   735  EW_PUSHPOP         Push "kernel32::Wow64DisableWow64FsRedirection(*i .r1) i r2"
+   736  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+   737  EW_INTOP           IntOp $Var50 $1 + 0
+   738  EW_SETFLAG         SetFlag bit=2 value=0
+   739  EW_SETFLAG         SetFlag bit=4 value=1
+   740  EW_SETFLAG         SetFlag bit=2 value=0
+   741  EW_CALL            Call label_2609
+   742  EW_CALL            Call label_2702
+   743  EW_SETFLAG         SetFlag bit=2 value=0
+   744  EW_CREATEDIR       CreateDirectory $INSTDIR
+   745  EW_SLEEP           Sleep 1234
+   746  EW_IFFILEEXISTS    IfFileExists "$Var51\SYSTEM32\certutil.exe" 0 label_788
+   747  EW_CREATEDIR       SetOutPath "$Var52\AMICLIENT"
+   748  EW_EXTRACTFILE     File "AmiCert_r1.cer"   ; data +0x2A088 size=1078
+   749  EW_CALL            Call label_2742
+   750  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+   751  EW_SETFLAG         SetFlag bit=13 value=0
+   752  EW_PUSHPOP         Push "$\"$Var51\SYSTEM32\certutil.exe$\" -addstore $\"Root$\"             $Var52\AMICLIENT\AmiCert_r1.cer"
+   753  EW_PUSHPOP         Push "/TIMEOUT=30000"
+   754  EW_PUSHPOP         Push "/OEM"
+   755  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   756  EW_EXTRACTFILE     File "AmiCert_r2.cer"   ; data +0x2A4C6 size=1395
+   757  EW_CALL            Call label_2742
+   758  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+   759  EW_SETFLAG         SetFlag bit=13 value=0
+   760  EW_PUSHPOP         Push "$\"$Var51\SYSTEM32\certutil.exe$\" -addstore $\"CA$\"               $Var52\AMICLIENT\AmiCert_r2.cer"
+   761  EW_PUSHPOP         Push "/TIMEOUT=30000"
+   762  EW_PUSHPOP         Push "/OEM"
+   763  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   764  EW_EXTRACTFILE     File "AmiCert_r3.cer"   ; data +0x2AA41 size=1568
+   765  EW_CALL            Call label_2742
+   766  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+   767  EW_SETFLAG         SetFlag bit=13 value=0
+   768  EW_PUSHPOP         Push "$\"$Var51\SYSTEM32\certutil.exe$\" -addstore $\"CA$\"               $Var52\AMICLIENT\AmiCert_r3.cer"
+   769  EW_PUSHPOP         Push "/TIMEOUT=30000"
+   770  EW_PUSHPOP         Push "/OEM"
+   771  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   772  EW_EXTRACTFILE     File "AmiCert_o1.cer"   ; data +0x2B069 size=1739
+   773  EW_CALL            Call label_2742
+   774  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+   775  EW_SETFLAG         SetFlag bit=13 value=0
+   776  EW_PUSHPOP         Push "$\"$Var51\SYSTEM32\certutil.exe$\" -addstore $\"TrustedPublisher$\" $Var52\AMICLIENT\AmiCert_o1.cer"
+   777  EW_PUSHPOP         Push "/TIMEOUT=30000"
+   778  EW_PUSHPOP         Push "/OEM"
+   779  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   780  EW_EXTRACTFILE     File "AmiCert_o2.cer"   ; data +0x2B73C size=1723
+   781  EW_CALL            Call label_2742
+   782  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+   783  EW_SETFLAG         SetFlag bit=13 value=0
+   784  EW_PUSHPOP         Push "$\"$Var51\SYSTEM32\certutil.exe$\" -addstore $\"TrustedPublisher$\" $Var52\AMICLIENT\AmiCert_o2.cer"
+   785  EW_PUSHPOP         Push "/TIMEOUT=30000"
+   786  EW_PUSHPOP         Push "/OEM"
+   787  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   788  EW_CREATEDIR       SetOutPath $INSTDIR
+   789  EW_DELETEFILE      Delete "$INSTDIR\License.txt"
+   790  EW_SLEEP           Sleep 2000
+   791  EW_RENAME          Rename "$Var52\AMICLIENT\License.txt" "$INSTDIR\License.txt"
+   792  EW_DELETEFILE      Delete "$INSTDIR\amiconnect-uninst.exe"
+   793  EW_SLEEP           Sleep 2000
+   794  EW_WRITEUNINSTALLER WriteUninstaller "amiconnect-uninst.exe" (data +0x1B18463)
+   795  EW_ASSIGNVAR       StrCpy $1 0
+   796  EW_ASSIGNVAR       StrCpy $2 $Var98
+   797  EW_DELETEFILE      Delete "$2\Amiconnect\*.*"
+   798  EW_RMDIR           RMDir /r "$2\Amiconnect"
+   799  EW_DELETEFILE      Delete "$2\AMICON\Amiconnect\*.*"
+   800  EW_RMDIR           RMDir /r "$2\AMICON\Amiconnect"
+   801  EW_DELETEFILE      Delete "$2\AMICON\Амиконнект\*.*"
+   802  EW_RMDIR           RMDir /r "$2\AMICON\Амиконнект"
+   803  EW_DELETEFILE      Delete "$2\Амиконнект\*.*"
+   804  EW_RMDIR           RMDir /r "$2\Амиконнект"
+   805  EW_DELETEFILE      Delete "$2\АМИКОН\Амиконнект\*.*"
+   806  EW_RMDIR           RMDir /r "$2\АМИКОН\Амиконнект"
+   807  EW_DELETEFILE      Delete "$2\АМИКОН\Amiconnect\*.*"
+   808  EW_RMDIR           RMDir /r "$2\АМИКОН\Amiconnect"
+   809  EW_PUSHPOP         Push "$2\AMICON"
+   810  EW_CALL            Call label_812
+   811  EW_NOP             Goto label_835
+
+===== Function_812   [entries 812..905] =====
+   812  EW_PUSHPOP         Push $0
+   813  EW_PUSHPOP         Exch
+   814  EW_PUSHPOP         Pop $0
+   815  EW_PUSHPOP         Push $1
+   816  EW_SETFLAG         SetFlag bit=2 value=0
+   817  EW_FINDFIRST       FindFirst $0 $1 "$0\*.*"
+   818  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_821
+   819  EW_ASSIGNVAR       StrCpy $0 -1
+   820  EW_NOP             Goto label_830
+   821  EW_STRCMP          StrCmp $0 "." 0 label_825
+   822  EW_FINDNEXT        FindNext $0 $1
+   823  EW_STRCMP          StrCmp $0 ".." 0 label_825
+   824  EW_FINDNEXT        FindNext $0 $1
+   825  EW_FINDCLOSE       FindClose $1
+   826  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_829
+   827  EW_ASSIGNVAR       StrCpy $0 0
+   828  EW_NOP             Goto label_830
+   829  EW_ASSIGNVAR       StrCpy $0 1
+   830  EW_PUSHPOP         Pop $1
+   831  EW_PUSHPOP         Push $0
+   832  EW_PUSHPOP         Exch
+   833  EW_PUSHPOP         Pop $0
+   834  EW_RET             Return
+   835  EW_PUSHPOP         Pop $0
+   836  EW_INTCMP          IntCmp $0 0 0 label_838 label_838
+   837  EW_RMDIR           RMDir /r "$2\AMICON"
+   838  EW_PUSHPOP         Push "$2\АМИКОН"
+   839  EW_CALL            Call label_812
+   840  EW_PUSHPOP         Pop $0
+   841  EW_INTCMP          IntCmp $0 0 0 label_843 label_843
+   842  EW_RMDIR           RMDir /r "$2\АМИКОН"
+   843  EW_STRCMP          StrCmp $1 "DEL" label_847 0
+   844  EW_ASSIGNVAR       StrCpy $1 "DEL"
+   845  EW_ASSIGNVAR       StrCpy $2 $Var99
+   846  EW_NOP             Goto label_797
+   847  EW_SLEEP           Sleep 2000
+   848  EW_SETFLAG         SetFlag bit=2 value=0
+   849  EW_CALL            Call label_2742
+   850  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+   851  EW_SETFLAG         SetFlag bit=13 value=0
+   852  EW_PUSHPOP         Push "sc failure amiconnectd reset= 0 actions= $\"$\""
+   853  EW_PUSHPOP         Push "/TIMEOUT=30000"
+   854  EW_PUSHPOP         Push "/OEM"
+   855  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   856  EW_CALL            Call label_2742
+   857  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+   858  EW_SETFLAG         SetFlag bit=13 value=0
+   859  EW_PUSHPOP         Push "net stop amiconnectd"
+   860  EW_PUSHPOP         Push "/TIMEOUT=30000"
+   861  EW_PUSHPOP         Push "/OEM"
+   862  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   863  EW_CALL            Call label_2742
+   864  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+   865  EW_SETFLAG         SetFlag bit=13 value=0
+   866  EW_PUSHPOP         Push "taskkill /f /t /im amiconnect.exe"
+   867  EW_PUSHPOP         Push "/TIMEOUT=30000"
+   868  EW_PUSHPOP         Push "/OEM"
+   869  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+   870  EW_SLEEP           Sleep 3333
+   871  EW_SLEEP           Sleep 3333
+   872  EW_SETFLAG         SetFlag bit=2 value=0
+   873  EW_CREATEDIR       SetOutPath $INSTDIR
+   874  EW_SETFLAG         SetFlag bit=2 value=0
+   875  EW_READREGSTR      ReadRegStr $1 HKLM "SOFTWARE\AMICON\Amiconnect" "Install_Dir"
+   876  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_1105 clear:0
+   877  EW_UPDATETEXT      DetailPrint "Old INSTDIR = '$1'"
+   878  EW_PUSHPOP         Push $4
+   879  EW_PUSHPOP         Push $5
+   880  EW_PUSHPOP         Push $6
+   881  EW_ASSIGNVAR       StrCpy $6 "Old INSTDIR = '$1'"
+   882  EW_INTOP           IntOp $5 0 + 0
+   883  EW_INTCMP          IntCmp $Var97 13 0 label_886 label_886
+   884  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+   885  EW_NOP             Goto label_887
+   886  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+   887  EW_INTOP           IntOp $Var97 0 + 13
+   888  EW_INTCMP          IntCmp $5 0 label_895 0 0
+   889  EW_FSEEK           FileSeek $5 0 END $4
+   890  EW_INTCMP          IntCmp $4 0 0 label_894 label_894
+   891  EW_FPUTS           FileWriteByte $5 255
+   892  EW_FPUTS           FileWriteByte $5 254
+   893  EW_LOCKWINDOW      LockWindow on
+   894  EW_LOCKWINDOW      LockWindow on
+   895  EW_INTCMP          IntCmp $5 0 label_897 0 0
+   896  EW_FCLOSE          FileClose $5
+   897  EW_PUSHPOP         Pop $6
+   898  EW_PUSHPOP         Pop $5
+   899  EW_PUSHPOP         Pop $4
+   900  EW_PUSHPOP         Push $1
+   901  EW_PUSHPOP         Push "+"
+   902  EW_PUSHPOP         Push 0
+   903  EW_PUSHPOP         Push "\/"
+   904  EW_CALL            Call label_906
+   905  EW_NOP             Goto label_1064
+
+===== Function_906   [entries 906..1630] =====
+   906  EW_PUSHPOP         Push $2
+   907  EW_PUSHPOP         Exch
+   908  EW_PUSHPOP         Pop $2
+   909  EW_PUSHPOP         Exch
+   910  EW_PUSHPOP         Push $1
+   911  EW_PUSHPOP         Exch
+   912  EW_PUSHPOP         Pop $1
+   913  EW_PUSHPOP         Exch
+   914  EW_PUSHPOP         Exch 2
+   915  EW_PUSHPOP         Push $0
+   916  EW_PUSHPOP         Exch
+   917  EW_PUSHPOP         Pop $0
+   918  EW_PUSHPOP         Exch 2
+   919  EW_PUSHPOP         Exch 3
+   920  EW_PUSHPOP         Push $R0
+   921  EW_PUSHPOP         Exch
+   922  EW_PUSHPOP         Pop $R0
+   923  EW_PUSHPOP         Exch 3
+   924  EW_PUSHPOP         Push $3
+   925  EW_PUSHPOP         Push $4
+   926  EW_PUSHPOP         Push $5
+   927  EW_PUSHPOP         Push $6
+   928  EW_PUSHPOP         Push $7
+   929  EW_PUSHPOP         Push $R1
+   930  EW_PUSHPOP         Push $R2
+   931  EW_PUSHPOP         Push $R3
+   932  EW_PUSHPOP         Push $R4
+   933  EW_PUSHPOP         Push $R5
+   934  EW_PUSHPOP         Push $R6
+   935  EW_PUSHPOP         Push $R7
+   936  EW_PUSHPOP         Push $R8
+   937  EW_SETFLAG         SetFlag bit=2 value=0
+   938  EW_ASSIGNVAR       StrCpy $R2 $0 maxlen=0 startpos=-3
+   939  EW_STRCMP          StrCmp $R2 "eng" label_941 0
+   940  EW_STRCMP          StrCmp $R2 "rus" label_946 0
+   941  EW_ASSIGNVAR       StrCpy $4 65
+   942  EW_ASSIGNVAR       StrCpy $5 90
+   943  EW_ASSIGNVAR       StrCpy $6 97
+   944  EW_ASSIGNVAR       StrCpy $7 122
+   945  EW_NOP             Goto label_951
+   946  EW_ASSIGNVAR       StrCpy $4 192
+   947  EW_ASSIGNVAR       StrCpy $5 223
+   948  EW_ASSIGNVAR       StrCpy $6 224
+   949  EW_ASSIGNVAR       StrCpy $7 255
+   950  EW_NOP             Goto label_951
+   951  EW_ASSIGNVAR       StrCpy $R7 0
+   952  EW_ASSIGNVAR       StrCpy $R8 0
+   953  EW_STRCMP          StrCmp $2 0 0 label_986
+   954  EW_ASSIGNVAR       StrCpy $2 0
+   955  EW_ASSIGNVAR       StrCpy $3 $0 maxlen=1 startpos=0
+   956  EW_STRCMP          StrCmp $3 "+" label_958 0
+   957  EW_STRCMP          StrCmp $3 "-" 0 label_960
+   958  EW_ASSIGNVAR       StrCpy $0 $0 maxlen=0 startpos=1
+   959  EW_NOP             Goto label_961
+   960  EW_ASSIGNVAR       StrCpy $3 0
+   961  EW_INTOP           IntOp $0 $0 + 0
+   962  EW_STRCMP          StrCmp $0 0 label_967 0
+   963  EW_ASSIGNVAR       StrCpy $R7 $0 maxlen=1 startpos=0
+   964  EW_ASSIGNVAR       StrCpy $R8 $0 maxlen=1 startpos=1
+   965  EW_ASSIGNVAR       StrCpy $R2 $0 maxlen=1 startpos=2
+   966  EW_STRCMP          StrCmp $R2 0 label_971 label_1038
+   967  EW_STRCMP          StrCmp $3 0 label_1044 0
+   968  EW_ASSIGNVAR       StrCpy $R7 0
+   969  EW_ASSIGNVAR       StrCpy $R8 "+-"
+   970  EW_NOP             Goto label_986
+   971  EW_STRCMP          StrCmp $R7 1 label_974 0
+   972  EW_STRCMP          StrCmp $R7 2 label_974 0
+   973  EW_STRCMP          StrCmp $R7 3 0 label_1038
+   974  EW_STRCMP          StrCmp $R8 0 label_986 0
+   975  EW_STRCMP          StrCmp "$R7$R8" 23 label_977 0
+   976  EW_STRCMP          StrCmp "$R7$R8" 32 0 label_979
+   977  EW_ASSIGNVAR       StrCpy $R7 -1
+   978  EW_NOP             Goto label_986
+   979  EW_STRCMP          StrCmp "$R7$R8" 13 label_981 0
+   980  EW_STRCMP          StrCmp "$R7$R8" 31 0 label_983
+   981  EW_ASSIGNVAR       StrCpy $R7 -2
+   982  EW_NOP             Goto label_986
+   983  EW_STRCMP          StrCmp "$R7$R8" 12 label_985 0
+   984  EW_STRCMP          StrCmp "$R7$R8" 21 0 label_1038
+   985  EW_ASSIGNVAR       StrCpy $R7 -3
+   986  EW_ASSIGNVAR       StrCpy $R6 0
+   987  EW_ASSIGNVAR       StrCpy $R1 0
+   988  EW_ASSIGNVAR       StrCpy $R2 $R0 maxlen=1 startpos=$R6
+   989  EW_STRCMP          StrCmp $R2 0 label_1041 0
+   990  EW_STRCMP          StrCmp $2 0 label_997 0
+   991  EW_ASSIGNVAR       StrCpy $R4 0
+   992  EW_ASSIGNVAR       StrCpy $R5 $2 maxlen=1 startpos=$R4
+   993  EW_STRCMP          StrCmp $R5 0 label_1035 0
+   994  EW_STRCMP          StrCmp $R5 $R2 label_1036 0
+   995  EW_INTOP           IntOp $R4 $R4 + 1
+   996  EW_NOP             Goto label_992
+   997  EW_STRCMP          StrCmp $1 0 label_1004 0
+   998  EW_ASSIGNVAR       StrCpy $R4 0
+   999  EW_ASSIGNVAR       StrCpy $R5 $1 maxlen=1 startpos=$R4
+  1000  EW_STRCMP          StrCmp $R5 0 label_1004 0
+  1001  EW_STRCMP          StrCmp $R5 $R2 label_1035 0
+  1002  EW_INTOP           IntOp $R4 $R4 + 1
+  1003  EW_NOP             Goto label_999
+  1004  EW_STRCMP          StrCmp $R7 1 label_1006 0
+  1005  EW_STRCMP          StrCmp $R7 -1 0 label_1009
+  1006  EW_ASSIGNVAR       StrCpy $R4 48
+  1007  EW_ASSIGNVAR       StrCpy $R5 57
+  1008  EW_NOP             Goto label_1016
+  1009  EW_STRCMP          StrCmp $R8 "+-" 0 label_1011
+  1010  EW_STRCMP          StrCmp $3 "+" 0 label_1014
+  1011  EW_ASSIGNVAR       StrCpy $R4 $4
+  1012  EW_ASSIGNVAR       StrCpy $R5 $5
+  1013  EW_NOP             Goto label_1016
+  1014  EW_ASSIGNVAR       StrCpy $R4 $6
+  1015  EW_ASSIGNVAR       StrCpy $R5 $7
+  1016  EW_INTFMT          IntFmt $R3 "%c" $R4
+  1017  EW_STRCMP          StrCmp $R2 $R3 label_1021 0
+  1018  EW_STRCMP          StrCmp $R4 $R5 label_1025 0
+  1019  EW_INTOP           IntOp $R4 $R4 + 1
+  1020  EW_NOP             Goto label_1016
+  1021  EW_STRCMP          StrCmp $R8 "+-" label_1034 0
+  1022  EW_STRCMP          StrCmp $R7 3 label_1036 0
+  1023  EW_STRCMP          StrCmp $R7 -3 label_1035 0
+  1024  EW_STRCMP          StrCmp $R8 0 label_1035 label_1036
+  1025  EW_STRCMP          StrCmp $R8 "+-" label_1035 0
+  1026  EW_STRCMP          StrCmp $R7 3 0 label_1028
+  1027  EW_STRCMP          StrCmp $R5 57 label_1035 label_1030
+  1028  EW_STRCMP          StrCmp $R7 -3 0 label_1033
+  1029  EW_STRCMP          StrCmp $R5 57 label_1036 0
+  1030  EW_ASSIGNVAR       StrCpy $R4 48
+  1031  EW_ASSIGNVAR       StrCpy $R5 57
+  1032  EW_NOP             Goto label_1016
+  1033  EW_STRCMP          StrCmp $R8 0 label_1036 label_1035
+  1034  EW_ASSIGNVAR       StrCpy $R2 $R3
+  1035  EW_ASSIGNVAR       StrCpy $R1 "$R1$R2"
+  1036  EW_INTOP           IntOp $R6 $R6 + 1
+  1037  EW_NOP             Goto label_988
+  1038  EW_SETFLAG         SetFlag bit=2 value=1
+  1039  EW_ASSIGNVAR       StrCpy $R0 0
+  1040  EW_NOP             Goto label_1044
+  1041  EW_ASSIGNVAR       StrCpy $R0 $R1
+  1042  EW_STRCMP          StrCmp $2 0 0 label_954
+  1043  EW_STRCMP          StrCmp $R8 "+-" 0 label_967
+  1044  EW_PUSHPOP         Pop $R8
+  1045  EW_PUSHPOP         Pop $R7
+  1046  EW_PUSHPOP         Pop $R6
+  1047  EW_PUSHPOP         Pop $R5
+  1048  EW_PUSHPOP         Pop $R4
+  1049  EW_PUSHPOP         Pop $R3
+  1050  EW_PUSHPOP         Pop $R2
+  1051  EW_PUSHPOP         Pop $R1
+  1052  EW_PUSHPOP         Pop $7
+  1053  EW_PUSHPOP         Pop $6
+  1054  EW_PUSHPOP         Pop $5
+  1055  EW_PUSHPOP         Pop $4
+  1056  EW_PUSHPOP         Pop $3
+  1057  EW_PUSHPOP         Pop $2
+  1058  EW_PUSHPOP         Pop $1
+  1059  EW_PUSHPOP         Pop $0
+  1060  EW_PUSHPOP         Push $R0
+  1061  EW_PUSHPOP         Exch
+  1062  EW_PUSHPOP         Pop $R0
+  1063  EW_RET             Return
+  1064  EW_PUSHPOP         Pop $2
+  1065  EW_ASSIGNVAR       StrCpy $4 $INSTDIR
+  1066  EW_PUSHPOP         Push $4
+  1067  EW_PUSHPOP         Push "+"
+  1068  EW_PUSHPOP         Push 0
+  1069  EW_PUSHPOP         Push "\/"
+  1070  EW_CALL            Call label_906
+  1071  EW_PUSHPOP         Pop $3
+  1072  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_1098 clear:0
+  1073  EW_STRCMP          StrCmp $2 $3 label_1098 0
+  1074  EW_UPDATETEXT      DetailPrint "New INSTDIR != Old"
+  1075  EW_PUSHPOP         Push $4
+  1076  EW_PUSHPOP         Push $5
+  1077  EW_PUSHPOP         Push $6
+  1078  EW_ASSIGNVAR       StrCpy $6 "New INSTDIR != Old"
+  1079  EW_INTOP           IntOp $5 0 + 0
+  1080  EW_INTCMP          IntCmp $Var97 13 0 label_1083 label_1083
+  1081  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1082  EW_NOP             Goto label_1084
+  1083  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1084  EW_INTOP           IntOp $Var97 0 + 13
+  1085  EW_INTCMP          IntCmp $5 0 label_1092 0 0
+  1086  EW_FSEEK           FileSeek $5 0 END $4
+  1087  EW_INTCMP          IntCmp $4 0 0 label_1091 label_1091
+  1088  EW_FPUTS           FileWriteByte $5 255
+  1089  EW_FPUTS           FileWriteByte $5 254
+  1090  EW_LOCKWINDOW      LockWindow on
+  1091  EW_LOCKWINDOW      LockWindow on
+  1092  EW_INTCMP          IntCmp $5 0 label_1094 0 0
+  1093  EW_FCLOSE          FileClose $5
+  1094  EW_PUSHPOP         Pop $6
+  1095  EW_PUSHPOP         Pop $5
+  1096  EW_PUSHPOP         Pop $4
+  1097  EW_RMDIR           RMDir /r $1
+  1098  EW_CALL            Call label_2742
+  1099  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1100  EW_SETFLAG         SetFlag bit=13 value=0
+  1101  EW_PUSHPOP         Push "netsh firewall delete allowedprogram $\"$1\amiconnectd.exe$\""
+  1102  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1103  EW_PUSHPOP         Push "/OEM"
+  1104  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1105  EW_RMDIR           RMDir /r "$INSTDIR\Log"
+  1106  EW_UPDATETEXT      DetailPrint "Installing network drivers"
+  1107  EW_PUSHPOP         Push $4
+  1108  EW_PUSHPOP         Push $5
+  1109  EW_PUSHPOP         Push $6
+  1110  EW_ASSIGNVAR       StrCpy $6 "Installing network drivers"
+  1111  EW_INTOP           IntOp $5 0 + 0
+  1112  EW_INTCMP          IntCmp $Var97 13 0 label_1115 label_1115
+  1113  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1114  EW_NOP             Goto label_1116
+  1115  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1116  EW_INTOP           IntOp $Var97 0 + 13
+  1117  EW_INTCMP          IntCmp $5 0 label_1124 0 0
+  1118  EW_FSEEK           FileSeek $5 0 END $4
+  1119  EW_INTCMP          IntCmp $4 0 0 label_1123 label_1123
+  1120  EW_FPUTS           FileWriteByte $5 255
+  1121  EW_FPUTS           FileWriteByte $5 254
+  1122  EW_LOCKWINDOW      LockWindow on
+  1123  EW_LOCKWINDOW      LockWindow on
+  1124  EW_INTCMP          IntCmp $5 0 label_1126 0 0
+  1125  EW_FCLOSE          FileClose $5
+  1126  EW_PUSHPOP         Pop $6
+  1127  EW_PUSHPOP         Pop $5
+  1128  EW_PUSHPOP         Pop $4
+  1129  EW_ASSIGNVAR       StrCpy $Var54 0
+  1130  EW_SETFLAG         SetFlag bit=2 value=0
+  1131  EW_RMDIR           RMDir /r "$INSTDIR\Drivers\AmiconnectFlt"
+  1132  EW_SLEEP           Sleep 2000
+  1133  EW_CREATEDIR       SetOutPath "$INSTDIR\Drivers\AmiconnectFlt"
+  1134  EW_EXTRACTFILE     File "AmiconnectFlt.inf"   ; data +0x2BDFF size=3126
+  1135  EW_EXTRACTFILE     File "amiconnectflt.cat"   ; data +0x2CA3D size=11332
+  1136  EW_EXTRACTFILE     File "AmiconnectFlt.sys"   ; data +0x2F689 size=228080
+  1137  EW_EXTRACTFILE     File "ADrvInst.exe"   ; data +0x67181 size=100168
+  1138  EW_SETFLAG         SetFlag bit=2 value=0
+  1139  EW_IFFILEEXISTS    IfFileExists "$Var51\SYSTEM32\DRIVERS\AmiconnectFlt.sys" label_1140 label_1171
+  1140  EW_UPDATETEXT      DetailPrint "Uninstalling driver..."
+  1141  EW_PUSHPOP         Push $4
+  1142  EW_PUSHPOP         Push $5
+  1143  EW_PUSHPOP         Push $6
+  1144  EW_ASSIGNVAR       StrCpy $6 "Uninstalling driver..."
+  1145  EW_INTOP           IntOp $5 0 + 0
+  1146  EW_INTCMP          IntCmp $Var97 13 0 label_1149 label_1149
+  1147  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1148  EW_NOP             Goto label_1150
+  1149  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1150  EW_INTOP           IntOp $Var97 0 + 13
+  1151  EW_INTCMP          IntCmp $5 0 label_1158 0 0
+  1152  EW_FSEEK           FileSeek $5 0 END $4
+  1153  EW_INTCMP          IntCmp $4 0 0 label_1157 label_1157
+  1154  EW_FPUTS           FileWriteByte $5 255
+  1155  EW_FPUTS           FileWriteByte $5 254
+  1156  EW_LOCKWINDOW      LockWindow on
+  1157  EW_LOCKWINDOW      LockWindow on
+  1158  EW_INTCMP          IntCmp $5 0 label_1160 0 0
+  1159  EW_FCLOSE          FileClose $5
+  1160  EW_PUSHPOP         Pop $6
+  1161  EW_PUSHPOP         Pop $5
+  1162  EW_PUSHPOP         Pop $4
+  1163  EW_CALL            Call label_2742
+  1164  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1165  EW_SETFLAG         SetFlag bit=13 value=0
+  1166  EW_PUSHPOP         Push "$\"$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe$\" /u $\"$INSTDIR\Drivers\AmiconnectFlt\AmiconnectFlt.inf$\""
+  1167  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1168  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1169  EW_SLEEP           Sleep 3333
+  1170  EW_DELETEFILE      Delete /REBOOTOK "$Var51\SYSTEM32\DRIVERS\AmiconnectFlt.sys"
+  1171  EW_CALL            Call label_2742
+  1172  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1173  EW_SETFLAG         SetFlag bit=13 value=0
+  1174  EW_PUSHPOP         Push "$\"$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe$\" /do $\"$INSTDIR\Drivers\AmiconnectFlt\AmiconnectFlt.inf$\""
+  1175  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1176  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1177  EW_SETFLAG         SetFlag bit=2 value=0
+  1178  EW_CALL            Call label_2742
+  1179  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1180  EW_SETFLAG         SetFlag bit=13 value=0
+  1181  EW_PUSHPOP         Push "$\"$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe$\" /o $\"$INSTDIR\Drivers\AmiconnectFlt\AmiconnectFlt.inf$\""
+  1182  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1183  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1184  EW_CALL            Call label_2742
+  1185  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1186  EW_SETFLAG         SetFlag bit=13 value=0
+  1187  EW_PUSHPOP         Push "$\"$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe$\" /i /s $\"$INSTDIR\Drivers\AmiconnectFlt\AmiconnectFlt.inf$\""
+  1188  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1189  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1190  EW_PUSHPOP         Pop $0
+  1191  EW_SLEEP           Sleep 3333
+  1192  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_1207 clear:0
+  1193  EW_CALL            Call label_2742
+  1194  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1195  EW_SETFLAG         SetFlag bit=13 value=0
+  1196  EW_PUSHPOP         Push "$\"$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe$\" /t /s $\"AmiconnectFlt$\""
+  1197  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1198  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1199  EW_PUSHPOP         Pop $1
+  1200  EW_CALL            Call label_2742
+  1201  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1202  EW_SETFLAG         SetFlag bit=13 value=0
+  1203  EW_PUSHPOP         Push "copy /y $\"$INSTDIR\Drivers\AmiNdisFlt\AmiconnectFlt.sys$\" $\"$Var51\SYSTEM32\DRIVERS$\""
+  1204  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1205  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1206  EW_SETFLAG         SetFlag bit=2 value=0
+  1207  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_1285
+  1208  EW_UPDATETEXT      DetailPrint "$Var54 $Var66"
+  1209  EW_PUSHPOP         Push $4
+  1210  EW_PUSHPOP         Push $5
+  1211  EW_PUSHPOP         Push $6
+  1212  EW_ASSIGNVAR       StrCpy $6 "$Var54 $Var66"
+  1213  EW_INTOP           IntOp $5 0 + 0
+  1214  EW_INTCMP          IntCmp $Var97 13 0 label_1217 label_1217
+  1215  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1216  EW_NOP             Goto label_1218
+  1217  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1218  EW_INTOP           IntOp $Var97 0 + 13
+  1219  EW_INTCMP          IntCmp $5 0 label_1226 0 0
+  1220  EW_FSEEK           FileSeek $5 0 END $4
+  1221  EW_INTCMP          IntCmp $4 0 0 label_1225 label_1225
+  1222  EW_FPUTS           FileWriteByte $5 255
+  1223  EW_FPUTS           FileWriteByte $5 254
+  1224  EW_LOCKWINDOW      LockWindow on
+  1225  EW_LOCKWINDOW      LockWindow on
+  1226  EW_INTCMP          IntCmp $5 0 label_1228 0 0
+  1227  EW_FCLOSE          FileClose $5
+  1228  EW_PUSHPOP         Pop $6
+  1229  EW_PUSHPOP         Pop $5
+  1230  EW_PUSHPOP         Pop $4
+  1231  EW_MESSAGEBOX      MessageBox MB=0xE00024 "$Var54 $Var66" label_5 label_1129
+  1232  EW_UPDATETEXT      DetailPrint "No"
+  1233  EW_PUSHPOP         Push $4
+  1234  EW_PUSHPOP         Push $5
+  1235  EW_PUSHPOP         Push $6
+  1236  EW_ASSIGNVAR       StrCpy $6 "No"
+  1237  EW_INTOP           IntOp $5 0 + 0
+  1238  EW_INTCMP          IntCmp $Var97 13 0 label_1241 label_1241
+  1239  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1240  EW_NOP             Goto label_1242
+  1241  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1242  EW_INTOP           IntOp $Var97 0 + 13
+  1243  EW_INTCMP          IntCmp $5 0 label_1250 0 0
+  1244  EW_FSEEK           FileSeek $5 0 END $4
+  1245  EW_INTCMP          IntCmp $4 0 0 label_1249 label_1249
+  1246  EW_FPUTS           FileWriteByte $5 255
+  1247  EW_FPUTS           FileWriteByte $5 254
+  1248  EW_LOCKWINDOW      LockWindow on
+  1249  EW_LOCKWINDOW      LockWindow on
+  1250  EW_INTCMP          IntCmp $5 0 label_1252 0 0
+  1251  EW_FCLOSE          FileClose $5
+  1252  EW_PUSHPOP         Pop $6
+  1253  EW_PUSHPOP         Pop $5
+  1254  EW_PUSHPOP         Pop $4
+  1255  EW_UPDATETEXT      DetailPrint $Var67
+  1256  EW_PUSHPOP         Push $4
+  1257  EW_PUSHPOP         Push $5
+  1258  EW_PUSHPOP         Push $6
+  1259  EW_ASSIGNVAR       StrCpy $6 $Var67
+  1260  EW_INTOP           IntOp $5 0 + 0
+  1261  EW_INTCMP          IntCmp $Var97 13 0 label_1264 label_1264
+  1262  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1263  EW_NOP             Goto label_1265
+  1264  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1265  EW_INTOP           IntOp $Var97 0 + 13
+  1266  EW_INTCMP          IntCmp $5 0 label_1273 0 0
+  1267  EW_FSEEK           FileSeek $5 0 END $4
+  1268  EW_INTCMP          IntCmp $4 0 0 label_1272 label_1272
+  1269  EW_FPUTS           FileWriteByte $5 255
+  1270  EW_FPUTS           FileWriteByte $5 254
+  1271  EW_LOCKWINDOW      LockWindow on
+  1272  EW_LOCKWINDOW      LockWindow on
+  1273  EW_INTCMP          IntCmp $5 0 label_1275 0 0
+  1274  EW_FCLOSE          FileClose $5
+  1275  EW_PUSHPOP         Pop $6
+  1276  EW_PUSHPOP         Pop $5
+  1277  EW_PUSHPOP         Pop $4
+  1278  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:label_1280 clear:0
+  1279  EW_MESSAGEBOX      MessageBox MB=0x10 $Var67 0 0
+  1280  EW_CALL            Call label_194
+  1281  EW_SETFLAG         SetFlag bit=11 value=1
+  1282  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:label_1284 clear:0
+  1283  EW_EXECUTE         Exec "$\"$INSTDIR\amiconnect-uninst.exe$\""
+  1284  EW_QUIT            Quit
+  1285  EW_INTOP           IntOp $Var53 0 + 0
+  1286  EW_INTCMP          IntCmp $0 1 0 label_1305 label_1289
+  1287  EW_INTOP           IntOp $Var53 1 + 0
+  1288  EW_NOP             Goto label_1305
+  1289  EW_INTCMP          IntCmp $0 2 label_1208 0 0
+  1290  EW_INTCMP          IntCmp $0 3 0 label_1208 label_1293
+  1291  EW_ASSIGNVAR       StrCpy $Var54 $Var70
+  1292  EW_NOP             Goto label_1208
+  1293  EW_INTCMP          IntCmp $0 4 0 label_1208 label_1296
+  1294  EW_ASSIGNVAR       StrCpy $Var54 $Var71
+  1295  EW_NOP             Goto label_1208
+  1296  EW_INTCMP          IntCmp $0 5 0 label_1208 label_1299
+  1297  EW_ASSIGNVAR       StrCpy $Var54 $Var72
+  1298  EW_NOP             Goto label_1208
+  1299  EW_INTCMP          IntCmp $0 6 0 label_1208 label_1302
+  1300  EW_ASSIGNVAR       StrCpy $Var54 $Var73
+  1301  EW_NOP             Goto label_1208
+  1302  EW_INTCMP          IntCmp $0 7 0 label_1208 label_1208
+  1303  EW_ASSIGNVAR       StrCpy $Var54 $Var74
+  1304  EW_NOP             Goto label_1208
+  1305  EW_INTCMP          IntCmp $1 0 label_1308 label_1306 label_1306
+  1306  EW_ASSIGNVAR       StrCpy $Var54 $Var77
+  1307  EW_NOP             Goto label_1208
+  1308  EW_UPDATETEXT      DetailPrint "Setting registry keys"
+  1309  EW_PUSHPOP         Push $4
+  1310  EW_PUSHPOP         Push $5
+  1311  EW_PUSHPOP         Push $6
+  1312  EW_ASSIGNVAR       StrCpy $6 "Setting registry keys"
+  1313  EW_INTOP           IntOp $5 0 + 0
+  1314  EW_INTCMP          IntCmp $Var97 13 0 label_1317 label_1317
+  1315  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1316  EW_NOP             Goto label_1318
+  1317  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1318  EW_INTOP           IntOp $Var97 0 + 13
+  1319  EW_INTCMP          IntCmp $5 0 label_1326 0 0
+  1320  EW_FSEEK           FileSeek $5 0 END $4
+  1321  EW_INTCMP          IntCmp $4 0 0 label_1325 label_1325
+  1322  EW_FPUTS           FileWriteByte $5 255
+  1323  EW_FPUTS           FileWriteByte $5 254
+  1324  EW_LOCKWINDOW      LockWindow on
+  1325  EW_LOCKWINDOW      LockWindow on
+  1326  EW_INTCMP          IntCmp $5 0 label_1328 0 0
+  1327  EW_FCLOSE          FileClose $5
+  1328  EW_PUSHPOP         Pop $6
+  1329  EW_PUSHPOP         Pop $5
+  1330  EW_PUSHPOP         Pop $4
+  1331  EW_STRCMP          StrCmp 0 0 0 label_1336
+  1332  EW_SETFLAG         SetFlag bit=12 value=512
+  1333  EW_DELREG          DeleteRegValue HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Run" "AMICON Amiconnect Client"
+  1334  EW_DELREG          DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\AMICON Amiconnect"
+  1335  EW_SETFLAG         SetFlag bit=12 value=0
+  1336  EW_WRITEREG        WriteRegStr HKLM "SOFTWARE\Microsoft\Windows\CurrentVersion\Run" "AMICON Amiconnect Client" "$INSTDIR\amiconnect.exe"
+  1337  EW_WRITEREG        WriteRegStr HKLM "SOFTWARE\AMICON\Amiconnect" "Install_Dir" "$INSTDIR"
+  1338  EW_WRITEREG        WriteRegDWORD HKLM "SOFTWARE\AMICON\Amiconnect" "VersionHi" "1"
+  1339  EW_WRITEREG        WriteRegDWORD HKLM "SOFTWARE\AMICON\Amiconnect" "VersionLo" "30"
+  1340  EW_WRITEREG        WriteRegDWORD HKLM "SOFTWARE\AMICON\Amiconnect" "VersionBn" "3004"
+  1341  EW_DELREG          DeleteRegValue HKLM "SOFTWARE\AMICON\Amiconnect" "VersionBeta"
+  1342  EW_DELREG          DeleteRegValue HKLM "SOFTWARE\AMICON\Amiconnect" "VersionBetaN"
+  1343  EW_DELREG          DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\AMICON Amiconnect"
+  1344  EW_WRITEREG        WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\AMICON Amiconnect" "DisplayName" "$Var63"
+  1345  EW_WRITEREG        WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\AMICON Amiconnect" "UninstallString" "$INSTDIR\amiconnect-uninst.exe"
+  1346  EW_WRITEREG        WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\AMICON Amiconnect" "DisplayIcon" "$INSTDIR\amiconnect.exe"
+  1347  EW_WRITEREG        WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\AMICON Amiconnect" "DisplayVersion" "1.30.3004"
+  1348  EW_WRITEREG        WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\AMICON Amiconnect" "URLInfoAbout" "http://www.amicon.ru"
+  1349  EW_WRITEREG        WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\AMICON Amiconnect" "Publisher" "AMICON"
+  1350  EW_SETFLAG         SetFlag bit=2 value=0
+  1351  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "HideConnectDialog"
+  1352  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_1355
+  1353  EW_SETFLAG         SetFlag bit=2 value=0
+  1354  EW_WRITEREG        WriteRegDWORD HKLM "SOFTWARE\AMICON\Amiconnect" "HideConnectDialog" "0"
+  1355  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "FlushDNS"
+  1356  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_1359
+  1357  EW_SETFLAG         SetFlag bit=2 value=0
+  1358  EW_WRITEREG        WriteRegDWORD HKLM "SOFTWARE\AMICON\Amiconnect" "FlushDNS" "1"
+  1359  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "RestartAdapters"
+  1360  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_1363
+  1361  EW_SETFLAG         SetFlag bit=2 value=0
+  1362  EW_WRITEREG        WriteRegDWORD HKLM "SOFTWARE\AMICON\Amiconnect" "RestartAdapters" "1"
+  1363  EW_UPDATETEXT      DetailPrint "Installing Amiconnect service"
+  1364  EW_PUSHPOP         Push $4
+  1365  EW_PUSHPOP         Push $5
+  1366  EW_PUSHPOP         Push $6
+  1367  EW_ASSIGNVAR       StrCpy $6 "Installing Amiconnect service"
+  1368  EW_INTOP           IntOp $5 0 + 0
+  1369  EW_INTCMP          IntCmp $Var97 13 0 label_1372 label_1372
+  1370  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1371  EW_NOP             Goto label_1373
+  1372  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1373  EW_INTOP           IntOp $Var97 0 + 13
+  1374  EW_INTCMP          IntCmp $5 0 label_1381 0 0
+  1375  EW_FSEEK           FileSeek $5 0 END $4
+  1376  EW_INTCMP          IntCmp $4 0 0 label_1380 label_1380
+  1377  EW_FPUTS           FileWriteByte $5 255
+  1378  EW_FPUTS           FileWriteByte $5 254
+  1379  EW_LOCKWINDOW      LockWindow on
+  1380  EW_LOCKWINDOW      LockWindow on
+  1381  EW_INTCMP          IntCmp $5 0 label_1383 0 0
+  1382  EW_FCLOSE          FileClose $5
+  1383  EW_PUSHPOP         Pop $6
+  1384  EW_PUSHPOP         Pop $5
+  1385  EW_PUSHPOP         Pop $4
+  1386  EW_CALL            Call label_2742
+  1387  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1388  EW_SETFLAG         SetFlag bit=13 value=0
+  1389  EW_PUSHPOP         Push "sc failure amiconnectd reset= 0 actions= $\"$\""
+  1390  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1391  EW_PUSHPOP         Push "/OEM"
+  1392  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1393  EW_CALL            Call label_2742
+  1394  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1395  EW_SETFLAG         SetFlag bit=13 value=0
+  1396  EW_PUSHPOP         Push "net stop amiconnectd"
+  1397  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1398  EW_PUSHPOP         Push "/OEM"
+  1399  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1400  EW_CALL            Call label_2742
+  1401  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1402  EW_SETFLAG         SetFlag bit=13 value=0
+  1403  EW_PUSHPOP         Push "sc delete amiconnectd"
+  1404  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1405  EW_PUSHPOP         Push "/OEM"
+  1406  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1407  EW_DELREG          DeleteRegKey HKLM "System\CurrentControlSet\Services\amiconnectd"
+  1408  EW_SETFLAG         SetFlag bit=2 value=0
+  1409  EW_SLEEP           Sleep 3333
+  1410  EW_DELETEFILE      Delete "$INSTDIR\amiconnect.*"
+  1411  EW_CREATEDIR       SetOutPath $INSTDIR
+  1412  EW_EXTRACTFILE     File "amiconnect.exe"   ; data +0x7F8D1 size=25637352
+  1413  EW_EXTRACTFILE     File "amiconnectd.exe"   ; data +0x18F2AC1 size=933864
+  1414  EW_EXTRACTFILE     File "csat.conf"   ; data +0x19D6AB1 size=85
+  1415  EW_EXTRACTFILE     File "ami.settings.conf"   ; data +0x19D6B0E size=2363
+  1416  EW_EXTRACTFILE     File "connection.settings.tmpl"   ; data +0x19D7451 size=187
+  1417  EW_EXTRACTFILE     File "cfg.ini"   ; data +0x19D7514 size=69
+  1418  EW_EXTRACTFILE     File "status.json"   ; data +0x19D7561 size=137
+  1419  EW_EXTRACTFILE     File "ami_errors.json"   ; data +0x19D75F2 size=54377
+  1420  EW_RMDIR           RMDir /r "$INSTDIR\Captive"
+  1421  EW_SLEEP           Sleep 2000
+  1422  EW_EXTRACTFILE     File "Руководство.pdf"   ; data +0x19E4A63 size=1175873
+  1423  EW_CALL            Call label_282
+  1424  EW_CALL            Call label_433
+  1425  EW_SETFLAG         SetFlag bit=2 value=0
+  1426  EW_CREATEDIR       CreateDirectory "$INSTDIR\log"
+  1427  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_1453
+  1428  EW_UPDATETEXT      DetailPrint "Failed to create log directory $INSTDIR\log"
+  1429  EW_PUSHPOP         Push $4
+  1430  EW_PUSHPOP         Push $5
+  1431  EW_PUSHPOP         Push $6
+  1432  EW_ASSIGNVAR       StrCpy $6 "Failed to create log directory $INSTDIR\log"
+  1433  EW_INTOP           IntOp $5 0 + 0
+  1434  EW_INTCMP          IntCmp $Var97 13 0 label_1437 label_1437
+  1435  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1436  EW_NOP             Goto label_1438
+  1437  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1438  EW_INTOP           IntOp $Var97 0 + 13
+  1439  EW_INTCMP          IntCmp $5 0 label_1446 0 0
+  1440  EW_FSEEK           FileSeek $5 0 END $4
+  1441  EW_INTCMP          IntCmp $4 0 0 label_1445 label_1445
+  1442  EW_FPUTS           FileWriteByte $5 255
+  1443  EW_FPUTS           FileWriteByte $5 254
+  1444  EW_LOCKWINDOW      LockWindow on
+  1445  EW_LOCKWINDOW      LockWindow on
+  1446  EW_INTCMP          IntCmp $5 0 label_1448 0 0
+  1447  EW_FCLOSE          FileClose $5
+  1448  EW_PUSHPOP         Pop $6
+  1449  EW_PUSHPOP         Pop $5
+  1450  EW_PUSHPOP         Pop $4
+  1451  EW_MESSAGEBOX      MessageBox MB=0x50010 "Cannot create folder $INSTDIR\log" 0 0
+  1452  EW_NOP             Goto label_1483
+  1453  EW_UPDATETEXT      DetailPrint "Log directory created"
+  1454  EW_PUSHPOP         Push $4
+  1455  EW_PUSHPOP         Push $5
+  1456  EW_PUSHPOP         Push $6
+  1457  EW_ASSIGNVAR       StrCpy $6 "Log directory created"
+  1458  EW_INTOP           IntOp $5 0 + 0
+  1459  EW_INTCMP          IntCmp $Var97 13 0 label_1462 label_1462
+  1460  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1461  EW_NOP             Goto label_1463
+  1462  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1463  EW_INTOP           IntOp $Var97 0 + 13
+  1464  EW_INTCMP          IntCmp $5 0 label_1471 0 0
+  1465  EW_FSEEK           FileSeek $5 0 END $4
+  1466  EW_INTCMP          IntCmp $4 0 0 label_1470 label_1470
+  1467  EW_FPUTS           FileWriteByte $5 255
+  1468  EW_FPUTS           FileWriteByte $5 254
+  1469  EW_LOCKWINDOW      LockWindow on
+  1470  EW_LOCKWINDOW      LockWindow on
+  1471  EW_INTCMP          IntCmp $5 0 label_1473 0 0
+  1472  EW_FCLOSE          FileClose $5
+  1473  EW_PUSHPOP         Pop $6
+  1474  EW_PUSHPOP         Pop $5
+  1475  EW_PUSHPOP         Pop $4
+  1476  EW_CALL            Call label_2742
+  1477  EW_EXTRACTFILE     File "$PLUGINSDIR\AccessControl.dll"   ; data +0x1B03BAC size=16896
+  1478  EW_SETFLAG         SetFlag bit=13 value=0
+  1479  EW_PUSHPOP         Push "FullAccess"
+  1480  EW_PUSHPOP         Push "(S-1-5-32-545)"
+  1481  EW_PUSHPOP         Push "$INSTDIR\log"
+  1482  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\AccessControl.dll" (func="GrantOnFile")
+  1483  EW_SETFLAG         SetFlag bit=2 value=0
+  1484  EW_CALL            Call label_2742
+  1485  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1486  EW_SETFLAG         SetFlag bit=13 value=0
+  1487  EW_PUSHPOP         Push "sc create amiconnectd start= auto displayname= $\"AMICON Amiconnect Service$\" binPath= $\"$INSTDIR\amiconnectd.exe$\""
+  1488  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1489  EW_PUSHPOP         Push "/OEM"
+  1490  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1491  EW_CALL            Call label_2742
+  1492  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1493  EW_SETFLAG         SetFlag bit=13 value=0
+  1494  EW_PUSHPOP         Push "sc description amiconnectd $\"Amicon Amiconnect service for Amicon FPSU-IP$\""
+  1495  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1496  EW_PUSHPOP         Push "/OEM"
+  1497  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1498  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_1499 clear:label_1576
+  1499  EW_UPDATETEXT      DetailPrint $Var78
+  1500  EW_PUSHPOP         Push $4
+  1501  EW_PUSHPOP         Push $5
+  1502  EW_PUSHPOP         Push $6
+  1503  EW_ASSIGNVAR       StrCpy $6 $Var78
+  1504  EW_INTOP           IntOp $5 0 + 0
+  1505  EW_INTCMP          IntCmp $Var97 13 0 label_1508 label_1508
+  1506  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1507  EW_NOP             Goto label_1509
+  1508  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1509  EW_INTOP           IntOp $Var97 0 + 13
+  1510  EW_INTCMP          IntCmp $5 0 label_1517 0 0
+  1511  EW_FSEEK           FileSeek $5 0 END $4
+  1512  EW_INTCMP          IntCmp $4 0 0 label_1516 label_1516
+  1513  EW_FPUTS           FileWriteByte $5 255
+  1514  EW_FPUTS           FileWriteByte $5 254
+  1515  EW_LOCKWINDOW      LockWindow on
+  1516  EW_LOCKWINDOW      LockWindow on
+  1517  EW_INTCMP          IntCmp $5 0 label_1519 0 0
+  1518  EW_FCLOSE          FileClose $5
+  1519  EW_PUSHPOP         Pop $6
+  1520  EW_PUSHPOP         Pop $5
+  1521  EW_PUSHPOP         Pop $4
+  1522  EW_MESSAGEBOX      MessageBox MB=0xE00024 $Var78 label_5 label_1425
+  1523  EW_UPDATETEXT      DetailPrint "No"
+  1524  EW_PUSHPOP         Push $4
+  1525  EW_PUSHPOP         Push $5
+  1526  EW_PUSHPOP         Push $6
+  1527  EW_ASSIGNVAR       StrCpy $6 "No"
+  1528  EW_INTOP           IntOp $5 0 + 0
+  1529  EW_INTCMP          IntCmp $Var97 13 0 label_1532 label_1532
+  1530  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1531  EW_NOP             Goto label_1533
+  1532  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1533  EW_INTOP           IntOp $Var97 0 + 13
+  1534  EW_INTCMP          IntCmp $5 0 label_1541 0 0
+  1535  EW_FSEEK           FileSeek $5 0 END $4
+  1536  EW_INTCMP          IntCmp $4 0 0 label_1540 label_1540
+  1537  EW_FPUTS           FileWriteByte $5 255
+  1538  EW_FPUTS           FileWriteByte $5 254
+  1539  EW_LOCKWINDOW      LockWindow on
+  1540  EW_LOCKWINDOW      LockWindow on
+  1541  EW_INTCMP          IntCmp $5 0 label_1543 0 0
+  1542  EW_FCLOSE          FileClose $5
+  1543  EW_PUSHPOP         Pop $6
+  1544  EW_PUSHPOP         Pop $5
+  1545  EW_PUSHPOP         Pop $4
+  1546  EW_UPDATETEXT      DetailPrint $Var79
+  1547  EW_PUSHPOP         Push $4
+  1548  EW_PUSHPOP         Push $5
+  1549  EW_PUSHPOP         Push $6
+  1550  EW_ASSIGNVAR       StrCpy $6 $Var79
+  1551  EW_INTOP           IntOp $5 0 + 0
+  1552  EW_INTCMP          IntCmp $Var97 13 0 label_1555 label_1555
+  1553  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1554  EW_NOP             Goto label_1556
+  1555  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1556  EW_INTOP           IntOp $Var97 0 + 13
+  1557  EW_INTCMP          IntCmp $5 0 label_1564 0 0
+  1558  EW_FSEEK           FileSeek $5 0 END $4
+  1559  EW_INTCMP          IntCmp $4 0 0 label_1563 label_1563
+  1560  EW_FPUTS           FileWriteByte $5 255
+  1561  EW_FPUTS           FileWriteByte $5 254
+  1562  EW_LOCKWINDOW      LockWindow on
+  1563  EW_LOCKWINDOW      LockWindow on
+  1564  EW_INTCMP          IntCmp $5 0 label_1566 0 0
+  1565  EW_FCLOSE          FileClose $5
+  1566  EW_PUSHPOP         Pop $6
+  1567  EW_PUSHPOP         Pop $5
+  1568  EW_PUSHPOP         Pop $4
+  1569  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:label_1571 clear:0
+  1570  EW_MESSAGEBOX      MessageBox MB=0x10 $Var79 0 0
+  1571  EW_CALL            Call label_194
+  1572  EW_SETFLAG         SetFlag bit=11 value=1
+  1573  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:label_1575 clear:0
+  1574  EW_EXECUTE         Exec "$\"$INSTDIR\amiconnect-uninst.exe$\""
+  1575  EW_QUIT            Quit
+  1576  EW_CREATEDIR       SetOutPath "$Var52\AMICLIENT"
+  1577  EW_EXTRACTFILE     File "ADrvInst.exe"   ; data +0x67181 size=100168
+  1578  EW_CALL            Call label_2742
+  1579  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1580  EW_SETFLAG         SetFlag bit=13 value=0
+  1581  EW_PUSHPOP         Push "$\"$Var52\AMICLIENT\ADrvInst.exe$\" /t /s $\"amiconnectd$\""
+  1582  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1583  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1584  EW_PUSHPOP         Pop $1
+  1585  EW_STRCMP          StrCmp $1 "error" label_1499 0
+  1586  EW_DELETEFILE      Delete "$Var52\AMICLIENT\ADrvInst.exe"
+  1587  EW_INTCMP          IntCmp $1 0 label_1588 label_1499 label_1499
+  1588  EW_CALL            Call label_2742
+  1589  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1590  EW_SETFLAG         SetFlag bit=13 value=0
+  1591  EW_PUSHPOP         Push "sc failure amiconnectd reset= 600 actions= restart/5000/restart/10000/restart/10000/$\"$\"/0"
+  1592  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1593  EW_PUSHPOP         Push "/OEM"
+  1594  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1595  EW_CALL            Call label_2742
+  1596  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1597  EW_SETFLAG         SetFlag bit=13 value=0
+  1598  EW_PUSHPOP         Push "sc failureflag amiconnectd 1"
+  1599  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1600  EW_PUSHPOP         Push "/OEM"
+  1601  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1602  EW_CALL            Call label_2742
+  1603  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1604  EW_SETFLAG         SetFlag bit=13 value=0
+  1605  EW_PUSHPOP         Push "netsh firewall add allowedprogram $\"$INSTDIR\amiconnectd.exe$\" $\"Amiconnect$\" ENABLE"
+  1606  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  1607  EW_PUSHPOP         Push "/OEM"
+  1608  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1609  EW_CALL            Call label_2742
+  1610  EW_EXTRACTFILE     File "$PLUGINSDIR\AccessControl.dll"   ; data +0x1B03BAC size=16896
+  1611  EW_SETFLAG         SetFlag bit=13 value=0
+  1612  EW_PUSHPOP         Push "GenericRead+GenericWrite"
+  1613  EW_PUSHPOP         Push "(S-1-5-32-545)"
+  1614  EW_PUSHPOP         Push "$INSTDIR\csat.conf"
+  1615  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\AccessControl.dll" (func="GrantOnFile")
+  1616  EW_CALL            Call label_2742
+  1617  EW_EXTRACTFILE     File "$PLUGINSDIR\AccessControl.dll"   ; data +0x1B03BAC size=16896
+  1618  EW_SETFLAG         SetFlag bit=13 value=0
+  1619  EW_PUSHPOP         Push "GenericRead+GenericWrite"
+  1620  EW_PUSHPOP         Push "(S-1-5-32-545)"
+  1621  EW_PUSHPOP         Push "$INSTDIR\cfg.ini"
+  1622  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\AccessControl.dll" (func="GrantOnFile")
+  1623  EW_CALL            Call label_2742
+  1624  EW_EXTRACTFILE     File "$PLUGINSDIR\AccessControl.dll"   ; data +0x1B03BAC size=16896
+  1625  EW_SETFLAG         SetFlag bit=13 value=0
+  1626  EW_PUSHPOP         Push "GenericRead+GenericWrite"
+  1627  EW_PUSHPOP         Push "(S-1-5-32-545)"
+  1628  EW_PUSHPOP         Push "$INSTDIR\status.json"
+  1629  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\AccessControl.dll" (func="GrantOnFile")
+  1630  EW_RET             Return
+
+===== SECTION_1_Reduce_MTU_on_all_network_interfaces   [entries 1631..1664] =====
+  1631  EW_SENDMESSAGE     SendMessage none "$HWNDPARENT" "0x000C" "0" (flags=0x2)
+  1632  EW_UPDATETEXT      DetailPrint "Setting default MTU"
+  1633  EW_PUSHPOP         Push $4
+  1634  EW_PUSHPOP         Push $5
+  1635  EW_PUSHPOP         Push $6
+  1636  EW_ASSIGNVAR       StrCpy $6 "Setting default MTU"
+  1637  EW_INTOP           IntOp $5 0 + 0
+  1638  EW_INTCMP          IntCmp $Var97 13 0 label_1641 label_1641
+  1639  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1640  EW_NOP             Goto label_1642
+  1641  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1642  EW_INTOP           IntOp $Var97 0 + 13
+  1643  EW_INTCMP          IntCmp $5 0 label_1650 0 0
+  1644  EW_FSEEK           FileSeek $5 0 END $4
+  1645  EW_INTCMP          IntCmp $4 0 0 label_1649 label_1649
+  1646  EW_FPUTS           FileWriteByte $5 255
+  1647  EW_FPUTS           FileWriteByte $5 254
+  1648  EW_LOCKWINDOW      LockWindow on
+  1649  EW_LOCKWINDOW      LockWindow on
+  1650  EW_INTCMP          IntCmp $5 0 label_1652 0 0
+  1651  EW_FCLOSE          FileClose $5
+  1652  EW_PUSHPOP         Pop $6
+  1653  EW_PUSHPOP         Pop $5
+  1654  EW_PUSHPOP         Pop $4
+  1655  EW_CREATEDIR       SetOutPath $INSTDIR
+  1656  EW_EXTRACTFILE     File "amiconnect-mtu.ps1"   ; data +0x1B07DB4 size=3563
+  1657  EW_CALL            Call label_2742
+  1658  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  1659  EW_SETFLAG         SetFlag bit=13 value=0
+  1660  EW_PUSHPOP         Push "powershell.exe -InputFormat None -NoProfile -NonInteractive -ExecutionPolicy Bypass -WindowStyle Hidden -File $\"$INSTDIR\amiconnect-mtu.ps1$\" -Mode Save"
+  1661  EW_PUSHPOP         Push "/TIMEOUT=60000"
+  1662  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  1663  EW_PUSHPOP         Pop $0
+  1664  EW_RET             Return
+
+===== SECTION_2_Start_menu_shortcut   [entries 1665..1702] =====
+  1665  EW_SENDMESSAGE     SendMessage none "$HWNDPARENT" "0x000C" "0" (flags=0x2)
+  1666  EW_UPDATETEXT      DetailPrint "Installing links"
+  1667  EW_PUSHPOP         Push $4
+  1668  EW_PUSHPOP         Push $5
+  1669  EW_PUSHPOP         Push $6
+  1670  EW_ASSIGNVAR       StrCpy $6 "Installing links"
+  1671  EW_INTOP           IntOp $5 0 + 0
+  1672  EW_INTCMP          IntCmp $Var97 13 0 label_1675 label_1675
+  1673  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1674  EW_NOP             Goto label_1676
+  1675  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1676  EW_INTOP           IntOp $Var97 0 + 13
+  1677  EW_INTCMP          IntCmp $5 0 label_1684 0 0
+  1678  EW_FSEEK           FileSeek $5 0 END $4
+  1679  EW_INTCMP          IntCmp $4 0 0 label_1683 label_1683
+  1680  EW_FPUTS           FileWriteByte $5 255
+  1681  EW_FPUTS           FileWriteByte $5 254
+  1682  EW_LOCKWINDOW      LockWindow on
+  1683  EW_LOCKWINDOW      LockWindow on
+  1684  EW_INTCMP          IntCmp $5 0 label_1686 0 0
+  1685  EW_FCLOSE          FileClose $5
+  1686  EW_PUSHPOP         Pop $6
+  1687  EW_PUSHPOP         Pop $5
+  1688  EW_PUSHPOP         Pop $4
+  1689  EW_CREATEDIR       SetOutPath $INSTDIR
+  1690  EW_INTCMP          IntCmp $Var61 25 0 label_1697 label_1697
+  1691  EW_CREATEDIR       CreateDirectory "$Var98\АМИКОН\Амиконнект"
+  1692  EW_CREATESHORTCUT  CreateShortCut "$Var98\АМИКОН\Амиконнект\Амиконнект.lnk" -> "$INSTDIR\amiconnect.exe" args="visible" icon="$INSTDIR\amiconnect.exe" flags=0x0
+  1693  EW_CREATESHORTCUT  CreateShortCut "$Var98\АМИКОН\Амиконнект\Удалить Амиконнект.lnk" -> "$INSTDIR\amiconnect-uninst.exe" args=0 icon="$INSTDIR\amiconnect-uninst.exe" flags=0x0
+  1694  EW_CREATESHORTCUT  CreateShortCut "$Var98\АМИКОН\Амиконнект\Лицензионное соглашение Амиконнекта.lnk" -> "$INSTDIR\license.txt" args=0 icon=0 flags=0x0
+  1695  EW_CREATESHORTCUT  CreateShortCut "$Var98\АМИКОН\Амиконнект\Руководство Амиконнекта.lnk" -> "$INSTDIR\Руководство.pdf" args=0 icon=0 flags=0x0
+  1696  EW_NOP             Goto label_1702
+  1697  EW_CREATEDIR       CreateDirectory "$Var98\AMICON\Amiconnect"
+  1698  EW_CREATESHORTCUT  CreateShortCut "$Var98\AMICON\Amiconnect\Amiconnect.lnk" -> "$INSTDIR\amiconnect.exe" args="visible" icon="$INSTDIR\amiconnect.exe" flags=0x0
+  1699  EW_CREATESHORTCUT  CreateShortCut "$Var98\AMICON\Amiconnect\UnInstall Amiconnect.lnk" -> "$INSTDIR\amiconnect-uninst.exe" args=0 icon="$INSTDIR\amiconnect-uninst.exe" flags=0x0
+  1700  EW_CREATESHORTCUT  CreateShortCut "$Var98\AMICON\Amiconnect\License Agreement.lnk Amiconnect" -> "$INSTDIR\license.txt" args=0 icon=0 flags=0x0
+  1701  EW_CREATESHORTCUT  CreateShortCut "$Var98\AMICON\Amiconnect\Amiconnect Manual.lnk" -> "$INSTDIR\Руководство.pdf" args=0 icon=0 flags=0x0
+  1702  EW_RET             Return
+
+===== Function_1703   [entries 1703..1781] =====
+  1703  EW_SENDMESSAGE     SendMessage none "$HWNDPARENT" "0x000C" "0" (flags=0x2)
+  1704  EW_CREATEDIR       SetOutPath "$Var52\AMICLIENT"
+  1705  EW_INTCMP          IntCmp $Var61 25 0 label_1708 label_1708
+  1706  EW_EXTRACTFILE     File "License.txt"   ; data +0x1B08BA7 size=29918
+  1707  EW_NOP             Goto label_1709
+  1708  EW_EXTRACTFILE     File "License.txt"   ; data +0x1B1008D size=29638
+  1709  EW_ASSIGNVAR       StrCpy $1 "License.txt"
+  1710  EW_CALL            Call label_2742
+  1711  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1712  EW_SETFLAG         SetFlag bit=13 value=0
+  1713  EW_PUSHPOP         Push "Kernel32::CreateFileW(t, i, i, i, i, i, i) i (r1, 0x80000000, 0, 0, 0x00000003, 0x00000080, 0) .r2"
+  1714  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  1715  EW_INTCMP          IntCmp $2 -1 label_1781 0 0
+  1716  EW_CALL            Call label_2742
+  1717  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1718  EW_SETFLAG         SetFlag bit=13 value=0
+  1719  EW_PUSHPOP         Push "Kernel32::GetFileSize(i, i) i ($2, 0) .r3"
+  1720  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  1721  EW_CALL            Call label_2742
+  1722  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1723  EW_SETFLAG         SetFlag bit=13 value=0
+  1724  EW_PUSHPOP         Push $3
+  1725  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Alloc")
+  1726  EW_PUSHPOP         Pop $4
+  1727  EW_INTCMP          IntCmp $4 0 0 label_1734 label_1734
+  1728  EW_CALL            Call label_2742
+  1729  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1730  EW_SETFLAG         SetFlag bit=13 value=0
+  1731  EW_PUSHPOP         Push "Kernel32::CloseHandle(i) i ($2)"
+  1732  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  1733  EW_NOP             Goto label_1781
+  1734  EW_CALL            Call label_2742
+  1735  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1736  EW_SETFLAG         SetFlag bit=13 value=0
+  1737  EW_PUSHPOP         Push 4
+  1738  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Alloc")
+  1739  EW_PUSHPOP         Pop $5
+  1740  EW_INTCMP          IntCmp $5 0 0 label_1752 label_1752
+  1741  EW_CALL            Call label_2742
+  1742  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1743  EW_SETFLAG         SetFlag bit=13 value=0
+  1744  EW_PUSHPOP         Push "Kernel32::CloseHandle(i) i ($2)"
+  1745  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  1746  EW_CALL            Call label_2742
+  1747  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1748  EW_SETFLAG         SetFlag bit=13 value=0
+  1749  EW_PUSHPOP         Push $4
+  1750  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Free")
+  1751  EW_NOP             Goto label_1781
+  1752  EW_CALL            Call label_2742
+  1753  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1754  EW_SETFLAG         SetFlag bit=13 value=0
+  1755  EW_PUSHPOP         Push "Kernel32::ReadFile(i, i, i, i, i) i ($2, r4, $3, r5, 0) .r1"
+  1756  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  1757  EW_CALL            Call label_2742
+  1758  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1759  EW_SETFLAG         SetFlag bit=13 value=0
+  1760  EW_PUSHPOP         Push "Kernel32::CloseHandle(i) i ($2)"
+  1761  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  1762  EW_INTCMP          IntCmp $1 0 label_1771 0 0
+  1763  EW_FINDWINDOW      FindWindow $0 "#32770" 0
+  1764  EW_GETDLGITEM      GetDlgItem $0 $0 1000
+  1765  EW_INTOP           IntOp $1 $4 + 2
+  1766  EW_CALL            Call label_2742
+  1767  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1768  EW_SETFLAG         SetFlag bit=13 value=0
+  1769  EW_PUSHPOP         Push "User32::SendMessageW(i, i, i, i) i ($0, 0x000C, 0, r1)"
+  1770  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  1771  EW_CALL            Call label_2742
+  1772  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1773  EW_SETFLAG         SetFlag bit=13 value=0
+  1774  EW_PUSHPOP         Push $4
+  1775  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Free")
+  1776  EW_CALL            Call label_2742
+  1777  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  1778  EW_SETFLAG         SetFlag bit=13 value=0
+  1779  EW_PUSHPOP         Push $5
+  1780  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Free")
+  1781  EW_RET             Return
+
+===== Function_1782   [entries 1782..1783] =====
+  1782  EW_SENDMESSAGE     SendMessage none "$HWNDPARENT" "0x000C" "0" (flags=0x2)
+  1783  EW_RET             Return
+
+===== Function_1784   [entries 1784..1785] =====
+  1784  EW_SENDMESSAGE     SendMessage none "$HWNDPARENT" "0x000C" "0" (flags=0x2)
+  1785  EW_RET             Return
+
+===== Function_1786   [entries 1786..1787] =====
+  1786  EW_SENDMESSAGE     SendMessage none "$HWNDPARENT" "0x000C" "0" (flags=0x2)
+  1787  EW_RET             Return
+
+===== Function_1788   [entries 1788..1824] =====
+  1788  EW_SENDMESSAGE     SendMessage none "$HWNDPARENT" "0x000C" "0" (flags=0x2)
+  1789  EW_SETFLAG         SetFlag bit=2 value=0
+  1790  EW_CALL            Call label_194
+  1791  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:label_1824 clear:0
+  1792  EW_CALL            Call label_2742
+  1793  EW_EXTRACTFILE     File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x19290 size=10752
+  1794  EW_SETFLAG         SetFlag bit=13 value=0
+  1795  EW_PUSHPOP         Push 1018
+  1796  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="Create")
+  1797  EW_PUSHPOP         Pop $0
+  1798  EW_CALL            Call label_2742
+  1799  EW_EXTRACTFILE     File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x19290 size=10752
+  1800  EW_SETFLAG         SetFlag bit=13 value=0
+  1801  EW_PUSHPOP         Push $Var95
+  1802  EW_PUSHPOP         Push "80%"
+  1803  EW_PUSHPOP         Push "80%"
+  1804  EW_PUSHPOP         Push "10u"
+  1805  EW_PUSHPOP         Push "10u"
+  1806  EW_PUSHPOP         Push "0x00000020"
+  1807  EW_PUSHPOP         Push "0x40000000|0x10000000|0x04000000|0x00000100"
+  1808  EW_PUSHPOP         Push "STATIC"
+  1809  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="CreateControl")
+  1810  EW_PUSHPOP         Pop $0
+  1811  EW_CREATEFONT      CreateFont $1 $(lang[-40]) height=8 weight=700 italic=0 underline=0 strike=0
+  1812  EW_SENDMESSAGE     SendMessage none "$0" "0x0030" "$1" (flags=0x0)
+  1813  EW_RESERVEDOPCODE  EW_RESERVEDOPCODE()
+  1814  EW_GETDLGITEM      GetDlgItem $0 $HWNDPARENT 2
+  1815  EW_SHOWWINDOW      ShowWindow $0 0
+  1816  EW_GETDLGITEM      GetDlgItem $0 $HWNDPARENT 3
+  1817  EW_SHOWWINDOW      ShowWindow $0 0
+  1818  EW_RESERVEDOPCODE  EW_RESERVEDOPCODE(0x1)
+  1819  EW_CALL            Call label_2742
+  1820  EW_EXTRACTFILE     File "$PLUGINSDIR\nsDialogs.dll"   ; data +0x19290 size=10752
+  1821  EW_SETFLAG         SetFlag bit=13 value=0
+  1822  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsDialogs.dll" (func="Show")
+  1823  EW_SENDMESSAGE     SendMessage none "$HWNDPARENT" "0x000C" "0" (flags=0x2)
+  1824  EW_RET             Return
+
+===== .onInstSuccess   [entries 1825..1856] =====
+  1825  EW_SENDMESSAGE     SendMessage none "$HWNDPARENT" "0x000C" "0" (flags=0x2)
+  1826  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:0 clear:label_1828
+  1827  EW_CALL            Call label_1788
+  1828  EW_IFFILEEXISTS    IfFileExists "$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe" 0 label_1830
+  1829  EW_DELETEFILE      Delete "$INSTDIR\Drivers\AmiconnectFlt\ADrvInst.exe"
+  1830  EW_RMDIR           RMDir /r "$Var52\AMICLIENT"
+  1831  EW_UPDATETEXT      DetailPrint $Var82
+  1832  EW_PUSHPOP         Push $4
+  1833  EW_PUSHPOP         Push $5
+  1834  EW_PUSHPOP         Push $6
+  1835  EW_ASSIGNVAR       StrCpy $6 $Var82
+  1836  EW_INTOP           IntOp $5 0 + 0
+  1837  EW_INTCMP          IntCmp $Var97 13 0 label_1840 label_1840
+  1838  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  1839  EW_NOP             Goto label_1841
+  1840  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  1841  EW_INTOP           IntOp $Var97 0 + 13
+  1842  EW_INTCMP          IntCmp $5 0 label_1849 0 0
+  1843  EW_FSEEK           FileSeek $5 0 END $4
+  1844  EW_INTCMP          IntCmp $4 0 0 label_1848 label_1848
+  1845  EW_FPUTS           FileWriteByte $5 255
+  1846  EW_FPUTS           FileWriteByte $5 254
+  1847  EW_LOCKWINDOW      LockWindow on
+  1848  EW_LOCKWINDOW      LockWindow on
+  1849  EW_INTCMP          IntCmp $5 0 label_1851 0 0
+  1850  EW_FCLOSE          FileClose $5
+  1851  EW_PUSHPOP         Pop $6
+  1852  EW_PUSHPOP         Pop $5
+  1853  EW_PUSHPOP         Pop $4
+  1854  EW_SETFLAG         SetFlag bit=2 value=0
+  1855  EW_CALL            Call label_1857
+  1856  EW_NOP             Goto label_1890
+
+===== Function_1857   [entries 1857..1895] =====
+  1857  EW_STRCMP          StrCmp $CMDLINE 0 0 label_1860
+  1858  EW_PUSHPOP         Push 0
+  1859  EW_RET             Return
+  1860  EW_PUSHPOP         Push $0
+  1861  EW_PUSHPOP         Push $1
+  1862  EW_PUSHPOP         Push $2
+  1863  EW_PUSHPOP         Push $3
+  1864  EW_STRLEN          StrLen $1 $CMDLINE
+  1865  EW_ASSIGNVAR       StrCpy $2 2
+  1866  EW_ASSIGNVAR       StrCpy $3 $CMDLINE maxlen=1 startpos=0
+  1867  EW_STRCMP          StrCmp $3 "$\"" label_1869 0
+  1868  EW_ASSIGNVAR       StrCpy $3 " "
+  1869  EW_INTCMP          IntCmp $2 $1 label_1873 0 label_1873
+  1870  EW_ASSIGNVAR       StrCpy $0 $CMDLINE maxlen=1 startpos=$2
+  1871  EW_INTOP           IntOp $2 $2 + 1
+  1872  EW_STRCMP          StrCmp $3 $0 0 label_1869
+  1873  EW_INTCMP          IntCmp $2 $1 label_1878 0 label_1878
+  1874  EW_ASSIGNVAR       StrCpy $0 $CMDLINE maxlen=1 startpos=$2
+  1875  EW_STRCMP          StrCmp $0 " " 0 label_1878
+  1876  EW_INTOP           IntOp $2 $2 + 1
+  1877  EW_NOP             Goto label_1873
+  1878  EW_ASSIGNVAR       StrCpy $0 $CMDLINE maxlen=0 startpos=$2
+  1879  EW_ASSIGNVAR       StrCpy $1 $0 maxlen=1 startpos=-1
+  1880  EW_STRCMP          StrCmp $1 " " 0 label_1883
+  1881  EW_ASSIGNVAR       StrCpy $0 $0 maxlen=-1 startpos=0
+  1882  EW_NOP             Goto label_1879
+  1883  EW_PUSHPOP         Pop $3
+  1884  EW_PUSHPOP         Pop $2
+  1885  EW_PUSHPOP         Pop $1
+  1886  EW_PUSHPOP         Push $0
+  1887  EW_PUSHPOP         Exch
+  1888  EW_PUSHPOP         Pop $0
+  1889  EW_RET             Return
+  1890  EW_PUSHPOP         Pop $R1
+  1891  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:0 clear:label_2017
+  1892  EW_PUSHPOP         Push $R1
+  1893  EW_PUSHPOP         Push "/W"
+  1894  EW_CALL            Call label_1896
+  1895  EW_NOP             Goto label_1985
+
+===== Function_1896   [entries 1896..2137] =====
+  1896  EW_PUSHPOP         Push $1
+  1897  EW_PUSHPOP         Exch
+  1898  EW_PUSHPOP         Pop $1
+  1899  EW_PUSHPOP         Exch
+  1900  EW_PUSHPOP         Push $0
+  1901  EW_PUSHPOP         Exch
+  1902  EW_PUSHPOP         Pop $0
+  1903  EW_PUSHPOP         Exch
+  1904  EW_PUSHPOP         Push $2
+  1905  EW_PUSHPOP         Push $3
+  1906  EW_PUSHPOP         Push $4
+  1907  EW_PUSHPOP         Push $5
+  1908  EW_PUSHPOP         Push $6
+  1909  EW_PUSHPOP         Push $7
+  1910  EW_SETFLAG         SetFlag bit=2 value=0
+  1911  EW_ASSIGNVAR       StrCpy $2 $1 maxlen=0 startpos=1
+  1912  EW_ASSIGNVAR       StrCpy $1 $1 maxlen=1 startpos=0
+  1913  EW_STRLEN          StrLen $3 $2
+  1914  EW_ASSIGNVAR       StrCpy $7 0
+  1915  EW_ASSIGNVAR       StrCpy $4 -1
+  1916  EW_ASSIGNVAR       StrCpy $6 0
+  1917  EW_INTOP           IntOp $4 $4 + 1
+  1918  EW_ASSIGNVAR       StrCpy $5 $0 maxlen=1 startpos=$4
+  1919  EW_STRCMP          StrCmp "$5$7" 0 label_1972 0
+  1920  EW_STRCMP          StrCmp $5 0 label_1959 0
+  1921  EW_STRCMP          StrCmp $5 "$\"" 0 label_1928
+  1922  EW_STRCMP          StrCmp $6 0 0 label_1925
+  1923  EW_ASSIGNVAR       StrCpy $6 "$\""
+  1924  EW_NOP             Goto label_1917
+  1925  EW_STRCMP          StrCmp $6 "$\"" 0 label_1928
+  1926  EW_ASSIGNVAR       StrCpy $6 0
+  1927  EW_NOP             Goto label_1917
+  1928  EW_STRCMP          StrCmp $5 "'" 0 label_1935
+  1929  EW_STRCMP          StrCmp $6 0 0 label_1932
+  1930  EW_ASSIGNVAR       StrCpy $6 "'"
+  1931  EW_NOP             Goto label_1917
+  1932  EW_STRCMP          StrCmp $6 "'" 0 label_1935
+  1933  EW_ASSIGNVAR       StrCpy $6 0
+  1934  EW_NOP             Goto label_1917
+  1935  EW_STRCMP          StrCmp $5 "`" 0 label_1942
+  1936  EW_STRCMP          StrCmp $6 0 0 label_1939
+  1937  EW_ASSIGNVAR       StrCpy $6 "`"
+  1938  EW_NOP             Goto label_1917
+  1939  EW_STRCMP          StrCmp $6 "`" 0 label_1942
+  1940  EW_ASSIGNVAR       StrCpy $6 0
+  1941  EW_NOP             Goto label_1917
+  1942  EW_STRCMP          StrCmp $6 "$\"" label_1917 0
+  1943  EW_STRCMP          StrCmp $6 "'" label_1917 0
+  1944  EW_STRCMP          StrCmp $6 "`" label_1917 0
+  1945  EW_STRCMP          StrCmp $5 $1 0 label_1917
+  1946  EW_STRCMP          StrCmp $7 0 label_1947 label_1959
+  1947  EW_INTOP           IntOp $4 $4 + 1
+  1948  EW_ASSIGNVAR       StrCpy $5 $0 maxlen=$3 startpos=$4
+  1949  EW_STRCMP          StrCmp $5 0 label_1972 0
+  1950  EW_STRCMP          StrCmp $5 $2 0 label_1917
+  1951  EW_INTOP           IntOp $4 $4 + $3
+  1952  EW_ASSIGNVAR       StrCpy $0 $0 maxlen=0 startpos=$4
+  1953  EW_ASSIGNVAR       StrCpy $4 $0 maxlen=1 startpos=0
+  1954  EW_STRCMP          StrCmp $4 " " 0 label_1957
+  1955  EW_ASSIGNVAR       StrCpy $0 $0 maxlen=0 startpos=1
+  1956  EW_NOP             Goto label_1953
+  1957  EW_ASSIGNVAR       StrCpy $7 1
+  1958  EW_NOP             Goto label_1915
+  1959  EW_ASSIGNVAR       StrCpy $0 $0 maxlen=$4 startpos=0
+  1960  EW_ASSIGNVAR       StrCpy $4 $0 maxlen=1 startpos=-1
+  1961  EW_STRCMP          StrCmp $4 " " 0 label_1964
+  1962  EW_ASSIGNVAR       StrCpy $0 $0 maxlen=-1 startpos=0
+  1963  EW_NOP             Goto label_1960
+  1964  EW_ASSIGNVAR       StrCpy $3 $0 maxlen=1 startpos=0
+  1965  EW_ASSIGNVAR       StrCpy $4 $0 maxlen=1 startpos=-1
+  1966  EW_STRCMP          StrCmp $3 $4 0 label_1974
+  1967  EW_STRCMP          StrCmp $3 "$\"" label_1970 0
+  1968  EW_STRCMP          StrCmp $3 "'" label_1970 0
+  1969  EW_STRCMP          StrCmp $3 "`" 0 label_1974
+  1970  EW_ASSIGNVAR       StrCpy $0 $0 maxlen=-1 startpos=1
+  1971  EW_NOP             Goto label_1974
+  1972  EW_SETFLAG         SetFlag bit=2 value=1
+  1973  EW_ASSIGNVAR       StrCpy $0 0
+  1974  EW_PUSHPOP         Pop $7
+  1975  EW_PUSHPOP         Pop $6
+  1976  EW_PUSHPOP         Pop $5
+  1977  EW_PUSHPOP         Pop $4
+  1978  EW_PUSHPOP         Pop $3
+  1979  EW_PUSHPOP         Pop $2
+  1980  EW_PUSHPOP         Pop $1
+  1981  EW_PUSHPOP         Push $0
+  1982  EW_PUSHPOP         Exch
+  1983  EW_PUSHPOP         Pop $0
+  1984  EW_RET             Return
+  1985  EW_PUSHPOP         Pop $R0
+  1986  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2017
+  1987  EW_SETFLAG         SetFlag bit=2 value=0
+  1988  EW_PUSHPOP         Push $R1
+  1989  EW_PUSHPOP         Push "/w"
+  1990  EW_CALL            Call label_1896
+  1991  EW_PUSHPOP         Pop $R0
+  1992  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2017
+  1993  EW_UPDATETEXT      DetailPrint $Var82
+  1994  EW_PUSHPOP         Push $4
+  1995  EW_PUSHPOP         Push $5
+  1996  EW_PUSHPOP         Push $6
+  1997  EW_ASSIGNVAR       StrCpy $6 $Var82
+  1998  EW_INTOP           IntOp $5 0 + 0
+  1999  EW_INTCMP          IntCmp $Var97 13 0 label_2002 label_2002
+  2000  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2001  EW_NOP             Goto label_2003
+  2002  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2003  EW_INTOP           IntOp $Var97 0 + 13
+  2004  EW_INTCMP          IntCmp $5 0 label_2011 0 0
+  2005  EW_FSEEK           FileSeek $5 0 END $4
+  2006  EW_INTCMP          IntCmp $4 0 0 label_2010 label_2010
+  2007  EW_FPUTS           FileWriteByte $5 255
+  2008  EW_FPUTS           FileWriteByte $5 254
+  2009  EW_LOCKWINDOW      LockWindow on
+  2010  EW_LOCKWINDOW      LockWindow on
+  2011  EW_INTCMP          IntCmp $5 0 label_2013 0 0
+  2012  EW_FCLOSE          FileClose $5
+  2013  EW_PUSHPOP         Pop $6
+  2014  EW_PUSHPOP         Pop $5
+  2015  EW_PUSHPOP         Pop $4
+  2016  EW_MESSAGEBOX      MessageBox MB=0xE00024 $Var82 label_6 label_2068
+  2017  EW_UPDATETEXT      DetailPrint $Var82
+  2018  EW_PUSHPOP         Push $4
+  2019  EW_PUSHPOP         Push $5
+  2020  EW_PUSHPOP         Push $6
+  2021  EW_ASSIGNVAR       StrCpy $6 $Var82
+  2022  EW_INTOP           IntOp $5 0 + 0
+  2023  EW_INTCMP          IntCmp $Var97 13 0 label_2026 label_2026
+  2024  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2025  EW_NOP             Goto label_2027
+  2026  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2027  EW_INTOP           IntOp $Var97 0 + 13
+  2028  EW_INTCMP          IntCmp $5 0 label_2035 0 0
+  2029  EW_FSEEK           FileSeek $5 0 END $4
+  2030  EW_INTCMP          IntCmp $4 0 0 label_2034 label_2034
+  2031  EW_FPUTS           FileWriteByte $5 255
+  2032  EW_FPUTS           FileWriteByte $5 254
+  2033  EW_LOCKWINDOW      LockWindow on
+  2034  EW_LOCKWINDOW      LockWindow on
+  2035  EW_INTCMP          IntCmp $5 0 label_2037 0 0
+  2036  EW_FCLOSE          FileClose $5
+  2037  EW_PUSHPOP         Pop $6
+  2038  EW_PUSHPOP         Pop $5
+  2039  EW_PUSHPOP         Pop $4
+  2040  EW_MESSAGEBOX      MessageBox MB=0x24 $Var82 label_6 label_2068
+  2041  EW_UPDATETEXT      DetailPrint "Yes"
+  2042  EW_PUSHPOP         Push $4
+  2043  EW_PUSHPOP         Push $5
+  2044  EW_PUSHPOP         Push $6
+  2045  EW_ASSIGNVAR       StrCpy $6 "Yes"
+  2046  EW_INTOP           IntOp $5 0 + 0
+  2047  EW_INTCMP          IntCmp $Var97 13 0 label_2050 label_2050
+  2048  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2049  EW_NOP             Goto label_2051
+  2050  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2051  EW_INTOP           IntOp $Var97 0 + 13
+  2052  EW_INTCMP          IntCmp $5 0 label_2059 0 0
+  2053  EW_FSEEK           FileSeek $5 0 END $4
+  2054  EW_INTCMP          IntCmp $4 0 0 label_2058 label_2058
+  2055  EW_FPUTS           FileWriteByte $5 255
+  2056  EW_FPUTS           FileWriteByte $5 254
+  2057  EW_LOCKWINDOW      LockWindow on
+  2058  EW_LOCKWINDOW      LockWindow on
+  2059  EW_INTCMP          IntCmp $5 0 label_2061 0 0
+  2060  EW_FCLOSE          FileClose $5
+  2061  EW_PUSHPOP         Pop $6
+  2062  EW_PUSHPOP         Pop $5
+  2063  EW_PUSHPOP         Pop $4
+  2064  EW_CALL            Call label_194
+  2065  EW_SETFLAG         SetFlag bit=11 value=2
+  2066  EW_REBOOT          Reboot
+  2067  EW_QUIT            Quit
+  2068  EW_UPDATETEXT      DetailPrint "No"
+  2069  EW_PUSHPOP         Push $4
+  2070  EW_PUSHPOP         Push $5
+  2071  EW_PUSHPOP         Push $6
+  2072  EW_ASSIGNVAR       StrCpy $6 "No"
+  2073  EW_INTOP           IntOp $5 0 + 0
+  2074  EW_INTCMP          IntCmp $Var97 13 0 label_2077 label_2077
+  2075  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2076  EW_NOP             Goto label_2078
+  2077  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2078  EW_INTOP           IntOp $Var97 0 + 13
+  2079  EW_INTCMP          IntCmp $5 0 label_2086 0 0
+  2080  EW_FSEEK           FileSeek $5 0 END $4
+  2081  EW_INTCMP          IntCmp $4 0 0 label_2085 label_2085
+  2082  EW_FPUTS           FileWriteByte $5 255
+  2083  EW_FPUTS           FileWriteByte $5 254
+  2084  EW_LOCKWINDOW      LockWindow on
+  2085  EW_LOCKWINDOW      LockWindow on
+  2086  EW_INTCMP          IntCmp $5 0 label_2088 0 0
+  2087  EW_FCLOSE          FileClose $5
+  2088  EW_PUSHPOP         Pop $6
+  2089  EW_PUSHPOP         Pop $5
+  2090  EW_PUSHPOP         Pop $4
+  2091  EW_INTCMP          IntCmp $Var53 1 0 label_2093 label_2093
+  2092  EW_NOP             Goto label_2127
+  2093  EW_UPDATETEXT      DetailPrint "Starting Amiconnect service"
+  2094  EW_PUSHPOP         Push $4
+  2095  EW_PUSHPOP         Push $5
+  2096  EW_PUSHPOP         Push $6
+  2097  EW_ASSIGNVAR       StrCpy $6 "Starting Amiconnect service"
+  2098  EW_INTOP           IntOp $5 0 + 0
+  2099  EW_INTCMP          IntCmp $Var97 13 0 label_2102 label_2102
+  2100  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2101  EW_NOP             Goto label_2103
+  2102  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2103  EW_INTOP           IntOp $Var97 0 + 13
+  2104  EW_INTCMP          IntCmp $5 0 label_2111 0 0
+  2105  EW_FSEEK           FileSeek $5 0 END $4
+  2106  EW_INTCMP          IntCmp $4 0 0 label_2110 label_2110
+  2107  EW_FPUTS           FileWriteByte $5 255
+  2108  EW_FPUTS           FileWriteByte $5 254
+  2109  EW_LOCKWINDOW      LockWindow on
+  2110  EW_LOCKWINDOW      LockWindow on
+  2111  EW_INTCMP          IntCmp $5 0 label_2113 0 0
+  2112  EW_FCLOSE          FileClose $5
+  2113  EW_PUSHPOP         Pop $6
+  2114  EW_PUSHPOP         Pop $5
+  2115  EW_PUSHPOP         Pop $4
+  2116  EW_SETFLAG         SetFlag bit=2 value=0
+  2117  EW_CALL            Call label_2742
+  2118  EW_EXTRACTFILE     File "$PLUGINSDIR\nsExec.dll"   ; data +0x28680 size=6656
+  2119  EW_SETFLAG         SetFlag bit=13 value=0
+  2120  EW_PUSHPOP         Push "net start amiconnectd"
+  2121  EW_PUSHPOP         Push "/TIMEOUT=30000"
+  2122  EW_PUSHPOP         Push "/OEM"
+  2123  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\nsExec.dll" (func="ExecToLog")
+  2124  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_1831 clear:0
+  2125  EW_SLEEP           Sleep 3333
+  2126  EW_EXECUTE         Exec "$\"$INSTDIR\amiconnect.exe$\""
+  2127  EW_CALL            Call label_194
+  2128  EW_STRCMP          StrCmp 0 0 0 label_2136
+  2129  EW_INTOP           IntOp $1 $Var50 + 0
+  2130  EW_CALL            Call label_2742
+  2131  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  2132  EW_SETFLAG         SetFlag bit=13 value=0
+  2133  EW_PUSHPOP         Push "kernel32::Wow64RevertWow64FsRedirection(i r1) i r2"
+  2134  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  2135  EW_SETFLAG         SetFlag bit=12 value=512
+  2136  EW_SETFLAG         SetFlag bit=11 value=0
+  2137  EW_RET             Return
+
+===== .onInit   [entries 2138..2608] =====
+  2138  EW_SETFLAG         SetFlag bit=2 value=0
+  2139  EW_CALL            Call label_1857
+  2140  EW_PUSHPOP         Pop $0
+  2141  EW_PUSHPOP         Push $0
+  2142  EW_PUSHPOP         Push "/ANP"
+  2143  EW_CALL            Call label_1896
+  2144  EW_PUSHPOP         Pop $1
+  2145  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2169
+  2146  EW_ASSIGNVAR       StrCpy $0 $EXEPATH maxlen=2 startpos=0
+  2147  EW_STRCMP          StrCmp $0 "//" label_2159 0
+  2148  EW_STRCMP          StrCmp $0 "\\" label_2159 0
+  2149  EW_ASSIGNVAR       StrCpy $0 $EXEPATH maxlen=1 startpos=1
+  2150  EW_STRCMP          StrCmp $0 ":" 0 label_2159
+  2151  EW_ASSIGNVAR       StrCpy $0 $EXEPATH maxlen=3 startpos=0
+  2152  EW_CALL            Call label_2742
+  2153  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  2154  EW_SETFLAG         SetFlag bit=13 value=0
+  2155  EW_PUSHPOP         Push "kernel32::GetDriveTypeW(w r0) i .r1"
+  2156  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  2157  EW_INTCMP          IntCmp $1 4 label_2159 0 0
+  2158  EW_NOP             Goto label_2169
+  2159  EW_SETFLAG         SetFlag bit=2 value=0
+  2160  EW_COPYFILES       CopyFiles $EXEPATH $TEMP flags=0x614
+  2161  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2169 clear:0
+  2162  EW_CALL            Call label_1857
+  2163  EW_PUSHPOP         Pop $0
+  2164  EW_EXECUTE         ExecWait "$\"$TEMP\$EXEFILE$\" $0 /ANP"
+  2165  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2169 clear:0
+  2166  EW_DELETEFILE      Delete "$TEMP\$EXEFILE"
+  2167  EW_SETFLAG         SetFlag bit=11 value=$1
+  2168  EW_QUIT            Quit
+  2169  EW_ASSIGNVAR       StrCpy $Var52 $TEMP
+  2170  EW_SETFLAG         SetFlag bit=2 value=0
+  2171  EW_CALL            Call label_1857
+  2172  EW_PUSHPOP         Pop $R1
+  2173  EW_PUSHPOP         Push $R1
+  2174  EW_PUSHPOP         Push "/lt"
+  2175  EW_CALL            Call label_1896
+  2176  EW_PUSHPOP         Pop $R0
+  2177  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2184
+  2178  EW_SETFLAG         SetFlag bit=2 value=0
+  2179  EW_PUSHPOP         Push $R1
+  2180  EW_PUSHPOP         Push "/LT"
+  2181  EW_CALL            Call label_1896
+  2182  EW_PUSHPOP         Pop $R0
+  2183  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2185 clear:label_2184
+  2184  EW_ASSIGNVAR       StrCpy $Var52 $EXEDIR
+  2185  EW_STRCMP          StrCmp 0 0 0 label_2192
+  2186  EW_CALL            Call label_2742
+  2187  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  2188  EW_SETFLAG         SetFlag bit=13 value=0
+  2189  EW_PUSHPOP         Push "kernel32::Wow64DisableWow64FsRedirection(*i .r1) i r2"
+  2190  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  2191  EW_INTOP           IntOp $Var50 $1 + 0
+  2192  EW_ASSIGNVAR       StrCpy $0 $WINDOWS
+  2193  EW_CALL            Call label_2742
+  2194  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  2195  EW_SETFLAG         SetFlag bit=13 value=0
+  2196  EW_PUSHPOP         Push "kernel32::GetSystemWindowsDirectory(t .r0, i 1024)"
+  2197  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  2198  EW_ASSIGNVAR       StrCpy $Var51 $0
+  2199  EW_STRCMP          StrCmp 0 0 0 label_2206
+  2200  EW_INTOP           IntOp $1 $Var50 + 0
+  2201  EW_CALL            Call label_2742
+  2202  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  2203  EW_SETFLAG         SetFlag bit=13 value=0
+  2204  EW_PUSHPOP         Push "kernel32::Wow64RevertWow64FsRedirection(i r1) i r2"
+  2205  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  2206  EW_SETFLAG         SetFlag bit=2 value=0
+  2207  EW_CALL            Call label_1857
+  2208  EW_PUSHPOP         Pop $R1
+  2209  EW_PUSHPOP         Push $R1
+  2210  EW_PUSHPOP         Push "/S"
+  2211  EW_CALL            Call label_1896
+  2212  EW_PUSHPOP         Pop $R0
+  2213  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2222
+  2214  EW_SETFLAG         SetFlag bit=2 value=0
+  2215  EW_PUSHPOP         Push $R1
+  2216  EW_PUSHPOP         Push "/s"
+  2217  EW_CALL            Call label_1896
+  2218  EW_PUSHPOP         Pop $R0
+  2219  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2222
+  2220  EW_SETFLAG         SetFlag bit=8 value=0
+  2221  EW_NOP             Goto label_2223
+  2222  EW_SETFLAG         SetFlag bit=8 value=1
+  2223  EW_STRCMP          StrCmp 0 0 0 label_2225
+  2224  EW_SETFLAG         SetFlag bit=12 value=0
+  2225  EW_SETFLAG         SetFlag bit=2 value=0
+  2226  EW_CALL            Call label_1857
+  2227  EW_PUSHPOP         Pop $R1
+  2228  EW_PUSHPOP         Push $R1
+  2229  EW_PUSHPOP         Push "/AUTORUN"
+  2230  EW_CALL            Call label_1896
+  2231  EW_PUSHPOP         Pop $R0
+  2232  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2243 clear:0
+  2233  EW_SETFLAG         SetFlag bit=2 value=0
+  2234  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "VersionHi"
+  2235  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2243 clear:0
+  2236  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "VersionLo"
+  2237  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2243 clear:0
+  2238  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "VersionBn"
+  2239  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2243 clear:0
+  2240  EW_STRCMP          StrCmp 0 0 0 label_2242
+  2241  EW_SETFLAG         SetFlag bit=12 value=512
+  2242  EW_QUIT            Quit
+  2243  EW_SETFLAG         SetFlag bit=2 value=0
+  2244  EW_CALL            Call label_1857
+  2245  EW_PUSHPOP         Pop $R1
+  2246  EW_PUSHPOP         Push $R1
+  2247  EW_PUSHPOP         Push "/R"
+  2248  EW_CALL            Call label_1896
+  2249  EW_PUSHPOP         Pop $R0
+  2250  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2257
+  2251  EW_SETFLAG         SetFlag bit=2 value=0
+  2252  EW_PUSHPOP         Push $R1
+  2253  EW_PUSHPOP         Push "/r"
+  2254  EW_CALL            Call label_1896
+  2255  EW_PUSHPOP         Pop $R0
+  2256  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2268 clear:0
+  2257  EW_SETFLAG         SetFlag bit=2 value=0
+  2258  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "VersionHi"
+  2259  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2264 clear:0
+  2260  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "VersionLo"
+  2261  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2264 clear:0
+  2262  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "VersionBn"
+  2263  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2264 clear:label_2268
+  2264  EW_STRCMP          StrCmp 0 0 0 label_2266
+  2265  EW_SETFLAG         SetFlag bit=12 value=512
+  2266  EW_SETFLAG         SetFlag bit=11 value=0
+  2267  EW_QUIT            Quit
+  2268  EW_STRCMP          StrCmp 0 0 0 label_2270
+  2269  EW_SETFLAG         SetFlag bit=12 value=512
+  2270  EW_WRITEREG        WriteRegDWORD HKLM "Software\AMICON\Amiconnect" "Installer Language" "1049"
+  2271  EW_READREGSTR      ReadRegStr $Var100 HKLM "Software\AMICON\Amiconnect" "Installer Language"
+  2272  EW_STRCMP          StrCmp $Var100 0 label_2274 0
+  2273  EW_ASSIGNVAR       StrCpy $LANGUAGE $Var100
+  2274  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:label_2292 clear:0
+  2275  EW_CALL            Call label_2742
+  2276  EW_EXTRACTFILE     File "$PLUGINSDIR\LangDLL.dll"   ; data +0x27278 size=5120
+  2277  EW_SETFLAG         SetFlag bit=13 value=0
+  2278  EW_PUSHPOP         Push 0
+  2279  EW_PUSHPOP         Push 1251
+  2280  EW_PUSHPOP         Push 1049
+  2281  EW_PUSHPOP         Push "Русский"
+  2282  EW_PUSHPOP         Push 1252
+  2283  EW_PUSHPOP         Push 1033
+  2284  EW_PUSHPOP         Push "English"
+  2285  EW_PUSHPOP         Push "AC"
+  2286  EW_PUSHPOP         Push "Выберите язык установщика"
+  2287  EW_PUSHPOP         Push "Язык установки"
+  2288  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\LangDLL.dll" (func="LangDialog")
+  2289  EW_PUSHPOP         Pop $LANGUAGE
+  2290  EW_STRCMP          StrCmp $LANGUAGE "cancel" 0 label_2292
+  2291  EW_ABORT           Abort
+  2292  EW_INTCMP          IntCmp $LANGUAGE 1049 0 label_2332 label_2332
+  2293  EW_INTOP           IntOp $Var61 25 + 0
+  2294  EW_ASSIGNVAR       StrCpy $Var55 "© $\"АМИКОН$\", 2026"
+  2295  EW_ASSIGNVAR       StrCpy $Var62 "Амиконнект"
+  2296  EW_ASSIGNVAR       StrCpy $Var63 "Амиконнект 1.30.3004"
+  2297  EW_ASSIGNVAR       StrCpy $Var64 "Амиконнект 1.30.3004"
+  2298  EW_ASSIGNVAR       StrCpy $Var95 21757
+  2299  EW_ASSIGNVAR       StrCpy $Var56 "Обновление драйвера..."
+  2300  EW_ASSIGNVAR       StrCpy $Var57 "Обновление драйвера не выполнено. "
+  2301  EW_ASSIGNVAR       StrCpy $Var58 "Предварительная установка драйвера не удалась."
+  2302  EW_ASSIGNVAR       StrCpy $Var59 "Установка драйвера..."
+  2303  EW_ASSIGNVAR       StrCpy $Var60 21972
+  2304  EW_ASSIGNVAR       StrCpy $Var65 "Программу необходимо устанавливать с правами администратора!"
+  2305  EW_ASSIGNVAR       StrCpy $Var66 "Ошибка установки сетевого драйвера. Повторить ещё раз?"
+  2306  EW_ASSIGNVAR       StrCpy $Var67 "Ошибка установки сетевого драйвера. Установка невозможна."
+  2307  EW_ASSIGNVAR       StrCpy $Var68 "Ошибка установки драйвера файловой системы. Повторить ещё раз?"
+  2308  EW_ASSIGNVAR       StrCpy $Var69 "Ошибка установки драйвера файловой системы. Установка невозможна."
+  2309  EW_ASSIGNVAR       StrCpy $Var70 "Ошибка инициализации INetCfg интерфейса. "
+  2310  EW_ASSIGNVAR       StrCpy $Var71 "INetCfg интерфейс уже используется. "
+  2311  EW_ASSIGNVAR       StrCpy $Var72 "Не удается открыть INetCfg интерфейс на запись. "
+  2312  EW_ASSIGNVAR       StrCpy $Var73 "Для установки требуется перезагрузка. "
+  2313  EW_ASSIGNVAR       StrCpy $Var74 "Превышено количество установленных NDIS-фильтров. "
+  2314  EW_ASSIGNVAR       StrCpy $Var75 "Невозможно открыть устройство драйвера. "
+  2315  EW_ASSIGNVAR       StrCpy $Var76 "Невозможно открыть устройство драйвера. Продолжить установку?"
+  2316  EW_ASSIGNVAR       StrCpy $Var77 "Не создана папка драйвера в реестре. "
+  2317  EW_ASSIGNVAR       StrCpy $Var78 "Ошибка установки сервиса Amiconnect. Повторить ещё раз?"
+  2318  EW_ASSIGNVAR       StrCpy $Var79 "Ошибка установки сервиса Amiconnect. Установка невозможна."
+  2319  EW_ASSIGNVAR       StrCpy $Var80 "Установка KC3 не выбрана, но он уже установлен. Удалить его?"
+  2320  EW_ASSIGNVAR       StrCpy $Var81 "Установка запуска приложения до входа в систему не выбрана, но оно уже установлено. Удалить его?"
+  2321  EW_ASSIGNVAR       StrCpy $Var82 "Изменения вступят в силу после перезагрузки компьютера. Перезагрузить компьютер?"
+  2322  EW_ASSIGNVAR       StrCpy $Var83 "Ошибка деинсталляции tdi-драйвера."
+  2323  EW_ASSIGNVAR       StrCpy $Var84 "Установка невозможна. Нужна ОС Windows 10, 11"
+  2324  EW_ASSIGNVAR       StrCpy $Var85 "Возможна неправильная установка из-за запуска в режиме совместимости (версии ОС и ndis.sys различны)! Продолжить?"
+  2325  EW_ASSIGNVAR       StrCpy $Var86 "Установка невозможна. Установлена более новая версия программы. Для продолжения установки удалите установленную версию программы"
+  2326  EW_ASSIGNVAR       StrCpy $Var87 "Программу установки не следует запускать из терминальной сессии! Продолжить установку?"
+  2327  EW_ASSIGNVAR       StrCpy $Var88 "Амиконнект"
+  2328  EW_ASSIGNVAR       StrCpy $Var89 "Уменьшить MTU на сетевых интерфейсах"
+  2329  EW_ASSIGNVAR       StrCpy $Var90 "Ярлык меню Пуск"
+  2330  EW_ASSIGNVAR       StrCpy $0 24144
+  2331  EW_NOP             Goto label_2370
+  2332  EW_INTOP           IntOp $Var61 9 + 0
+  2333  EW_ASSIGNVAR       StrCpy $Var55 "© $\"AMICON$\", 2026"
+  2334  EW_ASSIGNVAR       StrCpy $Var62 "Amiconnect"
+  2335  EW_ASSIGNVAR       StrCpy $Var63 "Amiconnect 1.30.3004"
+  2336  EW_ASSIGNVAR       StrCpy $Var64 "Amiconnect 1.30.3004"
+  2337  EW_ASSIGNVAR       StrCpy $Var95 24234
+  2338  EW_ASSIGNVAR       StrCpy $Var56 "Driver update..."
+  2339  EW_ASSIGNVAR       StrCpy $Var57 "Driver update failed. "
+  2340  EW_ASSIGNVAR       StrCpy $Var58 "Driver presetup failed."
+  2341  EW_ASSIGNVAR       StrCpy $Var59 "Driver setup..."
+  2342  EW_ASSIGNVAR       StrCpy $Var60 24407
+  2343  EW_ASSIGNVAR       StrCpy $Var65 "Program must be installed with administrator rights!"
+  2344  EW_ASSIGNVAR       StrCpy $Var66 "Error installing network driver. Try again?"
+  2345  EW_ASSIGNVAR       StrCpy $Var67 "Error installing network driver. Installation canceled."
+  2346  EW_ASSIGNVAR       StrCpy $Var68 "Error installing file system driver. Try again?"
+  2347  EW_ASSIGNVAR       StrCpy $Var69 "Error installing file system driver. Installation canceled."
+  2348  EW_ASSIGNVAR       StrCpy $Var70 "INetCfg interface initialization failed. "
+  2349  EW_ASSIGNVAR       StrCpy $Var71 "INetCfg interface is already in use. "
+  2350  EW_ASSIGNVAR       StrCpy $Var72 "Opening INetCfg interface for writing failed. "
+  2351  EW_ASSIGNVAR       StrCpy $Var73 "Reboot needed to complete the installation. "
+  2352  EW_ASSIGNVAR       StrCpy $Var74 "NDIS filter limit exceeded. "
+  2353  EW_ASSIGNVAR       StrCpy $Var75 "Opening driver device failed. "
+  2354  EW_ASSIGNVAR       StrCpy $Var76 "Opening driver device failed. Continue installation?"
+  2355  EW_ASSIGNVAR       StrCpy $Var77 "Driver registry folder wasn't created. "
+  2356  EW_ASSIGNVAR       StrCpy $Var78 "Error installing Amiconnect service. Try again?"
+  2357  EW_ASSIGNVAR       StrCpy $Var79 "Error installing Amiconnect service. Installation canceled."
+  2358  EW_ASSIGNVAR       StrCpy $Var80 "Installation of KC3 not selected, but it was installed. Uninstall it?"
+  2359  EW_ASSIGNVAR       StrCpy $Var81 "Installation of application to run before logon not selected, but it was installed. Uninstall it?"
+  2360  EW_ASSIGNVAR       StrCpy $Var82 "Changes will be applied after the computer restarts. Restart the computer?"
+  2361  EW_ASSIGNVAR       StrCpy $Var83 "Error uninstalling TDI driver."
+  2362  EW_ASSIGNVAR       StrCpy $Var84 "Installation canceled. Windows 10, 11 is required."
+  2363  EW_ASSIGNVAR       StrCpy $Var85 "Installation may be incorrect because it is running in compatibility mode (OS and ndis.sys versions differ). Continue?"
+  2364  EW_ASSIGNVAR       StrCpy $Var86 "Installation canceled. A newer version of the program is installed. Uninstall it to continue the installation."
+  2365  EW_ASSIGNVAR       StrCpy $Var87 "Installation program shouldn't be run from a terminal session! Continue installation?"
+  2366  EW_ASSIGNVAR       StrCpy $Var89 "Reduce MTU on all network interfaces"
+  2367  EW_ASSIGNVAR       StrCpy $Var88 "Amiconnect"
+  2368  EW_ASSIGNVAR       StrCpy $Var90 "Start menu shortcut"
+  2369  EW_ASSIGNVAR       StrCpy $0 26334
+  2370  EW_INTOP           IntOp $Var53 0 + 0
+  2371  EW_SETFLAG         SetFlag bit=2 value=0
+  2372  EW_SETFLAG         SetFlag bit=11 value=0
+  2373  EW_CALL            Call label_1857
+  2374  EW_PUSHPOP         Pop $R1
+  2375  EW_PUSHPOP         Push $R1
+  2376  EW_PUSHPOP         Push "/?"
+  2377  EW_CALL            Call label_1896
+  2378  EW_PUSHPOP         Pop $R0
+  2379  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2410
+  2380  EW_SETFLAG         SetFlag bit=2 value=0
+  2381  EW_PUSHPOP         Push $R1
+  2382  EW_PUSHPOP         Push "-?"
+  2383  EW_CALL            Call label_1896
+  2384  EW_PUSHPOP         Pop $R0
+  2385  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2410
+  2386  EW_SETFLAG         SetFlag bit=2 value=0
+  2387  EW_PUSHPOP         Push $R1
+  2388  EW_PUSHPOP         Push "/H"
+  2389  EW_CALL            Call label_1896
+  2390  EW_PUSHPOP         Pop $R0
+  2391  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2410
+  2392  EW_SETFLAG         SetFlag bit=2 value=0
+  2393  EW_PUSHPOP         Push $R1
+  2394  EW_PUSHPOP         Push "/h"
+  2395  EW_CALL            Call label_1896
+  2396  EW_PUSHPOP         Pop $R0
+  2397  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2410
+  2398  EW_SETFLAG         SetFlag bit=2 value=0
+  2399  EW_PUSHPOP         Push $R1
+  2400  EW_PUSHPOP         Push "-H"
+  2401  EW_CALL            Call label_1896
+  2402  EW_PUSHPOP         Pop $R0
+  2403  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:0 clear:label_2410
+  2404  EW_SETFLAG         SetFlag bit=2 value=0
+  2405  EW_PUSHPOP         Push $R1
+  2406  EW_PUSHPOP         Push "-h"
+  2407  EW_CALL            Call label_1896
+  2408  EW_PUSHPOP         Pop $R0
+  2409  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2412 clear:0
+  2410  EW_MESSAGEBOX      MessageBox MB=0x40 $Var60 0 0
+  2411  EW_QUIT            Quit
+  2412  EW_CALL            Call label_2742
+  2413  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  2414  EW_SETFLAG         SetFlag bit=13 value=0
+  2415  EW_PUSHPOP         Push "user32::GetSystemMetrics(i 4096) i .r0"
+  2416  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  2417  EW_INTCMP          IntCmp $0 0 0 label_2424 label_2424
+  2418  EW_CALL            Call label_2742
+  2419  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  2420  EW_SETFLAG         SetFlag bit=13 value=0
+  2421  EW_PUSHPOP         Push "user32::GetSystemMetrics(i 8193) i .r0"
+  2422  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  2423  EW_INTCMP          IntCmp $0 0 label_2474 label_2424 label_2424
+  2424  EW_UPDATETEXT      DetailPrint $Var87
+  2425  EW_PUSHPOP         Push $4
+  2426  EW_PUSHPOP         Push $5
+  2427  EW_PUSHPOP         Push $6
+  2428  EW_ASSIGNVAR       StrCpy $6 $Var87
+  2429  EW_INTOP           IntOp $5 0 + 0
+  2430  EW_INTCMP          IntCmp $Var97 13 0 label_2433 label_2433
+  2431  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2432  EW_NOP             Goto label_2434
+  2433  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2434  EW_INTOP           IntOp $Var97 0 + 13
+  2435  EW_INTCMP          IntCmp $5 0 label_2442 0 0
+  2436  EW_FSEEK           FileSeek $5 0 END $4
+  2437  EW_INTCMP          IntCmp $4 0 0 label_2441 label_2441
+  2438  EW_FPUTS           FileWriteByte $5 255
+  2439  EW_FPUTS           FileWriteByte $5 254
+  2440  EW_LOCKWINDOW      LockWindow on
+  2441  EW_LOCKWINDOW      LockWindow on
+  2442  EW_INTCMP          IntCmp $5 0 label_2444 0 0
+  2443  EW_FCLOSE          FileClose $5
+  2444  EW_PUSHPOP         Pop $6
+  2445  EW_PUSHPOP         Pop $5
+  2446  EW_PUSHPOP         Pop $4
+  2447  EW_MESSAGEBOX      MessageBox MB=0xE00024 $Var87 label_5 label_2474
+  2448  EW_UPDATETEXT      DetailPrint "No"
+  2449  EW_PUSHPOP         Push $4
+  2450  EW_PUSHPOP         Push $5
+  2451  EW_PUSHPOP         Push $6
+  2452  EW_ASSIGNVAR       StrCpy $6 "No"
+  2453  EW_INTOP           IntOp $5 0 + 0
+  2454  EW_INTCMP          IntCmp $Var97 13 0 label_2457 label_2457
+  2455  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2456  EW_NOP             Goto label_2458
+  2457  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2458  EW_INTOP           IntOp $Var97 0 + 13
+  2459  EW_INTCMP          IntCmp $5 0 label_2466 0 0
+  2460  EW_FSEEK           FileSeek $5 0 END $4
+  2461  EW_INTCMP          IntCmp $4 0 0 label_2465 label_2465
+  2462  EW_FPUTS           FileWriteByte $5 255
+  2463  EW_FPUTS           FileWriteByte $5 254
+  2464  EW_LOCKWINDOW      LockWindow on
+  2465  EW_LOCKWINDOW      LockWindow on
+  2466  EW_INTCMP          IntCmp $5 0 label_2468 0 0
+  2467  EW_FCLOSE          FileClose $5
+  2468  EW_PUSHPOP         Pop $6
+  2469  EW_PUSHPOP         Pop $5
+  2470  EW_PUSHPOP         Pop $4
+  2471  EW_CALL            Call label_194
+  2472  EW_SETFLAG         SetFlag bit=11 value=1
+  2473  EW_QUIT            Quit
+  2474  EW_CALL            Call label_2742
+  2475  EW_EXTRACTFILE     File "$PLUGINSDIR\UserInfo.dll"   ; data +0x1B1745B size=4096
+  2476  EW_SETFLAG         SetFlag bit=13 value=0
+  2477  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\UserInfo.dll" (func="GetAccountType")
+  2478  EW_PUSHPOP         Pop $1
+  2479  EW_STRCMP          StrCmp $1 "Admin" label_2508 0
+  2480  EW_UPDATETEXT      DetailPrint $Var65
+  2481  EW_PUSHPOP         Push $4
+  2482  EW_PUSHPOP         Push $5
+  2483  EW_PUSHPOP         Push $6
+  2484  EW_ASSIGNVAR       StrCpy $6 $Var65
+  2485  EW_INTOP           IntOp $5 0 + 0
+  2486  EW_INTCMP          IntCmp $Var97 13 0 label_2489 label_2489
+  2487  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2488  EW_NOP             Goto label_2490
+  2489  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2490  EW_INTOP           IntOp $Var97 0 + 13
+  2491  EW_INTCMP          IntCmp $5 0 label_2498 0 0
+  2492  EW_FSEEK           FileSeek $5 0 END $4
+  2493  EW_INTCMP          IntCmp $4 0 0 label_2497 label_2497
+  2494  EW_FPUTS           FileWriteByte $5 255
+  2495  EW_FPUTS           FileWriteByte $5 254
+  2496  EW_LOCKWINDOW      LockWindow on
+  2497  EW_LOCKWINDOW      LockWindow on
+  2498  EW_INTCMP          IntCmp $5 0 label_2500 0 0
+  2499  EW_FCLOSE          FileClose $5
+  2500  EW_PUSHPOP         Pop $6
+  2501  EW_PUSHPOP         Pop $5
+  2502  EW_PUSHPOP         Pop $4
+  2503  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:label_2505 clear:0
+  2504  EW_MESSAGEBOX      MessageBox MB=0x10 $Var65 0 0
+  2505  EW_CALL            Call label_194
+  2506  EW_SETFLAG         SetFlag bit=11 value=3
+  2507  EW_QUIT            Quit
+  2508  EW_STRCMP          StrCmp 0 0 0 label_2515
+  2509  EW_INTOP           IntOp $1 $Var50 + 0
+  2510  EW_CALL            Call label_2742
+  2511  EW_EXTRACTFILE     File "$PLUGINSDIR\System.dll"   ; data +0x1BC98 size=12288
+  2512  EW_SETFLAG         SetFlag bit=13 value=0
+  2513  EW_PUSHPOP         Push "kernel32::Wow64RevertWow64FsRedirection(i r1) i r2"
+  2514  EW_REGISTERDLL     CallInstDLL/Plugin "$PLUGINSDIR\System.dll" (func="Call")
+  2515  EW_SETFLAG         SetFlag bit=2 value=0
+  2516  EW_SETFLAG         SetFlag bit=2 value=0
+  2517  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion" "CurrentMajorVersionNumber"
+  2518  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2576 clear:0
+  2519  EW_READREGSTR      ReadRegDWORD $2 HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion" "CurrentMinorVersionNumber"
+  2520  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2576 clear:0
+  2521  EW_INTCMP          IntCmp $1 10 0 label_2576 label_2576
+  2522  EW_INTCMP          IntCmp $2 0 0 label_2576 label_2576
+  2523  EW_ASSIGNVAR       StrCpy $Var49 "Win10"
+  2524  EW_READREGSTR      ReadRegStr $1 HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion" "CurrentBuild"
+  2525  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2551 clear:0
+  2526  EW_INTCMP          IntCmp $1 22000 0 label_2551 0
+  2527  EW_UPDATETEXT      DetailPrint "OS Windows 11 / Server 11"
+  2528  EW_PUSHPOP         Push $4
+  2529  EW_PUSHPOP         Push $5
+  2530  EW_PUSHPOP         Push $6
+  2531  EW_ASSIGNVAR       StrCpy $6 "OS Windows 11 / Server 11"
+  2532  EW_INTOP           IntOp $5 0 + 0
+  2533  EW_INTCMP          IntCmp $Var97 13 0 label_2536 label_2536
+  2534  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2535  EW_NOP             Goto label_2537
+  2536  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2537  EW_INTOP           IntOp $Var97 0 + 13
+  2538  EW_INTCMP          IntCmp $5 0 label_2545 0 0
+  2539  EW_FSEEK           FileSeek $5 0 END $4
+  2540  EW_INTCMP          IntCmp $4 0 0 label_2544 label_2544
+  2541  EW_FPUTS           FileWriteByte $5 255
+  2542  EW_FPUTS           FileWriteByte $5 254
+  2543  EW_LOCKWINDOW      LockWindow on
+  2544  EW_LOCKWINDOW      LockWindow on
+  2545  EW_INTCMP          IntCmp $5 0 label_2547 0 0
+  2546  EW_FCLOSE          FileClose $5
+  2547  EW_PUSHPOP         Pop $6
+  2548  EW_PUSHPOP         Pop $5
+  2549  EW_PUSHPOP         Pop $4
+  2550  EW_NOP             Goto label_2574
+  2551  EW_UPDATETEXT      DetailPrint "OS Windows 10 / Server 10"
+  2552  EW_PUSHPOP         Push $4
+  2553  EW_PUSHPOP         Push $5
+  2554  EW_PUSHPOP         Push $6
+  2555  EW_ASSIGNVAR       StrCpy $6 "OS Windows 10 / Server 10"
+  2556  EW_INTOP           IntOp $5 0 + 0
+  2557  EW_INTCMP          IntCmp $Var97 13 0 label_2560 label_2560
+  2558  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2559  EW_NOP             Goto label_2561
+  2560  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2561  EW_INTOP           IntOp $Var97 0 + 13
+  2562  EW_INTCMP          IntCmp $5 0 label_2569 0 0
+  2563  EW_FSEEK           FileSeek $5 0 END $4
+  2564  EW_INTCMP          IntCmp $4 0 0 label_2568 label_2568
+  2565  EW_FPUTS           FileWriteByte $5 255
+  2566  EW_FPUTS           FileWriteByte $5 254
+  2567  EW_LOCKWINDOW      LockWindow on
+  2568  EW_LOCKWINDOW      LockWindow on
+  2569  EW_INTCMP          IntCmp $5 0 label_2571 0 0
+  2570  EW_FCLOSE          FileClose $5
+  2571  EW_PUSHPOP         Pop $6
+  2572  EW_PUSHPOP         Pop $5
+  2573  EW_PUSHPOP         Pop $4
+  2574  EW_SETFLAG         SetFlag bit=2 value=0
+  2575  EW_NOP             Goto label_2603
+  2576  EW_UPDATETEXT      DetailPrint $Var84
+  2577  EW_PUSHPOP         Push $4
+  2578  EW_PUSHPOP         Push $5
+  2579  EW_PUSHPOP         Push $6
+  2580  EW_ASSIGNVAR       StrCpy $6 $Var84
+  2581  EW_INTOP           IntOp $5 0 + 0
+  2582  EW_INTCMP          IntCmp $Var97 13 0 label_2585 label_2585
+  2583  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2584  EW_NOP             Goto label_2586
+  2585  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2586  EW_INTOP           IntOp $Var97 0 + 13
+  2587  EW_INTCMP          IntCmp $5 0 label_2594 0 0
+  2588  EW_FSEEK           FileSeek $5 0 END $4
+  2589  EW_INTCMP          IntCmp $4 0 0 label_2593 label_2593
+  2590  EW_FPUTS           FileWriteByte $5 255
+  2591  EW_FPUTS           FileWriteByte $5 254
+  2592  EW_LOCKWINDOW      LockWindow on
+  2593  EW_LOCKWINDOW      LockWindow on
+  2594  EW_INTCMP          IntCmp $5 0 label_2596 0 0
+  2595  EW_FCLOSE          FileClose $5
+  2596  EW_PUSHPOP         Pop $6
+  2597  EW_PUSHPOP         Pop $5
+  2598  EW_PUSHPOP         Pop $4
+  2599  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:label_2601 clear:0
+  2600  EW_MESSAGEBOX      MessageBox MB=0x40 $Var84 0 0
+  2601  EW_SETFLAG         SetFlag bit=2 value=1
+  2602  EW_QUIT            Quit
+  2603  EW_INTOP           IntOp $0 1 | 16
+  2604  EW_LOG             LogSet/LogText 95 "$0"
+  2605  EW_LOG             LogSet/LogText 95 0
+  2606  EW_LOG             LogSet/LogText 115 0
+  2607  EW_LOG             LogSet/LogText 325 0
+  2608  EW_RET             Return
+
+===== Function_2609   [entries 2609..2701] =====
+  2609  EW_SETFLAG         SetFlag bit=2 value=0
+  2610  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion" "CurrentMajorVersionNumber"
+  2611  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2669 clear:0
+  2612  EW_READREGSTR      ReadRegDWORD $2 HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion" "CurrentMinorVersionNumber"
+  2613  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2669 clear:0
+  2614  EW_INTCMP          IntCmp $1 10 0 label_2669 label_2669
+  2615  EW_INTCMP          IntCmp $2 0 0 label_2669 label_2669
+  2616  EW_ASSIGNVAR       StrCpy $Var49 "Win10"
+  2617  EW_READREGSTR      ReadRegStr $1 HKLM "SOFTWARE\Microsoft\Windows NT\CurrentVersion" "CurrentBuild"
+  2618  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2644 clear:0
+  2619  EW_INTCMP          IntCmp $1 22000 0 label_2644 0
+  2620  EW_UPDATETEXT      DetailPrint "OS Windows 11 / Server 11"
+  2621  EW_PUSHPOP         Push $4
+  2622  EW_PUSHPOP         Push $5
+  2623  EW_PUSHPOP         Push $6
+  2624  EW_ASSIGNVAR       StrCpy $6 "OS Windows 11 / Server 11"
+  2625  EW_INTOP           IntOp $5 0 + 0
+  2626  EW_INTCMP          IntCmp $Var97 13 0 label_2629 label_2629
+  2627  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2628  EW_NOP             Goto label_2630
+  2629  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2630  EW_INTOP           IntOp $Var97 0 + 13
+  2631  EW_INTCMP          IntCmp $5 0 label_2638 0 0
+  2632  EW_FSEEK           FileSeek $5 0 END $4
+  2633  EW_INTCMP          IntCmp $4 0 0 label_2637 label_2637
+  2634  EW_FPUTS           FileWriteByte $5 255
+  2635  EW_FPUTS           FileWriteByte $5 254
+  2636  EW_LOCKWINDOW      LockWindow on
+  2637  EW_LOCKWINDOW      LockWindow on
+  2638  EW_INTCMP          IntCmp $5 0 label_2640 0 0
+  2639  EW_FCLOSE          FileClose $5
+  2640  EW_PUSHPOP         Pop $6
+  2641  EW_PUSHPOP         Pop $5
+  2642  EW_PUSHPOP         Pop $4
+  2643  EW_NOP             Goto label_2667
+  2644  EW_UPDATETEXT      DetailPrint "OS Windows 10 / Server 10"
+  2645  EW_PUSHPOP         Push $4
+  2646  EW_PUSHPOP         Push $5
+  2647  EW_PUSHPOP         Push $6
+  2648  EW_ASSIGNVAR       StrCpy $6 "OS Windows 10 / Server 10"
+  2649  EW_INTOP           IntOp $5 0 + 0
+  2650  EW_INTCMP          IntCmp $Var97 13 0 label_2653 label_2653
+  2651  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2652  EW_NOP             Goto label_2654
+  2653  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2654  EW_INTOP           IntOp $Var97 0 + 13
+  2655  EW_INTCMP          IntCmp $5 0 label_2662 0 0
+  2656  EW_FSEEK           FileSeek $5 0 END $4
+  2657  EW_INTCMP          IntCmp $4 0 0 label_2661 label_2661
+  2658  EW_FPUTS           FileWriteByte $5 255
+  2659  EW_FPUTS           FileWriteByte $5 254
+  2660  EW_LOCKWINDOW      LockWindow on
+  2661  EW_LOCKWINDOW      LockWindow on
+  2662  EW_INTCMP          IntCmp $5 0 label_2664 0 0
+  2663  EW_FCLOSE          FileClose $5
+  2664  EW_PUSHPOP         Pop $6
+  2665  EW_PUSHPOP         Pop $5
+  2666  EW_PUSHPOP         Pop $4
+  2667  EW_SETFLAG         SetFlag bit=2 value=0
+  2668  EW_NOP             Goto label_2696
+  2669  EW_UPDATETEXT      DetailPrint $Var84
+  2670  EW_PUSHPOP         Push $4
+  2671  EW_PUSHPOP         Push $5
+  2672  EW_PUSHPOP         Push $6
+  2673  EW_ASSIGNVAR       StrCpy $6 $Var84
+  2674  EW_INTOP           IntOp $5 0 + 0
+  2675  EW_INTCMP          IntCmp $Var97 13 0 label_2678 label_2678
+  2676  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2677  EW_NOP             Goto label_2679
+  2678  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2679  EW_INTOP           IntOp $Var97 0 + 13
+  2680  EW_INTCMP          IntCmp $5 0 label_2687 0 0
+  2681  EW_FSEEK           FileSeek $5 0 END $4
+  2682  EW_INTCMP          IntCmp $4 0 0 label_2686 label_2686
+  2683  EW_FPUTS           FileWriteByte $5 255
+  2684  EW_FPUTS           FileWriteByte $5 254
+  2685  EW_LOCKWINDOW      LockWindow on
+  2686  EW_LOCKWINDOW      LockWindow on
+  2687  EW_INTCMP          IntCmp $5 0 label_2689 0 0
+  2688  EW_FCLOSE          FileClose $5
+  2689  EW_PUSHPOP         Pop $6
+  2690  EW_PUSHPOP         Pop $5
+  2691  EW_PUSHPOP         Pop $4
+  2692  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:label_2694 clear:0
+  2693  EW_MESSAGEBOX      MessageBox MB=0x40 $Var84 0 0
+  2694  EW_SETFLAG         SetFlag bit=2 value=1
+  2695  EW_QUIT            Quit
+  2696  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2697 clear:label_2700
+  2697  EW_CALL            Call label_194
+  2698  EW_SETFLAG         SetFlag bit=11 value=1
+  2699  EW_QUIT            Quit
+  2700  EW_SETFLAG         SetFlag bit=2 value=0
+  2701  EW_RET             Return
+
+===== Function_2702   [entries 2702..2741] =====
+  2702  EW_SETFLAG         SetFlag bit=2 value=0
+  2703  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "VersionHi"
+  2704  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2740 clear:0
+  2705  EW_INTCMP          IntCmp $1 1 0 label_2740 label_2712
+  2706  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "VersionLo"
+  2707  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2740 clear:0
+  2708  EW_INTCMP          IntCmp $1 30 0 label_2740 label_2712
+  2709  EW_READREGSTR      ReadRegDWORD $1 HKLM "SOFTWARE\AMICON\Amiconnect" "VersionBn"
+  2710  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2740 clear:0
+  2711  EW_INTCMP          IntCmp $1 3004 label_2740 label_2740 label_2712
+  2712  EW_UPDATETEXT      DetailPrint $Var86
+  2713  EW_PUSHPOP         Push $4
+  2714  EW_PUSHPOP         Push $5
+  2715  EW_PUSHPOP         Push $6
+  2716  EW_ASSIGNVAR       StrCpy $6 $Var86
+  2717  EW_INTOP           IntOp $5 0 + 0
+  2718  EW_INTCMP          IntCmp $Var97 13 0 label_2721 label_2721
+  2719  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0xC0000000 creat=4
+  2720  EW_NOP             Goto label_2722
+  2721  EW_FOPEN           FileOpen $5 "$INSTDIR\Install.log"   ; access=0x40000000 creat=2
+  2722  EW_INTOP           IntOp $Var97 0 + 13
+  2723  EW_INTCMP          IntCmp $5 0 label_2730 0 0
+  2724  EW_FSEEK           FileSeek $5 0 END $4
+  2725  EW_INTCMP          IntCmp $4 0 0 label_2729 label_2729
+  2726  EW_FPUTS           FileWriteByte $5 255
+  2727  EW_FPUTS           FileWriteByte $5 254
+  2728  EW_LOCKWINDOW      LockWindow on
+  2729  EW_LOCKWINDOW      LockWindow on
+  2730  EW_INTCMP          IntCmp $5 0 label_2732 0 0
+  2731  EW_FCLOSE          FileClose $5
+  2732  EW_PUSHPOP         Pop $6
+  2733  EW_PUSHPOP         Pop $5
+  2734  EW_PUSHPOP         Pop $4
+  2735  EW_IFFLAG          IfFlag bit=8 mask=-1 -> set:label_2737 clear:0
+  2736  EW_MESSAGEBOX      MessageBox MB=0x40 $Var86 0 0
+  2737  EW_CALL            Call label_194
+  2738  EW_SETFLAG         SetFlag bit=11 value=1
+  2739  EW_QUIT            Quit
+  2740  EW_SETFLAG         SetFlag bit=2 value=0
+  2741  EW_RET             Return
+
+===== Function_2742   [entries 2742..2760] =====
+  2742  EW_SETFLAG         SetFlag bit=13 value=6
+  2743  EW_STRCMP          StrCmp $PLUGINSDIR 0 0 label_2755
+  2744  EW_PUSHPOP         Push $0
+  2745  EW_PUSHPOP         Push $1
+  2746  EW_ASSIGNVAR       StrCpy $1 $0 maxlen=0 startpos=-1
+  2747  EW_SETFLAG         SetFlag bit=2 value=0
+  2748  EW_GETTEMPFILENAME GetTempFileName $0 $TEMP
+  2749  EW_DELETEFILE      Delete "$0"
+  2750  EW_CREATEDIR       CreateDirectory $0
+  2751  EW_IFFLAG          IfFlag bit=2 mask=0 -> set:label_2756 clear:0
+  2752  EW_ASSIGNVAR       StrCpy $PLUGINSDIR $0
+  2753  EW_PUSHPOP         Pop $1
+  2754  EW_PUSHPOP         Pop $0
+  2755  EW_RET             Return
+  2756  EW_INTOP           IntOp $1 $1 + 1
+  2757  EW_STRCMP          StrCmp $1 9 0 label_2747
+  2758  EW_MESSAGEBOX      MessageBox MB=0x200010 "Error! Can't initialize plug-ins directory. Please try again later." 0 0
+  2759  EW_QUIT            Quit
+  2760  EW_RET             Return
